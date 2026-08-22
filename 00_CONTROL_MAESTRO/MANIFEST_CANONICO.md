@@ -1,6 +1,6 @@
 # Manifest Canónico — CIFI 3065 Virtual — Materia Mundi
 
-**Estado:** F0 / Lote A — cierre autorizado  
+**Estado:** F0-E completado técnicamente — MIG-F3 PASS; apertura F3 pendiente de autorización humana  
 **Fecha:** 2026-08-22  
 **Gate A:** PASS CON AJUSTES — decisión humana
 
@@ -102,13 +102,13 @@ No se diseñaron módulos u OVAt.
 
 No se crearon automatizaciones ni agentes finales.
 
-## Deuda documental controlada
+## Reconciliación documental vigente
 
-1. `README.md` conserva todavía el snapshot inicial de bootstrap, incluyendo C5 rector y verificación pendiente.
-2. El Perfil de Implementación v1.0 no incorpora todavía la decisión F0-C4.
-3. La reconciliación deberá hacerse con genealogía y versionado en un movimiento futuro autorizado.
-
-Estas deudas no invalidan Gate A; fueron aceptadas bajo **PASS CON AJUSTES**.
+1. El Perfil de Implementación v1.0 se preserva como ancestro histórico.
+2. `PERFIL_IMPLEMENTACION_FRAMEWORK_CIFI3065_v1.1.md` establece operacionalmente N3 + C4 Integral.
+3. El Estado Maestro F0-B se preserva como snapshot histórico; `ESTADO_MAESTRO_CIFI3065_v2.0.md` es el estado vigente.
+4. Los instrumentos H2.8/MIG-F3 heredados se preservan en `99_ARCHIVO_HISTORICO/`.
+5. El README raíz permanece deliberadamente sin actualización final hasta la decisión humana posterior a MIG-F3.
 
 ## F0-B — Proyecto curricular rector
 
@@ -215,3 +215,43 @@ reconciliados con el estado real durante F0-E.
 **Próximo bloque:** F0-E — Consolidación, verificación y MIG-F3.
 
 **F3 permanece cerrada.**
+
+## F0-E — Consolidación, verificación y MIG-F3
+
+**Estado técnico:** COMPLETADO  
+**MIG-F3:** PASS  
+**F3:** CERRADA PENDIENTE DE AUTORIZACIÓN HUMANA
+
+### Decisiones y sucesiones
+
+- H2.8 ratificado humanamente como **GO CON CONDICIONES**.
+- Perfil v1.0 sucedido operacionalmente por Perfil v1.1: N3 + C4 Integral.
+- Estado Maestro F0-B sucedido por Estado Maestro v2.0.
+- Prompt preparatorio MIG-F3 sucedido por Primer de Activación F3 v2.0.
+- Gates originales preservados en `99_ARCHIVO_HISTORICO/CIFI3065/F0-E/`.
+
+### Instrumentos vigentes
+
+- `00_CONTROL_MAESTRO/PERFIL_IMPLEMENTACION_FRAMEWORK_CIFI3065_v1.1.md`
+- `00_CONTROL_MAESTRO/ESTADO_MAESTRO_CIFI3065_v2.0.md`
+- `15_EVALUACION_CALIDAD_Y_AUDITORIA/CIFI3065/H2.8_GATE_F2-F3_v1.1_RATIFICADO.md`
+- `15_EVALUACION_CALIDAD_Y_AUDITORIA/CIFI3065/GATE_MIG-F3_PRUEBA_CONTINUIDAD_v2.0.md`
+- `18_DOCUMENTACION_ACTIVA/PRIMER_ACTIVACION_F3_v2.0.md`
+- `18_DOCUMENTACION_ACTIVA/MATRIZ_F0E_CONSOLIDACION_MIG-F3.md`
+
+### Veredicto
+
+**MIG-F3 = PASS**
+
+La documentación versionada permite recuperar identidad, estado, Gates,
+C-F3-01–08, herencias, brechas, frontera F3/F4 y próximo movimiento sin
+depender de memoria conversacional.
+
+### Regla de parada
+
+El PASS técnico recomienda apertura de F3, pero no la ejecuta.
+
+**La autorización de apertura F3 permanece como decisión humana final.**
+
+README raíz pendiente de actualización hasta esa decisión.
+
