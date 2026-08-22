@@ -126,3 +126,18 @@ Ajustes/deuda conocidos:
 - README raíz no modificado.
 - Próximo bloque: F0-D — Continuidad, reconciliación y memoria.
 - F3 permanece cerrada.
+
+## [F0-D — Continuidad, reconciliación y memoria] — 2026-08-22
+
+- Compendio de continuidad/memoria verificado por SHA-256.
+- Bitácora Maestra F1→F2 v2.0 incorporada como síntesis longitudinal candidata.
+- Bitácoras v1.2–v1.8 preservadas como genealogía incremental.
+- Registro Maestro de Herencias incorporado.
+- Registro consolidado de Brechas/Riesgos/Diferidos incorporado.
+- Informe Evolutivo de Mejoras incorporado.
+- Continuidad F1→F2 vinculada a las fuentes pedagógicas canonicalizadas en F0-C.
+- Manifest Puente y Prompt MIG-F3 heredados preservados como antecedentes en `99`.
+- No se ejecutó MIG-F3.
+- README raíz no modificado.
+- Próximo bloque: F0-E — Consolidación, verificación y MIG-F3.
+- F3 permanece cerrada.

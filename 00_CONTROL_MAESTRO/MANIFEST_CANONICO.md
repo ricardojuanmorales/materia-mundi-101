@@ -181,3 +181,37 @@ Los Gates H2.8 y MIG-F3 fueron identificados y diferidos a F0-E.
 **Próximo bloque:** F0-D — Continuidad, reconciliación y memoria.
 
 **F3 permanece cerrada.**
+
+## F0-D — Continuidad, reconciliación y memoria
+
+**Estado:** COMPLETADO
+
+Fuente:
+
+`CIFI3065_F0-C_Compendio_Continuidad_Memoria_v1.0.zip`
+
+SHA-256:
+
+`1a16bc633e4f1fa4622a51fa11dc3140e4e091dd129dd0796a0a039161294dff`
+
+Documentos activos incorporados:
+
+- `18_DOCUMENTACION_ACTIVA/CIFI3065_Bitacora_Maestra_F1-F2_v2.0_CANDIDATA.md`
+- `18_DOCUMENTACION_ACTIVA/CIFI3065_Registro_Maestro_Herencias_Transferencias_F2_v1.0.md`
+- `04_GOBERNANZA_ETICA_Y_RIESGOS/CIFI3065_Registro_Consolidado_Brechas_Riesgos_Diferidos_F2_v1.0_CANDIDATO.md`
+- `20_MANTENIMIENTO_Y_EVOLUCION/CIFI3065_Informe_Evolutivo_Mejoras_Protocolo_F1-F2_v0.2_CANDIDATO.md`
+
+Registro rector del bloque:
+
+- `18_DOCUMENTACION_ACTIVA/MATRIZ_F0D_CONTINUIDAD_RECONCILIACION.md`
+
+Las bitácoras v1.2–v1.8 permanecen como genealogía histórica.
+La Bitácora Maestra v2.0 funciona como síntesis longitudinal candidata.
+
+El Manifest Puente y el Prompt MIG-F3 heredados se preservan en
+`99_ARCHIVO_HISTORICO/CIFI3065/F0-D/` como antecedentes y deberán ser
+reconciliados con el estado real durante F0-E.
+
+**Próximo bloque:** F0-E — Consolidación, verificación y MIG-F3.
+
+**F3 permanece cerrada.**
