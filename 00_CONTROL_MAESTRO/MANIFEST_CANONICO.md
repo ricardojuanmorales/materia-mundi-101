@@ -109,3 +109,33 @@ No se crearon automatizaciones ni agentes finales.
 3. La reconciliación deberá hacerse con genealogía y versionado en un movimiento futuro autorizado.
 
 Estas deudas no invalidan Gate A; fueron aceptadas bajo **PASS CON AJUSTES**.
+
+## F0-B — Proyecto curricular rector
+
+**Estado:** COMPLETADO
+
+Compendio fuente:
+
+`CIFI3065_F0-B_Compendio_Canonico_v1.0.zip`
+
+SHA-256:
+
+`5865105b2a4ba9edec6b807a869a76b7304873ba09c71ff1918da264c1376bf5`
+
+Documentos incorporados como canónicos:
+
+- `00_CONTROL_MAESTRO/ESTADO_MAESTRO_CIFI3065_v1.0-F0B.md`
+- `00_CONTROL_MAESTRO/MANIFEST_CANONICO_CIFI3065_v0.2-F0B.md`
+- `03_METODOLOGIA_Y_FLUJO_DE_TRABAJO/Protocolo_Virtualizacion_Ludica_Transdisciplinaria_V1_0.docx`
+- `18_DOCUMENTACION_ACTIVA/README_F0-B.md`
+
+Registro de autoridad y rutas:
+
+- `18_DOCUMENTACION_ACTIVA/MATRIZ_F0B_AUTORIDAD_RUTAS.md`
+
+El Protocolo de Virtualización queda establecido como referencia rectora
+del proceso curricular F1–F10.
+
+**Próximo bloque:** C — Integración canónica de F1.
+
+**F3 permanece cerrada.**

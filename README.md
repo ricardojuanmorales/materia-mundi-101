@@ -37,7 +37,7 @@ Repositorio, arquitectura `00–21 + 99`, documentos fundacionales, GitHub, cone
 - Investigador, Artista y Programador Humanista activos con desarrollo simétrico y activación proporcional.
 - C5 Pedagógico disponible como modo especializado de apoyo.
 
-### [ ] B — Proyecto curricular rector
+### [x] B — Proyecto curricular rector
 
 Recuperar y canonicalizar la documentación que define el curso como totalidad:
 
@@ -120,7 +120,7 @@ fuentes del bloque
 ## Estado actual
 
 **Completado:** Lote A — Infraestructura y activación.  
-**Siguiente movimiento permitido:** Lote B — Proyecto curricular rector.
+**Siguiente movimiento permitido:** C — Integración canónica de F1.
 
 ### Límites vigentes
 

@@ -97,3 +97,16 @@ Ajustes/deuda conocidos:
 - F0 / Lote A cerrado con deuda documental controlada;
 - F3 permanece cerrada;
 - próximo lote permitido: **Lote B — Proyecto curricular rector**, sólo mediante nueva autorización humana.
+
+## [F0-B — Proyecto curricular rector] — 2026-08-22
+
+- Compendio canónico F0-B verificado por SHA-256.
+- Cuatro documentos pedagógicos incorporados íntegramente.
+- Estado Maestro F0-B establecido.
+- Protocolo de Virtualización F1–F10 incorporado como rector curricular.
+- Manifest F0-B versionado.
+- README F0-B conservado como soporte del bloque.
+- Matriz de autoridad/rutas registrada.
+- README raíz actualizado: B completado.
+- Próximo bloque: C — Integración canónica de F1.
+- F3 permanece cerrada.
