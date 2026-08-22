@@ -1,148 +1,97 @@
 # CIFI 3065 Virtual — Materia Mundi
 
-## F0 — Activación y Migración Canónica
+## Estado del proyecto
 
-**Estado:** EN CURSO  
+**F0 — Activación y Migración Canónica:** COMPLETADA TÉCNICAMENTE  
+**F1 — Diagnóstico y Arquitectura:** CERRADA — GO CON CONDICIONES  
+**F2 — Alineación Pedagógica:** CERRADA — H2.8 GO CON CONDICIONES  
+**MIG-F3:** PASS  
+**F3:** PREPARADA, PENDIENTE DE AUTORIZACIÓN HUMANA
+
 **Nivel:** N3 Avanzado  
 **Caleidoscopio rector:** C4 Integral  
-**Fuente versionada de verdad:** GitHub  
-**F3:** CERRADA
+**C5 Pedagógico:** apoyo especializado  
+**Fuente versionada de verdad:** GitHub
 
-### Propósito de F0
+## Qué es Materia Mundi
 
-F0 prepara el sistema, la documentación y las herencias curriculares necesarias para continuar el desarrollo del curso sin reconstruir información por suposición.
+Materia Mundi es la arquitectura de virtualización lúdica y transdisciplinaria de CIFI 3065.
 
-La fase debe terminar con:
+El desarrollo curricular sigue el Protocolo de Virtualización F1–F10 y conserva trazabilidad entre evidencia, decisiones, riesgos, Gates y evolución documental.
 
-- infraestructura y gobernanza verificadas;
-- proyecto curricular rector canonicalizado;
-- F1 y F2 migradas completamente;
-- genealogía y contradicciones documentadas;
-- condiciones verificadas para decidir si F3 puede abrirse.
+## Estado alcanzado
 
----
+### F0
+Se establecieron:
+- arquitectura `00–21 + 99`;
+- gobernanza Humano / IA / Máquina / Documentación;
+- GitHub como fuente versionada;
+- evidencia curricular F1/F2;
+- genealogía;
+- memoria y transferencias;
+- Gates de continuidad.
 
-## Mapa de F0
+### F1
+Se consolidaron:
+- Materia Mundi;
+- H1–H10;
+- FEHE;
+- diagnóstico;
+- arquitectura conceptual;
+- riesgos y condiciones.
 
-### [x] A — Infraestructura y activación
+Resultado: **GO CON CONDICIONES**.
 
-Repositorio, arquitectura `00–21 + 99`, documentos fundacionales, GitHub, conexión con ChatGPT Project y configuración del Framework.
+### F2
+Se consolidaron:
+- RIA integradores;
+- REC;
+- PSEC;
+- DUA anticipado;
+- evaluación piloto;
+- interacciones;
+- apoyos;
+- brechas y transferencias.
 
-**Gate A:** `PASS CON AJUSTES`
+Resultado: **H2.8 = GO CON CONDICIONES**.
 
-**Resultado vigente:**
-- GitHub establecido como fuente versionada de verdad.
-- N3 Avanzado confirmado.
-- C4 Integral adoptado como modo rector.
-- Investigador, Artista y Programador Humanista activos con desarrollo simétrico y activación proporcional.
-- C5 Pedagógico disponible como modo especializado de apoyo.
+### MIG-F3
+La prueba de continuidad obtuvo:
 
-### [x] B — Proyecto curricular rector
+**PASS — 12/12 criterios.**
 
-Recuperar y canonicalizar la documentación que define el curso como totalidad:
+El proyecto puede reconstruirse desde GitHub sin depender de memoria conversacional.
 
-- propósito;
-- alcance;
-- estructura curricular;
-- criterios de autoridad;
-- dependencias;
-- relación entre las fases posteriores.
+## Condiciones que viajan a F3
 
-Este bloque servirá como referencia superior para evaluar F1 y F2.
+1. modelar carga estudiante/docente;
+2. preservar H1–H10 y FEHE;
+3. mantener PROEMA longitudinal;
+4. conservar provisionalidad de la evaluación piloto;
+5. producir Guión Maestro y Ficha Estratégica antes de OVAt;
+6. subordinar narrativa, avatar, IA y herramientas a REC;
+7. mantener la continuidad documental;
+8. transportar brechas controladas.
 
-### [ ] C — Integración canónica de F1
+## Frontera curricular
 
-Migrar F1 como bloque coherente:
+`F2 alineación → F3 macrodiseño → F4 microdiseño OVAt`
 
-- inventariar fuentes;
-- identificar versiones y genealogía;
-- detectar duplicados y contradicciones;
-- decidir autoridad documental;
-- establecer rutas canónicas;
-- versionar y verificar.
+F3 deberá construir la arquitectura longitudinal de 15 módulos.
 
-**Salida:** F1 completa, trazable y recuperable desde GitHub.
+No debe adelantar OVAt completos.
 
-### [ ] D — Integración canónica de F2
+## Documentos de entrada pre-F3
 
-Aplicar el mismo proceso expedito a F2, añadiendo verificación explícita de coherencia con F1 ya canonicalizada.
+- `00_CONTROL_MAESTRO/ESTADO_MAESTRO_CIFI3065_v2.0.md`
+- `00_CONTROL_MAESTRO/MANIFEST_CANONICO.md`
+- `00_CONTROL_MAESTRO/PERFIL_IMPLEMENTACION_FRAMEWORK_CIFI3065_v1.1.md`
+- `15_EVALUACION_CALIDAD_Y_AUDITORIA/CIFI3065/H2.8_GATE_F2-F3_v1.1_RATIFICADO.md`
+- `15_EVALUACION_CALIDAD_Y_AUDITORIA/CIFI3065/GATE_MIG-F3_PRUEBA_CONTINUIDAD_v2.0.md`
+- `18_DOCUMENTACION_ACTIVA/PRIMER_ACTIVACION_F3_v2.0.md`
 
-**Salida:** F2 completa, trazable y coherente con las herencias anteriores.
+## Próximo movimiento
 
-### [ ] E — Reconciliación F1 ↔ F2
+La apertura de F3 requiere una decisión humana explícita.
 
-Comprobar transversalmente:
-
-- continuidad conceptual;
-- terminología;
-- secuencias y dependencias;
-- contradicciones pendientes;
-- documentos sustituidos;
-- vacíos que afecten el inicio de F3.
-
-No se reabre todo el análisis. Se revisan principalmente excepciones, dependencias y riesgos materiales.
-
-### [ ] MIG-F3 — Gate de salida
-
-F3 sólo puede abrirse cuando exista evidencia suficiente de que:
-
-- el proyecto curricular rector es canónico;
-- F1 está integrada;
-- F2 está integrada;
-- la genealogía está preservada;
-- las contradicciones relevantes están resueltas o explícitamente diferidas;
-- GitHub contiene el estado verificado;
-- ChatGPT Project puede recuperar las herencias necesarias sin inventarlas.
-
-**Decisión final:** humana.
-
----
-
-## Método de migración expedita
-
-Para los bloques siguientes:
-
-```text
-fuentes del bloque
-→ inventario y comparación IA
-→ contradicciones / autoridad / rutas
-→ una decisión humana
-→ ejecución en VS Code/Git
-→ verificación
-→ commit/push
-→ Gate
-```
-
-“Expedita” reduce conversaciones y decisiones redundantes. No elimina evidencia, genealogía, Gates ni control humano.
-
----
-
-## Estado actual
-
-**Completado:** Lote A — Infraestructura y activación.  
-**Siguiente movimiento permitido:** C — Integración canónica de F1.
-
-### Límites vigentes
-
-- F1 y F2 todavía no se reconstruyen fuera de su lote autorizado.
-- F3 permanece cerrada.
-- Los documentos fundacionales conservan su genealogía.
-- La decisión F0-C4 posterior al Perfil v1.0 permanece registrada como divergencia controlada pendiente de futura canonicalización.
-
----
-
-## Regla para este README
-
-`README.md` representa siempre el **mapa de la fase activa**.
-
-Al cerrar una fase:
-
-```text
-README de la fase saliente
-→ 99_ARCHIVO_HISTORICO/
-
-nuevo README.md
-→ mapa de la nueva fase
-```
-
-Manifest, Changelog y registros de cierre conservan el detalle operacional; este README conserva la orientación humana.
+Hasta entonces, F3 permanece preparada pero cerrada.

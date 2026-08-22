@@ -156,3 +156,15 @@ Ajustes/deuda conocidos:
 - Brechas heredadas mantienen trazabilidad y destino.
 - README raíz no modificado todavía por decisión metodológica.
 - F3 permanece cerrada pendiente de autorización humana explícita.
+
+## [Cierre documental pre-F3] — 2026-08-22
+
+- Auditoría interna F0→F2 completada.
+- Informe Ejecutivo Pre-F3 incorporado.
+- Cierre documental de sesión incorporado.
+- README de F0 actualizado a la fotografía real del umbral F3.
+- README anterior preservado en archivo histórico.
+- Prospectiva F3→F10 documentada.
+- MIG-F3 permanece PASS.
+- F3 permanece preparada pero cerrada.
+- Kit externo y prompt de nueva sesión permanecen fuera del repositorio.

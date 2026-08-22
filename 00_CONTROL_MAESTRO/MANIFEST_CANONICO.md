@@ -255,3 +255,31 @@ El PASS técnico recomienda apertura de F3, pero no la ejecuta.
 
 README raíz pendiente de actualización hasta esa decisión.
 
+
+## Cierre documental de sesión pre-F3
+
+**Fecha:** 2026-08-22  
+**Estado:** CIERRE DOCUMENTAL COMPLETADO
+
+Se consolidan:
+
+- `18_DOCUMENTACION_ACTIVA/CIFI3065_Informe_Ejecutivo_PreF3_v1.0.md`
+- `18_DOCUMENTACION_ACTIVA/CIFI3065_Cierre_Sesion_F0_PreF3_v1.0.md`
+- `README.md` como fotografía final del umbral F3.
+
+El README anterior se preserva en:
+
+- `99_ARCHIVO_HISTORICO/README_F0_PRECIERRE_2026-08-22.md`
+
+Estado de transición:
+
+- F0 técnicamente completada.
+- F1 cerrada: GO CON CONDICIONES.
+- F2 cerrada: H2.8 = GO CON CONDICIONES.
+- MIG-F3 = PASS.
+- F3 preparada pero todavía cerrada.
+- apertura F3 requiere autorización humana explícita.
+
+El kit externo de activación/continuidad y su prompt de inicio se mantienen
+fuera del repositorio como instrumentos portátiles de transferencia.
+GitHub continúa siendo la fuente versionada de verdad.
