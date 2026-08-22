@@ -110,3 +110,19 @@ Ajustes/deuda conocidos:
 - README raíz actualizado: B completado.
 - Próximo bloque: C — Integración canónica de F1.
 - F3 permanece cerrada.
+
+## [F0-C — Evidencia pedagógica base] — 2026-08-22
+
+- Secuencia F0 recalibrada: evidencia antes de reconstrucción de continuidad.
+- Suplemento granular F1/F2 verificado por SHA-256.
+- Evidencia granular disponible de F1 y F2 incorporada íntegramente.
+- Dossiers F1/F2 preservados sin sustituir las fuentes granulares.
+- Prontuario, PSEC y FEHE H1–H10 incorporados a rutas canónicas.
+- Versiones preliminares y bitácoras históricas preservadas en `99_ARCHIVO_HISTORICO`.
+- F1.0 y F1.1A–C registrados como no localizados, sin reconstrucción artificial.
+- Fuentes de continuidad identificadas y diferidas a F0-D.
+- H2.8 y MIG-F3 identificados y diferidos a F0-E.
+- Matriz F0-B corregida para eliminar su instrucción de verificación ya obsoleta.
+- README raíz no modificado.
+- Próximo bloque: F0-D — Continuidad, reconciliación y memoria.
+- F3 permanece cerrada.

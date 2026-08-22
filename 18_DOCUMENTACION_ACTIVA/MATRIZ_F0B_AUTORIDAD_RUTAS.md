@@ -23,17 +23,13 @@
 3. `README.md` continúa siendo el mapa humano de la Fase 0.
 4. `README_F0-B.md` no compite con el README raíz.
 5. La presencia de un documento en Git no implica por sí sola su promoción a autoridad canónica.
-6. La autoridad final del Bloque B requiere comparación, resolución de contradicciones, Gate B y decisión humana.
+6. La autoridad final del Bloque B quedó resuelta mediante decisión humana de cierre y verificación Git/GitHub del commit `54188cf`.
 
-## Próxima verificación
+## Verificación cerrada
 
-- leer los cuatro documentos desde GitHub;
-- comparar Estado Maestro y Manifest F0-B con el estado vigente;
-- establecer genealogía;
-- identificar contradicciones materiales;
-- decidir qué documentos se promueven como rectores;
-- actualizar Manifest/Changelog sólo después de esa decisión.
-
+F0-B quedó cerrado y verificado en GitHub mediante el commit `54188cf`.
+Las verificaciones previstas en la versión inicial de esta matriz quedaron
+superadas por la decisión humana de canonicalización y su evidencia Git/GitHub.
 
 ## Decisión humana de cierre F0-B
 

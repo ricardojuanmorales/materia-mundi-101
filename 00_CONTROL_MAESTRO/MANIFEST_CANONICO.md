@@ -139,3 +139,45 @@ del proceso curricular F1–F10.
 **Próximo bloque:** C — Integración canónica de F1.
 
 **F3 permanece cerrada.**
+
+## F0-C — Evidencia pedagógica base
+
+**Estado:** COMPLETADO
+
+La secuencia de cierre de F0 fue recalibrada por decisión humana para
+consolidar primero las fuentes pedagógicas y reconstruir después la continuidad:
+
+- F0-C — Evidencia pedagógica base.
+- F0-D — Continuidad, reconciliación y memoria.
+- F0-E — Consolidación, verificación y MIG-F3.
+
+Fuente de ingesta F0-C:
+
+`Suplemento_Granular_F1_y_F2.zip`
+
+SHA-256:
+
+`0cdf83e039698b86f2c5661e9c82ef52360a553f246bd9d70bd7c59b37535a8d`
+
+Rutas principales activadas:
+
+- `08_CURSOS_PROGRAMAS_Y_TRAYECTORIAS/CIFI3065/F1/`
+- `08_CURSOS_PROGRAMAS_Y_TRAYECTORIAS/CIFI3065/F2/`
+- `08_CURSOS_PROGRAMAS_Y_TRAYECTORIAS/CIFI3065/FUENTES_INSTITUCIONALES/`
+- `02_ARQUITECTURA_CONCEPTUAL/CIFI3065/`
+- `07_PLANTILLAS_Y_MODELOS/FEHE/`
+- `99_ARCHIVO_HISTORICO/CIFI3065/`
+
+Registro rector de evidencia y genealogía:
+
+- `18_DOCUMENTACION_ACTIVA/MATRIZ_F0C_EVIDENCIA_GENEALOGIA.md`
+
+F1.0 y F1.1A–C no fueron localizados como archivos independientes y no
+se reconstruyen artificialmente.
+
+Las fuentes de continuidad/memoria fueron identificadas y diferidas a F0-D.
+Los Gates H2.8 y MIG-F3 fueron identificados y diferidos a F0-E.
+
+**Próximo bloque:** F0-D — Continuidad, reconciliación y memoria.
+
+**F3 permanece cerrada.**
