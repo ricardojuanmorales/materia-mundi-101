@@ -1,11 +1,11 @@
 # CIFI 3065 Virtual — Materia Mundi
 # F3-A — Matriz Arquitectónica Longitudinal U1–U15
 
-**Versión:** 1.0 CANDIDATA  
+**Versión:** 1.0  
 **Fecha:** 23 de agosto de 2026  
 **Fase:** F3 — Macrodiseño longitudinal  
 **Bloque:** F3-A — Arquitectura longitudinal  
-**Estado:** producto rector de trabajo; pendiente de validación humana antes de F3-B  
+**Estado:** ✅ APROBADA HUMANAMENTE  
 **Frontera:** no contiene microdiseño OVAt
 
 ## 1. Propósito
@@ -157,7 +157,7 @@ Permanecen abiertos. Sólo podrán entrar cuando exista función REC, accesibili
 
 ## 9. Criterio de salida F3-A
 
-F3-A se considera arquitectónicamente preparada para validación humana si:
+F3-A se considera arquitectónicamente preparada si:
 
 1. los 15 módulos forman una trayectoria coherente;
 2. H1–H10 y FEHE se preservan sin sustitución;
@@ -170,11 +170,11 @@ F3-A se considera arquitectónicamente preparada para validación humana si:
 9. no se han diseñado OVAt completos;
 10. las tensiones heredadas permanecen visibles y trazables.
 
-## 10. Próximo movimiento propuesto
+## 10. Decisión humana
 
-**F3-B — Guión Maestro + modelado de carga estudiante/docente.**
+**23 de agosto de 2026 — F3-A APROBADA.**
 
-Antes de congelar el Guión Maestro se deberán estimar tiempos por familia de actividad/evidencia, carga semanal estudiantil, carga de feedback/docencia y picos de saturación, aplicando `integrar antes que añadir` como mecanismo de reducción.
+La aprobación autoriza el paso a **F3-B — Guión Maestro + modelado de carga estudiante/docente**, sin autorizar F4.
 
 ---
 
