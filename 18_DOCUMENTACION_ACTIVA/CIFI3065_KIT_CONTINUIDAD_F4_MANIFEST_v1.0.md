@@ -5,7 +5,9 @@
 **Fecha:** 23 de agosto de 2026  
 **Rama:** `main`  
 **Repositorio:** `ricardojuanmorales/materia-mundi-101`  
-**Commit mínimo de continuidad:** PENDIENTE DE SELLADO POST-CREACIÓN
+**Commit mínimo del corpus de continuidad:** `034cb43d731329032cfa0c8c41b05e64f587778a`
+
+> El commit mínimo anterior contiene el corpus completo requerido para reanudar F4, excepto este manifest, que fue creado y sellado posteriormente. Una nueva sesión debe operar sobre ese commit o cualquier HEAD posterior y verificar que el manifest exista en la rama actual.
 
 ## Propósito
 
