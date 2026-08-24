@@ -49,6 +49,7 @@ F4 opera bajo dos reglas rectoras:
 10. `00_CONTROL_MAESTRO/CIFI3065_MAPA_RUTA_MAESTRO_F0-F10_v1.0.md`
 11. `18_DOCUMENTACION_ACTIVA/CIFI3065_BITACORA_SESION_F4_2026-08-24.md`
 12. `08_CURSOS_PROGRAMAS_Y_TRAYECTORIAS/CIFI3065/F4/CIFI3065_F4_REGISTRO_FUENTES_GENEALOGIA_OVAT_v1.0.md`
+13. `08_CURSOS_PROGRAMAS_Y_TRAYECTORIAS/CIFI3065/F4/CIFI3065_PROTOCOLO_OVAT_MATERIA_MUNDI_v0.1.md`
 
 ## Frontera de decisión
 
@@ -122,29 +123,39 @@ Se adopta **solapamiento controlado + ola progresiva**:
 
 ### Hito 2 — Protocolo OVAt Materia Mundi
 
-**Hito medular.** Construir la teoría operativa y gramática evolutiva del OVAt para Materia Mundi.
+**Estado:** COMPLETADO — CANDIDATO OPERATIVO v0.1.
 
-Debe producir:
+Producto canónico de trabajo:
+
+`08_CURSOS_PROGRAMAS_Y_TRAYECTORIAS/CIFI3065/F4/CIFI3065_PROTOCOLO_OVAT_MATERIA_MUNDI_v0.1.md`
+
+El protocolo fija:
 
 1. genealogía `OVA → OVAt original → OVAt validado → OVAt Materia Mundi`;
-2. definición operacional del OVAt Materia Mundi;
-3. anatomía reusable del microdiseño;
+2. definición operacional del OVAt Materia Mundi como nodo evolutivo transdisciplinario;
+3. anatomía reusable de ocho capas: identidad, transformación, experiencia, evidencia, activaciones longitudinales, ecología pedagógica, operación y observabilidad;
 4. reglas de granularidad G0–G4;
 5. matriz longitudinal de intensidades de U1/U2/U13/U14/U15;
 6. gramática de evidencia y Ficha REC;
 7. integración RIA/REC/PSEC/FEHE/PROEMA/DUA/interacción;
-8. observabilidad para F9;
+8. observabilidad mínima para F9;
 9. gobernanza Humano/Máquina/IA dentro del OVAt;
-10. patrón inicial candidato para prototipado.
+10. patrón mínimo de 19 campos para microdiseño;
+11. auditoría rápida de 12 criterios;
+12. criterio explícito de evolución y mutación documentada.
 
-Escala preliminar de intensidad longitudinal:
+Escala de intensidad longitudinal:
 
 - `0` = latente;
 - `1` = apoyo;
 - `2` = activa;
 - `3` = dominante.
 
+La versión 0.1 es operativa pero calibrable. Hito 4 decidirá qué ajustes merece después de someterla al prototipo profundo.
+
 ### Hito 3 — OVAt prototipo profundo
+
+**Estado:** SIGUIENTE.
 
 Microdiseñar un OVAt representativo, provisionalmente **U3/H1**, hasta G3 pedagógico.
 
