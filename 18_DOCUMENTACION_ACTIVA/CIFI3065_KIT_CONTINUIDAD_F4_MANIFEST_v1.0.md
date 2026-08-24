@@ -22,7 +22,7 @@ Permitir que una nueva sesión reconstruya el estado F4 sin depender de memoria 
 - F4 abierta por autorización humana.
 - Cohorte inicial N=27.
 
-## Archivos mínimos del kit
+## Corpus canónico completo en GitHub
 
 1. `18_DOCUMENTACION_ACTIVA/CIFI3065_PROMPT_ACTIVACION_F4_v1.0.md`
 2. `00_CONTROL_MAESTRO/ESTADO_MAESTRO_CIFI3065_v3.0.md`
@@ -42,9 +42,27 @@ Permitir que una nueva sesión reconstruya el estado F4 sin depender de memoria 
 16. `README.md`
 17. este manifest.
 
-## Fuentes pedagógicas a recuperar bajo demanda
+## Composición del ZIP portátil
 
-No es necesario duplicarlas en cada prompt, pero deben permanecer accesibles en GitHub:
+El ZIP portátil evita duplicar íntegramente los tres productos F3 voluminosos, porque GitHub es la fuente de verdad. Incluye:
+
+1. Prompt de Activación F4.
+2. Estado Maestro v3.0.
+3. Gate F3→F4 ratificado.
+4. README F4.
+5. Bitácora Maestra F1–F3 v3.0.
+6. Registro de Herencias F3→F4 v2.0.
+7. Registro de Brechas F3 v2.0.
+8. Protocolo General de Sesión v1.1.
+9. Cierre Oficial F3/Pre-F4.
+10. Informe Ejecutivo Cierre F3.
+11. Informe Ejecutivo GitHub.
+12. Manifest del kit.
+13. Referencias Canónicas F3 con rutas obligatorias a F3-A/B/C y fuentes F2.
+
+Este núcleo es autosuficiente para **activar y orientar** la nueva sesión. Antes de escribir en F4, la sesión debe leer F3-C y recuperar F3-B/F3-A o fuentes F2 cuando una decisión concreta lo requiera.
+
+## Fuentes pedagógicas a recuperar bajo demanda
 
 - prontuario institucional;
 - FEHE H1–H10;
