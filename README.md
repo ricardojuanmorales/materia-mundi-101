@@ -2,152 +2,128 @@
 
 ## Estado del proyecto
 
-**F0 — Activación y Migración Canónica:** COMPLETADA TÉCNICAMENTE  
+**F0 — Activación y Migración Canónica:** CERRADA  
 **F1 — Diagnóstico y Arquitectura:** CERRADA — GO CON CONDICIONES  
-**F2 — Alineación Pedagógica:** CERRADA — H2.8 GO CON CONDICIONES  
-**MIG-F3:** PASS  
-**F3 — Macrodiseño longitudinal:** ABIERTA — EN EJECUCIÓN
+**F2 — Alineación Pedagógica:** CERRADA — GO CON CONDICIONES  
+**F3 — Macrodiseño longitudinal:** CERRADA — GO CON CONDICIONES  
+**F4 — Microdiseño OVAt:** **ABIERTA POR AUTORIZACIÓN HUMANA**
 
+**Fecha de corte:** 23 de agosto de 2026  
 **Nivel:** N3 Avanzado  
 **Caleidoscopio rector:** C4 Integral  
 **C5 Pedagógico:** apoyo especializado  
-**Fuente versionada de verdad:** GitHub
+**Fuente versionada de verdad:** GitHub `main`
 
 ## Qué es Materia Mundi
 
-Materia Mundi es la arquitectura de virtualización lúdica y transdisciplinaria de CIFI 3065.
+Materia Mundi es la arquitectura de virtualización lúdica, transdisciplinaria, verificable y centrada en evidencia de CIFI 3065.
 
-El desarrollo curricular sigue el Protocolo de Virtualización F1–F10 y conserva trazabilidad entre evidencia, decisiones, riesgos, Gates y evolución documental.
+El desarrollo curricular sigue el Protocolo de Virtualización F1–F10 y conserva trazabilidad entre evidencia, decisiones, riesgos, Gates, carga, accesibilidad y evolución documental.
 
-## Estado alcanzado
+## Estado alcanzado al cierre de F3
 
-### F0
-Se establecieron:
-- arquitectura `00–21 + 99`;
-- gobernanza Humano / IA / Máquina / Documentación;
-- GitHub como fuente versionada;
-- evidencia curricular F1/F2;
-- genealogía;
-- memoria y transferencias;
-- Gates de continuidad.
+### Arquitectura curricular
 
-### F1
-Se consolidaron:
-- Materia Mundi;
-- H1–H10;
-- FEHE;
-- diagnóstico;
-- arquitectura conceptual;
-- riesgos y condiciones.
+F3 consolidó dos sistemas entrelazados:
 
-Resultado: **GO CON CONDICIONES**.
+1. **Cinco unidades longitudinales persistentes:** U1, U2, U13, U14 y U15.
+2. **Trayectoria histórico-epistemológica:** U3–U12 = H1–H10 con FEHE obligatoria.
 
-### F2
-Se consolidaron:
-- RIA integradores;
-- REC;
-- PSEC;
-- DUA anticipado;
-- evaluación piloto;
-- interacciones;
-- apoyos;
-- brechas y transferencias.
+La planificación opera en tres escalas:
 
-Resultado: **H2.8 = GO CON CONDICIONES**.
+`módulo → ciclo → semestre`
 
-### MIG-F3
-La prueba de continuidad obtuvo:
+### PROEMA
 
-**PASS — 12/12 criterios.**
+PROEMA es una investigación longitudinal única:
 
-El proyecto puede reconstruirse desde GitHub sin depender de memoria conversacional.
+`tema común de clase → subtema grupal (máx. 3 estudiantes) → contribución/problema individual`
 
-### F3
-La persona responsable autorizó explícitamente la apertura de F3 el **23 de agosto de 2026**.
+Los cinco Ensayos PROEMA son hitos evolutivos. La trayectoria culmina en:
 
-F3 se ejecuta mediante tres bloques condensados:
+`investigación acumulada → presentación grupal → artículo individual original`
 
-1. **F3-A — Arquitectura longitudinal U1–U15**;
-2. **F3-B — Guión Maestro + modelo de carga estudiante/docente**;
-3. **F3-C — Fichas Estratégicas + auditoría + Gate F3→F4**.
+### Laboratorio
 
-El plan aprobado se encuentra en:
+- 10 experiencias × 2 puntos = 20 puntos.
+- Ficha REC individual + evidencia personal + apreciación.
+- complejidad histórica y competencial creciente.
+- simulación valorada por ganancia epistemológica, accesibilidad y contraste.
+- portafolio personal de doble lectura histórica/competencial.
 
-- `18_DOCUMENTACION_ACTIVA/CIFI3065_APERTURA_PLAN_F3_v1.0.md`
+### Evaluación piloto
 
-## Condiciones C-F3-01–08
+**Clase 75 + Laboratorio 25 = 100 puntos.**
 
-1. modelar carga estudiante/docente antes de congelar el Guión Maestro;
-2. preservar H1–H10 y FEHE H1–H10;
-3. mantener PROEMA longitudinal e integrador, no paralelo;
-4. conservar la evaluación piloto como equivalencia provisional;
-5. producir Guión Maestro y Ficha Estratégica antes de OVAt;
-6. subordinar narrativa, avatar, IA y herramientas a REC y proporcionalidad;
-7. completar MIG-F3 antes de abrir F3 — **cumplida**;
-8. transportar brechas controladas mediante el Registro Maestro.
+La arquitectura sigue siendo una equivalencia provisional del piloto y no constituye modificación institucional automática.
 
-## Arquitectura de trabajo F3
+### Cohorte y feedback
 
-### F3-A — Arquitectura longitudinal
-Construir la trayectoria completa de 15 módulos integrando:
-- Materia Mundi;
-- H1–H10 y FEHE;
-- cinco RIA;
-- REC/PSEC;
-- PROEMA;
-- laboratorios;
-- cinco Diarios Reflexivos;
-- evaluación piloto;
-- DUA;
-- interacción;
-- apoyos;
-- trayectoria transdisciplinaria;
-- dependencias entre módulos.
+- cohorte inicial: **27 estudiantes**;
+- máximo teórico PROEMA: 9 subgrupos de tres;
+- feedback: **cohorte → grupo → individuo** según REC;
+- asistente especializado Materia Mundi: apoyo estructurado bajo autoridad docente.
 
-### F3-B — Guión Maestro y carga
-Convertir la arquitectura en un Guión Maestro longitudinal y modelar explícitamente:
-- carga estudiantil;
-- carga docente;
-- picos semanales;
-- viabilidad de feedback;
-- integración de tareas para evitar corrientes paralelas.
+### Humano / Máquina / IA
 
-### F3-C — Puente pre-F4
-Consolidar Fichas Estratégicas U1–U15, auditar las condiciones C-F3 y realizar el Gate humano F3→F4.
+- humano: sentido, juicio, evaluación y excepciones;
+- máquina: organización, verificación y señales;
+- IA: apoyo proporcional al riesgo y supervisado cuando el juicio lo requiere.
 
-## Regla documental de F3
+Alfabetización IA estudiantil:
+
+`declarar → explicar función → documentar/verificar → juicio crítico`
+
+## Gate F3→F4
+
+**Decisión humana:** **GO CON CONDICIONES**.
+
+Registro oficial:
+
+- `15_EVALUACION_CALIDAD_Y_AUDITORIA/CIFI3065/GATE_F3-F4_v1.0_RATIFICADO.md`
+
+F3 queda cerrada y F4 queda autorizada para apertura.
+
+## Condiciones obligatorias que viajan a F4
+
+1. respetar presupuestos de carga y elevar desviaciones sostenidas;
+2. diseñar Ficha REC/rúbrica antes de congelar los diez OVAt de laboratorio;
+3. seleccionar experiencias/simulaciones por REC, seguridad, accesibilidad y viabilidad;
+4. producir guía operativa PROEMA coherente con U13/U14;
+5. mantener U15 como organizador, no duplicador de entregas;
+6. validar herramientas, IA, narrativa y avatar por función pedagógica;
+7. preservar feedback multiescala sostenible para N=27;
+8. mantener 75/25 como equivalencia provisional;
+9. conservar brechas de implementación/empiria hasta evidencia real.
+
+## Documentos canónicos de continuidad F4
+
+- `00_CONTROL_MAESTRO/ESTADO_MAESTRO_CIFI3065_v3.0.md`
+- `15_EVALUACION_CALIDAD_Y_AUDITORIA/CIFI3065/GATE_F3-F4_v1.0_RATIFICADO.md`
+- `08_CURSOS_PROGRAMAS_Y_TRAYECTORIAS/CIFI3065/F4/README.md`
+- `08_CURSOS_PROGRAMAS_Y_TRAYECTORIAS/CIFI3065/F3/CIFI3065_F3-A_Matriz_Arquitectonica_Longitudinal_U1-U15_v1.0_CANDIDATA.md`
+- `08_CURSOS_PROGRAMAS_Y_TRAYECTORIAS/CIFI3065/F3/CIFI3065_F3-B_Guion_Maestro_Carga_U1-U15_v1.1_CANDIDATA.md`
+- `08_CURSOS_PROGRAMAS_Y_TRAYECTORIAS/CIFI3065/F3/CIFI3065_F3-C_Fichas_Estrategicas_Auditoria_Gate_F3-F4_v1.0_CANDIDATA.md`
+- `18_DOCUMENTACION_ACTIVA/CIFI3065_Bitacora_Maestra_F1-F3_v3.0.md`
+- `18_DOCUMENTACION_ACTIVA/CIFI3065_Registro_Maestro_Herencias_Transferencias_F3-F4_v2.0.md`
+- `04_GOBERNANZA_ETICA_Y_RIESGOS/CIFI3065_Registro_Consolidado_Brechas_Riesgos_Diferidos_F3_v2.0.md`
+- `03_METODOLOGIA_Y_FLUJO_DE_TRABAJO/Protocolo_General_Sesion_Concertada_Verificable_v1_1.md`
+- `18_DOCUMENTACION_ACTIVA/CIFI3065_PROMPT_ACTIVACION_F4_v1.0.md`
+
+## Regla documental
 
 **Un producto vivo por función + Git como genealogía.**
 
-F3 evita archivos independientes por cada módulo o deliberación menor. Los snapshots nominales se reservan para cambios de estado significativos, Gates o sucesiones documentales justificadas.
-
-El README pre-F3 fue preservado en:
-
-- `99_ARCHIVO_HISTORICO/README_PRE_F3_2026-08-23.md`
+Las versiones nominales nuevas se reservan para cambios semánticos, Gates o sucesiones justificadas. Los candidatos superados pueden retirarse del árbol activo sin perder su historia Git.
 
 ## Frontera curricular
 
-`F2 alineación → F3 macrodiseño → F4 microdiseño OVAt`
+`F3 macrodiseño → F4 microdiseño OVAt`
 
-**F3 no diseña OVAt completos.**
+F4 puede decidir actividades concretas, recursos, simulaciones, rúbricas, plantillas, herramientas justificadas, interacción, accesibilidad y microfeedback.
 
-Durante F3 no se congelan herramientas, storytelling, avatares o soluciones de IA como arquitectura autónoma; estos elementos permanecen subordinados a REC y a una función pedagógica demostrable.
-
-## Documentos rectores de entrada F3
-
-- `00_CONTROL_MAESTRO/ESTADO_MAESTRO_CIFI3065_v2.0.md`
-- `00_CONTROL_MAESTRO/MANIFEST_CANONICO.md`
-- `00_CONTROL_MAESTRO/PERFIL_IMPLEMENTACION_FRAMEWORK_CIFI3065_v1.1.md`
-- `03_METODOLOGIA_Y_FLUJO_DE_TRABAJO/Protocolo_General_Sesion_Concertada_Verificable_v1_0.md`
-- `03_METODOLOGIA_Y_FLUJO_DE_TRABAJO/Protocolo_Virtualizacion_Ludica_Transdisciplinaria_V1_0.docx`
-- `15_EVALUACION_CALIDAD_Y_AUDITORIA/CIFI3065/H2.8_GATE_F2-F3_v1.1_RATIFICADO.md`
-- `15_EVALUACION_CALIDAD_Y_AUDITORIA/CIFI3065/GATE_MIG-F3_PRUEBA_CONTINUIDAD_v2.0.md`
-- `18_DOCUMENTACION_ACTIVA/CIFI3065_APERTURA_PLAN_F3_v1.0.md`
-- `18_DOCUMENTACION_ACTIVA/CIFI3065_Registro_Maestro_Herencias_Transferencias_F2_v1.0.md`
-- `04_GOBERNANZA_ETICA_Y_RIESGOS/CIFI3065_Registro_Consolidado_Brechas_Riesgos_Diferidos_F2_v1.0_CANDIDATO.md`
+F4 no puede reinterpretar H1–H10/FEHE, RIA/REC/PSEC, PROEMA longitudinal, arquitectura evaluativa piloto, unidades longitudinales persistentes ni límites de carga sin elevar contradicción.
 
 ## Próximo movimiento
 
-**F3-A — construir la Arquitectura Longitudinal U1–U15.**
-
-Se consultará evidencia granular F1/F2 únicamente cuando una decisión de distribución o una afirmación curricular requiera verificación.
+**F4 — establecer el patrón mínimo de microdiseño OVAt y calibrar un primer OVAt representativo antes de escalar.**
