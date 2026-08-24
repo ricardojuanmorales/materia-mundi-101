@@ -3,12 +3,12 @@
 
 **Estado:** ACTIVA  
 **Fase:** F4 — Microdiseño OVAt  
-**Naturaleza de la sesión:** activación + reflexión estratégica + preparación del trabajo sustantivo  
+**Naturaleza de la sesión:** activación + reflexión estratégica + trabajo sustantivo de F4  
 **Fuente de verdad:** GitHub `main`
 
 ## 1. Propósito de esta bitácora
 
-Registrar de forma compacta las decisiones estratégicas tomadas durante la pausa de reflexión que siguió a la activación de F4, de modo que el proyecto pueda recuperar el norte sin depender de memoria conversacional.
+Registrar de forma compacta las decisiones estratégicas tomadas durante la pausa de reflexión que siguió a la activación de F4 y los hitos sustantivos ejecutados después, de modo que el proyecto pueda recuperar el norte sin depender de memoria conversacional.
 
 Esta bitácora no sustituye el Estado Maestro, el README F4 ni los registros de herencias/brechas. Conserva el razonamiento decisional y los acuerdos operativos de esta sesión.
 
@@ -87,9 +87,9 @@ La discusión llevó a una formulación provisional más amplia:
 
 > **OVAt Materia Mundi = nodo evolutivo transdisciplinario de experiencia, evidencia, interacción y continuidad, situado dentro de varias trayectorias longitudinales de aprendizaje.**
 
-Esta definición todavía no está congelada. Debe ser examinada y formalizada en Hito 2 mediante el Protocolo OVAt Materia Mundi.
+Esta definición se formalizó en Hito 2 mediante el Protocolo OVAt Materia Mundi v0.1 y permanece calibrable hasta Hito 4.
 
-Anatomía candidata del OVAt:
+Anatomía operativa del OVAt:
 
 1. identidad;
 2. transformación;
@@ -202,12 +202,37 @@ Hallazgos preliminares relevantes para F4:
 2. esta Bitácora de Sesión.
 3. Mapa de Ruta Maestro F0–F10.
 4. Registro de Fuentes y Genealogía OVAt.
-5. Protocolo OVAt Materia Mundi como producto sustantivo del Hito 2.
+5. Protocolo OVAt Materia Mundi.
 
-## 14. Próximo movimiento
+## 14. Hito 2 — Protocolo OVAt Materia Mundi
 
-La pausa de reflexión se da por concluida.
+**Estado:** COMPLETADO — CANDIDATO OPERATIVO v0.1.
 
-Próximo movimiento sustantivo:
+Producto:
 
-**Hito 2 — desarrollar el Protocolo OVAt Materia Mundi utilizando las herencias F1–F3, las fuentes genealógicas OVAt y las decisiones concertadas en esta sesión.**
+`08_CURSOS_PROGRAMAS_Y_TRAYECTORIAS/CIFI3065/F4/CIFI3065_PROTOCOLO_OVAT_MATERIA_MUNDI_v0.1.md`
+
+Decisiones formalizadas:
+
+- OVAt como nodo evolutivo y no paquete de recursos;
+- ocho capas de anatomía;
+- granularidad G0–G4;
+- firma longitudinal U1/U2/U13/U14/U15 con intensidad 0–3;
+- gramática `experiencia → huella → evidencia → interpretación → criterio → feedback → metacognición`;
+- Ficha REC longitudinal de seis componentes;
+- regla de reutilización de evidencia;
+- DUA anticipado e interacción proporcional;
+- feedback `cohorte → grupo → individuo`;
+- taxonomía de decisiones Tipo 1–4;
+- patrón mínimo de microdiseño con 19 campos;
+- auditoría rápida de 12 criterios;
+- observabilidad mínima para F9;
+- mutación documentada mediante `fuente/evidencia → hallazgo → interpretación → decisión → aplicación → evidencia F9 → nueva mutación`.
+
+La versión 0.1 no se congela definitivamente todavía. Hito 3 la somete a prototipo y Hito 4 decide sus ajustes.
+
+## 15. Próximo movimiento
+
+**Hito 3 — OVAt prototipo profundo U3/H1.**
+
+Objetivo inmediato: llevar U3/H1 a G3 pedagógico utilizando el Protocolo OVAt v0.1, producir su firma longitudinal, concretar la primera Ficha REC y someter el patrón a una prueba de esfuerzo real.
