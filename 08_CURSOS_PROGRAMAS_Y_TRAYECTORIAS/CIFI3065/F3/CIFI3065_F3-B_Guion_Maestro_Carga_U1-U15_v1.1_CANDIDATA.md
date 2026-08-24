@@ -1,11 +1,12 @@
 # CIFI 3065 Virtual — Materia Mundi
 # F3-B — Guión Maestro + Modelo de Carga U1–U15
 
-**Versión:** 1.1 CANDIDATA  
+**Versión:** 1.1  
 **Fecha:** 23 de agosto de 2026  
 **Fase:** F3 — Macrodiseño longitudinal  
 **Bloque:** F3-B — Guión Maestro y viabilidad  
-**Estado:** candidata reconstruida tras pausa estratégica; pendiente de validación humana antes de F3-C  
+**Estado:** ✅ APROBADA HUMANAMENTE  
+**Aprobación humana:** 23 de agosto de 2026  
 **Dependencia:** F3-A aprobada humanamente  
 **Cohorte inicial:** 27 estudiantes  
 **Frontera:** no contiene microdiseño OVAt
@@ -521,7 +522,7 @@ Estas decisiones pertenecen al nivel apropiado posterior y no deben adelantarse 
 
 ## 20. Criterio de salida F3-B
 
-F3-B puede aprobarse si la autoridad humana acepta que:
+F3-B se considera **APROBADA HUMANAMENTE** el 23 de agosto de 2026. La aprobación confirma que:
 
 1. la arquitectura longitudinal persistente representa mejor el curso que una secuencia rígida de 15 compartimentos;
 2. U1/U2/U13/U14/U15 tienen funciones diferenciadas y no generan corrientes paralelas de trabajo;
@@ -535,7 +536,7 @@ F3-B puede aprobarse si la autoridad humana acepta que:
 10. las decisiones microdidácticas legítimamente posteriores permanecen abiertas;
 11. F4 no ha sido adelantada.
 
-## 21. Próximo movimiento, sólo tras aprobación humana
+## 21. Próximo movimiento autorizado
 
 **F3-C — Consolidación, Fichas Estratégicas U1–U15 y Gate F3→F4.**
 
@@ -543,4 +544,4 @@ F3-C deberá traducir este Guión Maestro aprobado a fichas estratégicas compac
 
 ---
 
-**Regla de parada:** F3-B v1.1 es CANDIDATA. No autoriza F3-C ni F4 hasta decisión humana explícita.
+**Regla de parada:** F3-B está aprobada. Su aprobación autoriza F3-C, pero no abre F4.
