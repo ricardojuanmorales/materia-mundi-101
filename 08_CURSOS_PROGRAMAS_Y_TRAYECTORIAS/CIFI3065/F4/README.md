@@ -49,7 +49,8 @@ F4 opera bajo dos reglas rectoras:
 10. `00_CONTROL_MAESTRO/CIFI3065_MAPA_RUTA_MAESTRO_F0-F10_v1.0.md`
 11. `18_DOCUMENTACION_ACTIVA/CIFI3065_BITACORA_SESION_F4_2026-08-24.md`
 12. `08_CURSOS_PROGRAMAS_Y_TRAYECTORIAS/CIFI3065/F4/CIFI3065_F4_REGISTRO_FUENTES_GENEALOGIA_OVAT_v1.0.md`
-13. `08_CURSOS_PROGRAMAS_Y_TRAYECTORIAS/CIFI3065/F4/CIFI3065_PROTOCOLO_OVAT_MATERIA_MUNDI_v0.1.md`
+13. `08_CURSOS_PROGRAMAS_Y_TRAYECTORIAS/CIFI3065/F4/CIFI3065_PROTOCOLO_OVAT_MATERIA_MUNDI_v0.2_APROBADO.md`
+14. `08_CURSOS_PROGRAMAS_Y_TRAYECTORIAS/CIFI3065/F4/CIFI3065_HITO3_OVAT_PROTOTIPO_U3_H1_v0.1_CANDIDATA.md`
 
 ## Frontera de decisión
 
@@ -79,22 +80,18 @@ F4 no puede alterar herencias F1–F3 sin elevar contradicción y obtener decisi
 
 ## Granularidad adaptativa
 
-Escala operativa:
-
 - **G0 — concepto**;
 - **G1 — requisito funcional**;
 - **G2 — diseño pedagógico**;
 - **G3 — experiencia especificada**;
 - **G4 — implementación/recurso concreto**.
 
-F4 trabaja predominantemente en G2–G3. F8 lleva los elementos sustituibles a G4.
+F4 trabaja predominantemente en G2–G3. F8 lleva elementos sustituibles a G4.
 
 ## Gobernanza Humano / Máquina / IA
 
-Modelo concertado:
-
 - F4–F6: autoridad por riesgo y supervisión humana fuerte;
-- F7–F8: mayor delegación operacional cuando reglas y patrones estén estabilizados;
+- F7–F8: mayor delegación operacional cuando reglas/patrones estén estabilizados;
 - Gates, cambios arquitectónicos, REC, evaluación, PROEMA, carga, ética y contradicciones: decisión humana;
 - máquina: estructura, verificación, estados y trazabilidad;
 - IA: análisis, integración, propuestas, borradores y decisiones reversibles de bajo riesgo bajo reglas establecidas.
@@ -103,11 +100,11 @@ Modelo concertado:
 
 Se adopta **solapamiento controlado + ola progresiva**:
 
-- ninguna fase futura puede reinterpretar un Gate no superado;
-- unidades suficientemente maduras pueden preparar componentes reversibles de fases posteriores;
-- las unidades próximas a implementación pueden avanzar antes hacia F8 cuando superen su umbral de riesgo;
-- F9 se concibe como laboratorio vivo controlado con hipótesis y señales mínimas de observación;
-- cambios estructurales derivados de F9 se elevan a revisión formal, mientras correcciones reversibles de bajo riesgo pueden aplicarse durante la implementación.
+- ninguna fase futura reinterpreta un Gate no superado;
+- unidades maduras pueden preparar componentes reversibles de fases posteriores;
+- unidades próximas a implementación pueden avanzar antes hacia F8 al superar su umbral de riesgo;
+- F9 se concibe como laboratorio vivo controlado;
+- cambios estructurales derivados de F9 se elevan a revisión formal.
 
 ## F4 en cinco hitos concertados
 
@@ -115,130 +112,75 @@ Se adopta **solapamiento controlado + ola progresiva**:
 
 **Estado:** COMPLETADO.
 
-- archivar el README de apertura;
-- actualizar README operativo;
-- documentar activación;
-- verificar HEAD y corpus;
-- fijar continuidad documental.
-
 ### Hito 2 — Protocolo OVAt Materia Mundi
 
-**Estado:** COMPLETADO — CANDIDATO OPERATIVO v0.1.
+**Estado:** COMPLETADO Y APROBADO HUMANAMENTE.
 
-Producto canónico de trabajo:
+Producto canónico vigente:
 
-`08_CURSOS_PROGRAMAS_Y_TRAYECTORIAS/CIFI3065/F4/CIFI3065_PROTOCOLO_OVAT_MATERIA_MUNDI_v0.1.md`
+`CIFI3065_PROTOCOLO_OVAT_MATERIA_MUNDI_v0.2_APROBADO.md`
 
-El protocolo fija:
-
-1. genealogía `OVA → OVAt original → OVAt validado → OVAt Materia Mundi`;
-2. definición operacional del OVAt Materia Mundi como nodo evolutivo transdisciplinario;
-3. anatomía reusable de ocho capas: identidad, transformación, experiencia, evidencia, activaciones longitudinales, ecología pedagógica, operación y observabilidad;
-4. reglas de granularidad G0–G4;
-5. matriz longitudinal de intensidades de U1/U2/U13/U14/U15;
-6. gramática de evidencia y Ficha REC;
-7. integración RIA/REC/PSEC/FEHE/PROEMA/DUA/interacción;
-8. observabilidad mínima para F9;
-9. gobernanza Humano/Máquina/IA dentro del OVAt;
-10. patrón mínimo de 19 campos para microdiseño;
-11. auditoría rápida de 12 criterios;
-12. criterio explícito de evolución y mutación documentada.
-
-Escala de intensidad longitudinal:
-
-- `0` = latente;
-- `1` = apoyo;
-- `2` = activa;
-- `3` = dominante.
-
-La versión 0.1 es operativa pero calibrable. Hito 4 decidirá qué ajustes merece después de someterla al prototipo profundo.
+Núcleo aprobado: ocho capas estructurales + NLEP transversal; apertura cálida; 3–5 objetivos operacionales; firma longitudinal 0–3; granularidad G0–G4; Ficha REC; economía de tareas; DUA; feedback sostenible; H/M/IA por riesgo; observabilidad F9.
 
 ### Hito 3 — OVAt prototipo profundo
 
-**Estado:** SIGUIENTE.
+**Estado:** PRODUCIDO — CANDIDATO PARA REVISIÓN HUMANA.
 
-Microdiseñar un OVAt representativo, provisionalmente **U3/H1**, hasta G3 pedagógico.
+Producto:
 
-Debe permitir reconstruir la experiencia real del estudiante e integrar, cuando corresponda:
+`CIFI3065_HITO3_OVAT_PROTOTIPO_U3_H1_v0.1_CANDIDATA.md`
 
-- historia/FEHE;
-- U2 epistemológica;
-- foro;
-- laboratorio + Ficha REC;
+El prototipo lleva U3/H1 a G3 pedagógico e integra:
+
+- apertura cálida + 5 objetivos operacionales;
+- pregunta rectora y transformación;
+- NLEP con microhistoria `Archivo de las materias perdidas`;
+- Foro H1;
+- Lab H1 + Ficha REC inicial;
 - Ensayo PROEMA 1;
-- DR1;
-- DUA;
-- interacción;
-- feedback;
-- evaluación;
-- carga;
-- activaciones longitudinales;
-- requisitos funcionales de recursos;
-- señal mínima F9.
+- DR1 integrado;
+- firma longitudinal candidata `U1=1 | U2=3 | U13=3 | U14=1 | U15=2`;
+- carga estimada 395/420 min;
+- DUA, interacción, feedback, H/M/IA;
+- 8 señales mínimas F9;
+- auditoría rápida 15/15 PASS, con cinco criterios provisionales para Hito 4.
+
+**Hito 4 NO está abierto.** Requiere revisión humana del prototipo.
 
 ### Hito 4 — Calibración y Gate humano del patrón
 
-Auditar el prototipo en:
+**Estado:** PENDIENTE DE AUTORIZACIÓN HUMANA.
 
-1. REC y evidencia;
-2. carga;
-3. DUA/accesibilidad;
-4. interacción;
-5. integración sin duplicación;
-6. sostenibilidad docente para N=27.
-
-Clasificar lo aprendido en:
-
-- invariantes del OVAt;
-- componentes condicionales;
-- particularidades del módulo.
-
-Ajustar el Protocolo OVAt y someter el patrón a decisión humana antes de escalar.
+Auditará REC/evidencia, carga, DUA, interacción, integración y sostenibilidad; clasificará invariantes, condicionales y particularidades; y ajustará el protocolo si procede.
 
 ### Hito 5 — Documento Maestro de Microdiseño U1–U15
 
-Aplicar el patrón calibrado a las quince unidades para producir el **primer borrador profundo del diseño completo del curso**, llegando a G3 en las decisiones pedagógicamente importantes.
+**Estado:** PENDIENTE.
 
-Debe incluir:
-
-- U1/U2/U13/U14/U15 como sistemas longitudinales persistentes;
-- U3–U12 como trayectoria H1–H10;
-- matriz longitudinal de intensidades;
-- progresión PROEMA;
-- progresión de Ficha REC y laboratorio;
-- interacción y feedback;
-- DUA;
-- carga;
-- evaluación;
-- requisitos funcionales pendientes de F5–F8;
-- señales observables para F9.
-
-El Hito 5 termina con auditoría longitudinal y preparación del Gate F4→F5.
+Aplicará el patrón calibrado a las quince unidades y terminará con auditoría longitudinal + preparación Gate F4→F5.
 
 ## Criterios de cierre de F4
 
 F4 puede elevarse a Gate F4→F5 cuando existan:
 
-1. Protocolo OVAt Materia Mundi candidato aprobado;
+1. Protocolo OVAt aprobado;
 2. patrón reusable estabilizado;
 3. matriz longitudinal de intensidades;
 4. Ficha REC funcional;
-5. OVAt prototipo profundo calibrado;
-6. Documento Maestro U1–U15 en primer borrador profundo;
+5. prototipo profundo calibrado;
+6. Documento Maestro U1–U15 profundo;
 7. auditoría longitudinal;
-8. brechas clasificadas y transportables;
-9. señales iniciales para F9;
-10. decisión humana sobre el Gate.
+8. brechas clasificadas;
+9. señales iniciales F9;
+10. decisión humana sobre Gate.
 
 ## Regla de eficiencia
 
-Cada artefacto nuevo debe cumplir una función única. Si una necesidad puede resolverse integrando, enlazando o reutilizando una estructura existente, no se crea otra capa documental o actividad.
-
-Un diseño F4 puede estar completo aunque recursos sustituibles permanezcan pendientes, siempre que su requisito funcional esté suficientemente definido.
+Cada artefacto nuevo debe cumplir una función única. Un diseño F4 puede estar completo aunque recursos sustituibles permanezcan pendientes, siempre que su requisito funcional esté suficientemente definido.
 
 ## Genealogía
 
-El README de apertura de F4 se conserva en:
+El README de apertura se conserva en:
 
 `08_CURSOS_PROGRAMAS_Y_TRAYECTORIAS/CIFI3065/F4/ARCHIVO/README_F4_APERTURA_2026-08-23.md`
 
