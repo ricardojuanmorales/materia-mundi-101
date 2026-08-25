@@ -83,22 +83,24 @@ La matriz debe servir simultáneamente a:
 
 ## 6. Evolución conceptual del OVAt
 
-La discusión llevó a una formulación provisional más amplia:
+La discusión llevó inicialmente a una formulación amplia del OVAt como nodo evolutivo transdisciplinario. Hitos 2–4 la sometieron a recuperación genealógica, prototipo profundo, calibración y nuevas reflexiones en acción.
 
-> **OVAt Materia Mundi = nodo evolutivo transdisciplinario de experiencia, evidencia, interacción y continuidad, situado dentro de varias trayectorias longitudinales de aprendizaje.**
+La definición canónica vigente al cierre de Hito 4 es:
 
-Esta definición se formalizó en Hito 2 mediante el Protocolo OVAt Materia Mundi v0.1 y permanece calibrable hasta Hito 4.
+> **Un OVAt Materia Mundi es un nodo evolutivo transdisciplinario de experiencia, evidencia, interacción, motivación, fuentes/proveniencia y continuidad que produce aprendizaje observable dentro de varias trayectorias longitudinales del curso.**
 
-Anatomía operativa del OVAt:
+La anatomía canónica conserva ocho capas estructurales:
 
-1. identidad;
-2. transformación;
+1. identidad curricular;
+2. apertura y transformación;
 3. experiencia;
-4. evidencia;
+4. arquitectura de evidencia;
 5. activaciones longitudinales;
-6. ecología pedagógica;
+6. ecología transdisciplinaria;
 7. operación;
-8. observabilidad.
+8. observabilidad;
+
+más la decisión transversal NLEP y el ecosistema obligatorio de fuentes/proveniencia.
 
 ## 7. Granularidad adaptativa
 
@@ -112,7 +114,7 @@ Escala:
 - G3: experiencia especificada;
 - G4: implementación/recurso concreto.
 
-F4 debe llegar normalmente a G3 en lo pedagógicamente importante. F8 concretará muchos elementos G4, como documentos exactos, videos, simuladores, visualizadores, URLs y configuración LMS.
+F4 debe llegar normalmente a G3 en lo pedagógicamente importante. F8 concretará muchos elementos G4, como documentos exactos, videos, simuladores, visualizadores, URLs, licencias, estabilidad de enlaces y configuración LMS.
 
 Principio derivado:
 
@@ -163,6 +165,7 @@ Una unidad puede avanzar cuando estén resueltos, según su riesgo:
 - DUA;
 - carga;
 - longitudinalidad;
+- arquitectura de fuentes/proveniencia;
 - requisitos funcionales de recursos.
 
 No requiere que todos los recursos concretos estén seleccionados si son sustituibles.
@@ -186,53 +189,121 @@ Durante la reflexión se incorporaron dos fuentes primarias del propio desarroll
 1. artículo de 2020 sobre OVAt como alternativa a problemas de enseñanza/aprendizaje de Física virtual;
 2. manuscrito de validación del OVAt de Movimiento/Lanzamiento de Proyectiles.
 
-Hallazgos preliminares relevantes para F4:
+Hallazgos relevantes para F4:
 
 - el OVAt original ya integraba navegación flexible, competencias múltiples, estudio independiente, aportaciones histórico-epistemológicas, contexto cotidiano y evaluación auténtica;
 - el modelo fue concebido como reutilizable, transdisciplinario y adaptable;
 - la validación describió los OVAt como entidades en continua construcción;
 - las implementaciones mostraron que los estudiantes tendían a priorizar actividades evaluadas;
 - se identificaron como áreas de mejora la organización, profundidad, práctica matemática, instrucciones, metacognición, portafolio, interacción y selección de evidencias;
-- la simulación y la diversidad de aproximaciones fueron percibidas como valiosas por participantes;
-- estas evidencias respaldan la evolución hacia un OVAt más integrado, longitudinal y observable, pero no determinan por sí solas la nueva definición.
+- la simulación y la diversidad de aproximaciones fueron percibidas como valiosas por participantes.
 
-## 13. Productos tangibles mínimos acordados para continuidad
+## 13. Hito 2 — recuperación y aprobación del Protocolo OVAt
 
-1. README F4 actualizado.
-2. esta Bitácora de Sesión.
-3. Mapa de Ruta Maestro F0–F10.
-4. Registro de Fuentes y Genealogía OVAt.
-5. Protocolo OVAt Materia Mundi.
+Hito 2 evolucionó desde v0.1 hacia v0.2 a partir de reflexión en acción.
 
-## 14. Hito 2 — Protocolo OVAt Materia Mundi
+La recuperación v0.2 restituyó explícitamente:
 
-**Estado:** COMPLETADO — CANDIDATO OPERATIVO v0.1.
+- apertura cálida;
+- 3–5 objetivos operacionales;
+- storytelling local;
+- avatar/presencia;
+- ludicidad y estética;
+- capa transversal NLEP.
+
+v0.2 fue aprobada humanamente y utilizada como protocolo rector del prototipo H1.
+
+## 14. Hito 3 — OVAt prototipo profundo U3/H1
+
+**Estado:** COMPLETADO Y APROBADO HUMANAMENTE.
 
 Producto:
 
-`08_CURSOS_PROGRAMAS_Y_TRAYECTORIAS/CIFI3065/F4/CIFI3065_PROTOCOLO_OVAT_MATERIA_MUNDI_v0.1.md`
+`08_CURSOS_PROGRAMAS_Y_TRAYECTORIAS/CIFI3065/F4/CIFI3065_HITO3_OVAT_PROTOTIPO_U3_H1_v0.1_CANDIDATA.md`
 
-Decisiones formalizadas:
+El prototipo llevó U3/H1 a G3 y probó:
 
-- OVAt como nodo evolutivo y no paquete de recursos;
-- ocho capas de anatomía;
-- granularidad G0–G4;
-- firma longitudinal U1/U2/U13/U14/U15 con intensidad 0–3;
-- gramática `experiencia → huella → evidencia → interpretación → criterio → feedback → metacognición`;
-- Ficha REC longitudinal de seis componentes;
-- regla de reutilización de evidencia;
-- DUA anticipado e interacción proporcional;
-- feedback `cohorte → grupo → individuo`;
-- taxonomía de decisiones Tipo 1–4;
-- patrón mínimo de microdiseño con 19 campos;
-- auditoría rápida de 12 criterios;
-- observabilidad mínima para F9;
-- mutación documentada mediante `fuente/evidencia → hallazgo → interpretación → decisión → aplicación → evidencia F9 → nueva mutación`.
+- apertura y objetivos;
+- NLEP;
+- secuencia completa de experiencia;
+- Foro H1;
+- Lab H1 + Ficha REC;
+- PROEMA 1;
+- DR1 integrado;
+- firma longitudinal;
+- DUA;
+- feedback sostenible;
+- carga;
+- observabilidad F9.
 
-La versión 0.1 no se congela definitivamente todavía. Hito 3 la somete a prototipo y Hito 4 decide sus ajustes.
+## 15. Hito 4 — calibración del patrón
 
-## 15. Próximo movimiento
+**Estado:** COMPLETADO Y APROBADO HUMANAMENTE.  
+**Decisión:** `GO CON CONDICIONES`.
 
-**Hito 3 — OVAt prototipo profundo U3/H1.**
+La calibración produjo:
 
-Objetivo inmediato: llevar U3/H1 a G3 pedagógico utilizando el Protocolo OVAt v0.1, producir su firma longitudinal, concretar la primera Ficha REC y someter el patrón a una prueba de esfuerzo real.
+1. carga como techo con margen 80–90/10–20 orientador;
+2. Ficha REC de seis campos invariantes + 1–2 prompts adaptativos;
+3. NLEP como decisión obligatoria, sin obligar avatar/gamificación;
+4. escala NLEP-0–3 para prueba longitudinal;
+5. mapa explícito de reutilización de evidencias;
+6. punto principal de feedback humano por OVAt;
+7. pregunta DUA centrada en equivalencia de REC/criterio;
+8. clasificación invariantes / condicionales / particulares;
+9. patrón base de rúbrica Lab de 2 puntos;
+10. patrón de microdiseño y auditoría calibrados.
+
+## 16. Reflexión en acción — bibliografía viva y proveniencia
+
+Antes de ratificar v0.3 se detectó una deuda estructural potencial: referencias del prontuario, bibliografía viva, materiales docentes y materiales desarrollados con apoyo de IA quedaban demasiado invisibilizados dentro de “recursos funcionales”.
+
+Se decidió corregirlo **antes de abrir Hito 5**.
+
+La v0.3 incorpora como invariante un **ecosistema de fuentes, bibliografía viva y proveniencia** con cuatro estratos:
+
+1. **anclajes del prontuario**;
+2. **bibliografía viva del OVAt**;
+3. **materiales docentes y materiales desarrollados con apoyo de IA**, con proveniencia proporcional;
+4. **horizonte de expansión** con estados `Núcleo | Profundización | Exploración`.
+
+Se incorpora además una ficha mínima proporcional:
+
+`fuente/recurso → función → estado → procedencia/autoría → accesibilidad/licencia → verificación`
+
+Regla de frontera:
+
+> **En F4 hacemos visible la genealogía intelectual del OVAt; en F8 concretamos y verificamos su ecosistema definitivo de recursos.**
+
+## 17. Ratificación canónica v0.3
+
+**APROBACIÓN HUMANA:** 24 de agosto de 2026.
+
+Protocolo canónico vigente:
+
+`08_CURSOS_PROGRAMAS_Y_TRAYECTORIAS/CIFI3065/F4/CIFI3065_PROTOCOLO_OVAT_MATERIA_MUNDI_v0.3_APROBADO.md`
+
+La v0.3 APROBADA:
+
+- sustituye a v0.2 APROBADO como fuente normativa;
+- conserva v0.1, v0.2 y candidatas como genealogía;
+- fija 25 campos de microdiseño;
+- fija auditoría de 17 criterios;
+- incorpora explícitamente fuentes/proveniencia;
+- cierra Hito 4 con `GO CON CONDICIONES`;
+- habilita Hito 5 sin deuda estructural conocida en el patrón OVAt.
+
+Condiciones que viajan:
+
+- probar longitudinalmente NLEP-0–3;
+- auditar la rúbrica Lab 2 puntos a través de H1–H10;
+- verificar firmas longitudinales completas;
+- validar carga y márgenes empíricamente en F9;
+- mantener trazabilidad proporcional de fuentes/proveniencia;
+- no adelantar innecesariamente recursos G4.
+
+## 18. Próximo movimiento
+
+**Hito 5 — Documento Maestro de Microdiseño OVAt U1–U15.**
+
+Objetivo inmediato: aplicar v0.3 APROBADO a las quince unidades, consolidar la matriz longitudinal completa, progresiones PROEMA/Ficha REC/laboratorio, ecosistema de fuentes/proveniencia, carga, DUA, NLEP, feedback y observabilidad, y terminar con auditoría longitudinal + preparación del Gate F4→F5.
