@@ -5,6 +5,7 @@
 **Fecha de apertura:** 23 de agosto de 2026  
 **Sesión operativa activada:** 24 de agosto de 2026  
 **Gate de entrada:** F3→F4 = GO CON CONDICIONES  
+**Hito actual:** Hito 5 listo para apertura humana  
 **Cohorte inicial:** 27 estudiantes  
 **Fuente de verdad:** GitHub `main`
 
@@ -12,10 +13,14 @@
 
 Transformar las Fichas Estratégicas aprobadas de F3 en OVAt microdiseñados, verificables, accesibles y sostenibles, sin reinterpretar las decisiones cerradas en F1–F3.
 
-F4 opera bajo dos reglas rectoras:
+Reglas rectoras activas:
 
 1. **integrar antes que añadir**;
-2. **decidir temprano lo irreversible y diferir lo sustituible**.
+2. **decidir temprano lo irreversible y diferir lo sustituible**;
+3. **la carga es techo con margen, no meta a llenar**;
+4. **la evidencia precede al recurso concreto**;
+5. **todo OVAt toma una decisión NLEP proporcional**;
+6. **todo OVAt hace visible su genealogía intelectual y proveniencia**.
 
 ## Herencias no reinterpretables
 
@@ -35,6 +40,37 @@ F4 opera bajo dos reglas rectoras:
 - asistente Materia Mundi bajo autoridad docente.
 - gobernanza Humano/Máquina/IA proporcional al riesgo.
 
+## Protocolo OVAt canónico vigente
+
+**Única fuente normativa activa para Hito 5:**
+
+`08_CURSOS_PROGRAMAS_Y_TRAYECTORIAS/CIFI3065/F4/CIFI3065_PROTOCOLO_OVAT_MATERIA_MUNDI_v0.3_APROBADO.md`
+
+La v0.3 APROBADA sustituye a v0.2 APROBADO como protocolo rector. v0.1, v0.2 y la v0.3 candidata se conservan exclusivamente como genealogía.
+
+El protocolo vigente incorpora:
+
+- definición OVAt como nodo evolutivo transdisciplinario;
+- ocho capas estructurales;
+- 3–5 objetivos operacionales normalmente;
+- firma longitudinal U1/U2/U13/U14/U15 0–3;
+- NLEP transversal proporcional;
+- carga como techo con margen 80–90/10–20 orientador;
+- Ficha REC con seis campos invariantes + 1–2 adaptativos;
+- patrón base de laboratorio de 2 puntos;
+- mapa de reutilización de evidencias;
+- punto principal de feedback humano;
+- DUA con equivalencia de REC/criterio;
+- clasificación invariantes / condicionales / particulares;
+- **ecosistema de fuentes, bibliografía viva y proveniencia**;
+- anclajes del prontuario;
+- materiales docentes y materiales con apoyo de IA con proveniencia proporcional;
+- horizonte de expansión `Núcleo | Profundización | Exploración`;
+- ficha mínima de trazabilidad de recursos;
+- patrón de microdiseño de 25 campos;
+- auditoría de 17 criterios;
+- frontera F4/F8 explícita para recursos G4.
+
 ## Entradas canónicas de continuidad
 
 1. `00_CONTROL_MAESTRO/ESTADO_MAESTRO_CIFI3065_v3.0.md`
@@ -49,120 +85,93 @@ F4 opera bajo dos reglas rectoras:
 10. `00_CONTROL_MAESTRO/CIFI3065_MAPA_RUTA_MAESTRO_F0-F10_v1.0.md`
 11. `18_DOCUMENTACION_ACTIVA/CIFI3065_BITACORA_SESION_F4_2026-08-24.md`
 12. `08_CURSOS_PROGRAMAS_Y_TRAYECTORIAS/CIFI3065/F4/CIFI3065_F4_REGISTRO_FUENTES_GENEALOGIA_OVAT_v1.0.md`
-13. `08_CURSOS_PROGRAMAS_Y_TRAYECTORIAS/CIFI3065/F4/CIFI3065_PROTOCOLO_OVAT_MATERIA_MUNDI_v0.2_APROBADO.md`
+13. `08_CURSOS_PROGRAMAS_Y_TRAYECTORIAS/CIFI3065/F4/CIFI3065_PROTOCOLO_OVAT_MATERIA_MUNDI_v0.3_APROBADO.md`
 14. `08_CURSOS_PROGRAMAS_Y_TRAYECTORIAS/CIFI3065/F4/CIFI3065_HITO3_OVAT_PROTOTIPO_U3_H1_v0.1_CANDIDATA.md`
 15. `08_CURSOS_PROGRAMAS_Y_TRAYECTORIAS/CIFI3065/F4/CIFI3065_HITO4_CALIBRACION_PATRON_OVAT_v0.1_CANDIDATA.md`
-16. `08_CURSOS_PROGRAMAS_Y_TRAYECTORIAS/CIFI3065/F4/CIFI3065_PROTOCOLO_OVAT_MATERIA_MUNDI_v0.3_CANDIDATA.md`
 
-## Frontera de decisión
+## Frontera de decisión F4/F8
 
-F4 debe resolver con alta precisión:
+F4 resuelve a G3:
 
-- propósito pedagógico y transformación esperada;
-- REC/RIA/FEHE y evidencias;
-- secuencia de experiencia;
-- evaluación y feedback;
+- propósito y transformación;
+- objetivos;
+- REC/RIA/FEHE;
+- experiencia/evidencias;
+- evaluación/feedback;
 - carga;
-- DUA/accesibilidad;
+- DUA;
 - interacción;
-- función longitudinal de U1/U2/U13/U14/U15;
-- integración PROEMA/laboratorio/DR/foros;
-- requisitos funcionales de recursos y tecnologías.
+- longitudinalidad;
+- PROEMA/laboratorio/DR/foros;
+- arquitectura de fuentes/proveniencia;
+- requisitos funcionales de recursos.
 
-F4 puede dejar para F8, salvo dependencia crítica:
+F8 concreta G4, salvo dependencia crítica:
 
-- documento exacto;
+- documento/edición exacta;
+- URL;
 - video final;
-- simulador o visualizador específico;
-- URL final;
+- simulador/visualizador específico;
 - imagen o recurso audiovisual final;
-- configuración concreta del LMS.
-
-F4 no puede alterar herencias F1–F3 sin elevar contradicción y obtener decisión humana.
-
-## Granularidad adaptativa
-
-- **G0 — concepto**;
-- **G1 — requisito funcional**;
-- **G2 — diseño pedagógico**;
-- **G3 — experiencia especificada**;
-- **G4 — implementación/recurso concreto**.
-
-F4 trabaja predominantemente en G2–G3. F8 lleva elementos sustituibles a G4.
-
-## Gobernanza Humano / Máquina / IA
-
-- F4–F6: autoridad por riesgo y supervisión humana fuerte;
-- F7–F8: mayor delegación operacional cuando reglas/patrones estén estabilizados;
-- Gates, cambios arquitectónicos, REC, evaluación, PROEMA, carga, ética y contradicciones: decisión humana;
-- máquina: estructura, verificación, estados y trazabilidad;
-- IA: análisis, integración, propuestas, borradores y decisiones reversibles de bajo riesgo bajo reglas establecidas.
-
-## Estrategia temporal hacia F8–F10
-
-Se adopta **solapamiento controlado + ola progresiva**:
-
-- ninguna fase futura reinterpreta un Gate no superado;
-- unidades maduras pueden preparar componentes reversibles de fases posteriores;
-- unidades próximas a implementación pueden avanzar antes hacia F8 al superar su umbral de riesgo;
-- F9 se concibe como laboratorio vivo controlado;
-- cambios estructurales derivados de F9 se elevan a revisión formal.
+- licencia y estabilidad de enlace;
+- configuración LMS.
 
 ## F4 en cinco hitos concertados
 
 ### Hito 1 — Activación, continuidad y gobernanza
 
-**Estado:** COMPLETADO.
+**Estado:** ✅ COMPLETADO.
 
 ### Hito 2 — Protocolo OVAt Materia Mundi
 
-**Estado:** COMPLETADO Y APROBADO HUMANAMENTE.
+**Estado:** ✅ COMPLETADO Y APROBADO HUMANAMENTE.
 
-Producto canónico vigente mientras Hito 4 se decide:
+Genealogía inicial v0.1 → v0.2.
 
-`CIFI3065_PROTOCOLO_OVAT_MATERIA_MUNDI_v0.2_APROBADO.md`
+### Hito 3 — OVAt prototipo profundo U3/H1
 
-### Hito 3 — OVAt prototipo profundo
+**Estado:** ✅ COMPLETADO Y APROBADO HUMANAMENTE.
 
-**Estado:** COMPLETADO Y APROBADO HUMANAMENTE.
-
-Producto aprobado como banco de prueba:
+Producto banco de prueba:
 
 `CIFI3065_HITO3_OVAT_PROTOTIPO_U3_H1_v0.1_CANDIDATA.md`
 
-El prototipo U3/H1 llevó el patrón a G3 y elevó siete decisiones para calibración: firma longitudinal, objetivos, NLEP narrativa, Ficha REC, carga/extensiones, rúbrica Lab H1 y clasificación invariante/condicional/particular.
-
 ### Hito 4 — Calibración y Gate humano del patrón
 
-**Estado:** CALIBRACIÓN PRODUCIDA — PENDIENTE DE DECISIÓN HUMANA.
+**Estado:** ✅ COMPLETADO Y APROBADO HUMANAMENTE.
 
-Productos candidatos:
+**Decisión:** `GO CON CONDICIONES`.
+
+Productos:
 
 - `CIFI3065_HITO4_CALIBRACION_PATRON_OVAT_v0.1_CANDIDATA.md`
-- `CIFI3065_PROTOCOLO_OVAT_MATERIA_MUNDI_v0.3_CANDIDATA.md`
+- `CIFI3065_PROTOCOLO_OVAT_MATERIA_MUNDI_v0.3_APROBADO.md`
 
-Resultado propuesto: **GO CON CONDICIONES**.
+Condiciones que viajan a Hito 5/F9:
 
-Mutaciones calibradas principales:
-
-1. carga como techo con margen orientador 80–90% núcleo / 10–20% contingencia;
-2. Ficha REC de seis campos invariantes + 1–2 prompts adaptativos;
-3. NLEP como decisión obligatoria de diseño, sin obligar avatar/gamificación;
-4. escala NLEP-0–3 candidata para Hito 5;
-5. mapa explícito de reutilización de evidencias;
-6. punto principal de feedback humano por OVAt;
-7. clasificación formal invariantes / condicionales / particulares;
-8. patrón calibrado de 24 campos;
-9. auditoría calibrada de 16 criterios;
-10. patrón base candidato para rúbrica Lab de 2 puntos.
-
-**Hito 5 permanece cerrado hasta aprobación humana de Hito 4 y v0.3.**
+1. probar longitudinalmente escala NLEP-0–3 sin volverla métrica rígida;
+2. auditar patrón base de rúbrica Lab 2 puntos en H1–H10;
+3. verificar distribución real de firmas longitudinales;
+4. validar empíricamente carga/márgenes en F9;
+5. mantener bibliografía viva y proveniencia con trazabilidad proporcional;
+6. no resolver prematuramente recursos sustituibles G4.
 
 ### Hito 5 — Documento Maestro de Microdiseño U1–U15
 
-**Estado:** BLOQUEADO POR GATE HUMANO HITO 4.
+**Estado:** LISTO PARA APERTURA HUMANA.
 
-Tras aprobación, aplicará el patrón calibrado a las quince unidades y terminará con auditoría longitudinal + preparación Gate F4→F5.
+Aplicará el patrón v0.3 APROBADO a U1–U15 y terminará con:
+
+- Documento Maestro U1–U15 en primer borrador profundo;
+- matriz longitudinal de intensidades;
+- progresión Ficha REC/laboratorios;
+- progresión PROEMA;
+- ecosistema de fuentes/proveniencia por nodo;
+- auditoría horizontal U1→U15;
+- auditorías verticales U1/U2/U13/U14/U15;
+- brechas transportables;
+- señales iniciales F9;
+- preparación Gate F4→F5.
 
 ## Criterios de cierre de F4
 
@@ -181,7 +190,7 @@ F4 puede elevarse a Gate F4→F5 cuando existan:
 
 ## Regla de eficiencia
 
-Cada artefacto nuevo debe cumplir una función única. Un diseño F4 puede estar completo aunque recursos sustituibles permanezcan pendientes, siempre que su requisito funcional esté suficientemente definido.
+Cada artefacto nuevo debe cumplir una función única. Un diseño F4 puede estar completo aunque recursos sustituibles permanezcan pendientes, siempre que su requisito funcional y su lugar dentro del ecosistema de fuentes/proveniencia estén suficientemente definidos.
 
 ## Genealogía
 
