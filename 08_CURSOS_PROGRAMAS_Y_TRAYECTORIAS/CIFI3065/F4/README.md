@@ -51,6 +51,8 @@ F4 opera bajo dos reglas rectoras:
 12. `08_CURSOS_PROGRAMAS_Y_TRAYECTORIAS/CIFI3065/F4/CIFI3065_F4_REGISTRO_FUENTES_GENEALOGIA_OVAT_v1.0.md`
 13. `08_CURSOS_PROGRAMAS_Y_TRAYECTORIAS/CIFI3065/F4/CIFI3065_PROTOCOLO_OVAT_MATERIA_MUNDI_v0.2_APROBADO.md`
 14. `08_CURSOS_PROGRAMAS_Y_TRAYECTORIAS/CIFI3065/F4/CIFI3065_HITO3_OVAT_PROTOTIPO_U3_H1_v0.1_CANDIDATA.md`
+15. `08_CURSOS_PROGRAMAS_Y_TRAYECTORIAS/CIFI3065/F4/CIFI3065_HITO4_CALIBRACION_PATRON_OVAT_v0.1_CANDIDATA.md`
+16. `08_CURSOS_PROGRAMAS_Y_TRAYECTORIAS/CIFI3065/F4/CIFI3065_PROTOCOLO_OVAT_MATERIA_MUNDI_v0.3_CANDIDATA.md`
 
 ## Frontera de decisión
 
@@ -116,48 +118,51 @@ Se adopta **solapamiento controlado + ola progresiva**:
 
 **Estado:** COMPLETADO Y APROBADO HUMANAMENTE.
 
-Producto canónico vigente:
+Producto canónico vigente mientras Hito 4 se decide:
 
 `CIFI3065_PROTOCOLO_OVAT_MATERIA_MUNDI_v0.2_APROBADO.md`
 
-Núcleo aprobado: ocho capas estructurales + NLEP transversal; apertura cálida; 3–5 objetivos operacionales; firma longitudinal 0–3; granularidad G0–G4; Ficha REC; economía de tareas; DUA; feedback sostenible; H/M/IA por riesgo; observabilidad F9.
-
 ### Hito 3 — OVAt prototipo profundo
 
-**Estado:** PRODUCIDO — CANDIDATO PARA REVISIÓN HUMANA.
+**Estado:** COMPLETADO Y APROBADO HUMANAMENTE.
 
-Producto:
+Producto aprobado como banco de prueba:
 
 `CIFI3065_HITO3_OVAT_PROTOTIPO_U3_H1_v0.1_CANDIDATA.md`
 
-El prototipo lleva U3/H1 a G3 pedagógico e integra:
-
-- apertura cálida + 5 objetivos operacionales;
-- pregunta rectora y transformación;
-- NLEP con microhistoria `Archivo de las materias perdidas`;
-- Foro H1;
-- Lab H1 + Ficha REC inicial;
-- Ensayo PROEMA 1;
-- DR1 integrado;
-- firma longitudinal candidata `U1=1 | U2=3 | U13=3 | U14=1 | U15=2`;
-- carga estimada 395/420 min;
-- DUA, interacción, feedback, H/M/IA;
-- 8 señales mínimas F9;
-- auditoría rápida 15/15 PASS, con cinco criterios provisionales para Hito 4.
-
-**Hito 4 NO está abierto.** Requiere revisión humana del prototipo.
+El prototipo U3/H1 llevó el patrón a G3 y elevó siete decisiones para calibración: firma longitudinal, objetivos, NLEP narrativa, Ficha REC, carga/extensiones, rúbrica Lab H1 y clasificación invariante/condicional/particular.
 
 ### Hito 4 — Calibración y Gate humano del patrón
 
-**Estado:** PENDIENTE DE AUTORIZACIÓN HUMANA.
+**Estado:** CALIBRACIÓN PRODUCIDA — PENDIENTE DE DECISIÓN HUMANA.
 
-Auditará REC/evidencia, carga, DUA, interacción, integración y sostenibilidad; clasificará invariantes, condicionales y particularidades; y ajustará el protocolo si procede.
+Productos candidatos:
+
+- `CIFI3065_HITO4_CALIBRACION_PATRON_OVAT_v0.1_CANDIDATA.md`
+- `CIFI3065_PROTOCOLO_OVAT_MATERIA_MUNDI_v0.3_CANDIDATA.md`
+
+Resultado propuesto: **GO CON CONDICIONES**.
+
+Mutaciones calibradas principales:
+
+1. carga como techo con margen orientador 80–90% núcleo / 10–20% contingencia;
+2. Ficha REC de seis campos invariantes + 1–2 prompts adaptativos;
+3. NLEP como decisión obligatoria de diseño, sin obligar avatar/gamificación;
+4. escala NLEP-0–3 candidata para Hito 5;
+5. mapa explícito de reutilización de evidencias;
+6. punto principal de feedback humano por OVAt;
+7. clasificación formal invariantes / condicionales / particulares;
+8. patrón calibrado de 24 campos;
+9. auditoría calibrada de 16 criterios;
+10. patrón base candidato para rúbrica Lab de 2 puntos.
+
+**Hito 5 permanece cerrado hasta aprobación humana de Hito 4 y v0.3.**
 
 ### Hito 5 — Documento Maestro de Microdiseño U1–U15
 
-**Estado:** PENDIENTE.
+**Estado:** BLOQUEADO POR GATE HUMANO HITO 4.
 
-Aplicará el patrón calibrado a las quince unidades y terminará con auditoría longitudinal + preparación Gate F4→F5.
+Tras aprobación, aplicará el patrón calibrado a las quince unidades y terminará con auditoría longitudinal + preparación Gate F4→F5.
 
 ## Criterios de cierre de F4
 
