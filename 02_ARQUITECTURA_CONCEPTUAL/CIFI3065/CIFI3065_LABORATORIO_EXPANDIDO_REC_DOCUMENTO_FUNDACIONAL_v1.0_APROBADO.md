@@ -1,5 +1,5 @@
 # CIFI 3065 Virtual — Materia Mundi
-# Documento Fundacional CANDIDATO
+# Documento Fundacional
 ## Laboratorio Expandido sin Fronteras y Arquitectura REC
 
 **Versión:** 1.0 APROBADO  
