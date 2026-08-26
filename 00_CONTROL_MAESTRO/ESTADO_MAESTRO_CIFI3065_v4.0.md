@@ -2,175 +2,152 @@
 
 **Versión:** 4.0  
 **Fecha:** 25 de agosto de 2026  
-**Estado:** F4 ARQUITECTÓNICAMENTE COMPLETA; HITO 5 APROBADO; GATE F4→F5 CANDIDATO `GO CON CONDICIONES` PENDIENTE DE RATIFICACIÓN HUMANA
-
----
+**Estado:** F6 CERRADA — GO CON CONDICIONES; F7 AUTORIZADA PARA APERTURA, NO ABIERTA  
+**Fuente de verdad:** GitHub `main`
 
 ## 1. Posición del proyecto
 
 - F0: CERRADA.
 - F1: CERRADA — GO CON CONDICIONES.
 - F2: CERRADA — GO CON CONDICIONES.
-- F3: CERRADA — Gate F3→F4 GO CON CONDICIONES RATIFICADO.
-- F4 Hito 1: COMPLETADO.
-- F4 Hito 2: COMPLETADO Y APROBADO.
-- F4 Hito 3: COMPLETADO Y APROBADO.
-- F4 Hito 4: COMPLETADO Y APROBADO — GO CON CONDICIONES.
-- F4 Hito 5: COMPLETADO Y APROBADO — PASS SISTÉMICO CON CONDICIONES TRANSPORTABLES.
-- Gate F4→F5: AUDITADO TÉCNICAMENTE; recomendación `GO CON CONDICIONES`; ratificación humana pendiente.
-- F5: NO ABIERTA FORMALMENTE todavía.
+- F3: CERRADA — GO CON CONDICIONES.
+- F4: CERRADA — PASS SISTÉMICO CON CONDICIONES TRANSPORTABLES; Gate F4→F5 GO CON CONDICIONES RATIFICADO.
+- F5: CERRADA — PASS SISTÉMICO CON CONDICIONES TRANSPORTABLES; Gate F5→F6 GO CON CONDICIONES RATIFICADO.
+- F6: CERRADA — PASS SISTÉMICO CON CONDICIONES TRANSPORTABLES; Gate F6→F7 GO CON CONDICIONES RATIFICADO.
+- F7: AUTORIZADA PARA APERTURA, NO ABIERTA.
 
----
+## 2. Gobierno vigente
 
-## 2. Fuente normativa F4
+- GitHub `main`: fuente versionada de verdad.
+- Autoridad humana: propósito, arquitectura, cambios sustantivos, riesgos y Gates.
+- IA: análisis, integración, comparación, propuestas y auditoría asistida.
+- Máquina: estructura, trazabilidad, cálculos, estados y verificación objetiva.
+- Producto sustantivo: `CANDIDATO visible → revisión humana → aprobación → canonicalización`.
+- Modos de reflexión: en acción, sobre la acción y estratégica profunda.
+- Doctrina: ninguna fase posterior borra intelectualmente a la anterior; la somete a prueba, registra hallazgos y produce una versión más madura del sistema.
 
-### Protocolo OVAt canónico
+## 3. Arquitectura curricular consolidada
 
-`08_CURSOS_PROGRAMAS_Y_TRAYECTORIAS/CIFI3065/F4/CIFI3065_PROTOCOLO_OVAT_MATERIA_MUNDI_v0.3_APROBADO.md`
+### Eje longitudinal
 
-### Documento Maestro Hito 5
-
-Estado aprobado:
-
-`08_CURSOS_PROGRAMAS_Y_TRAYECTORIAS/CIFI3065/F4/CIFI3065_HITO5_DOCUMENTO_MAESTRO_MICRODISENO_U1-U15_v0.1_APROBADO.md`
-
-Contenido íntegro ratificado:
-
-`08_CURSOS_PROGRAMAS_Y_TRAYECTORIAS/CIFI3065/F4/CIFI3065_HITO5_DOCUMENTO_MAESTRO_MICRODISENO_U1-U15_v0.1_CANDIDATA.md`
-
-### Gate de transición
-
-`15_EVALUACION_CALIDAD_Y_AUDITORIA/CIFI3065/GATE_F4-F5_v1.0_CANDIDATO.md`
-
----
-
-## 3. Arquitectura consolidada al cierre técnico de F4
-
-### Trayectoria histórico-epistemológica
-
-`U3/H1 → U4/H2 → U5/H3 → U6/H4 → U7/H5 → U8/H6 → U9/H7 → U10/H8 → U11/H9 → U12/H10`
-
-Movimiento:
-
-`explicar → transformar → medir → cuantificar → atomizar → representar/clasificar → modelar → analizar sistema → inferir/instrumentar → evaluar consecuencias`
-
-### Sistemas longitudinales
-
-- U1 orientación/presencia.
-- U2 epistemología.
-- U13 metodología PROEMA.
-- U14 producción intelectual.
-- U15 evidencias/metacognición/cierre.
-
-Intensidad por nodo: escala 0–3 documentada en Hito 5.
+- U1: orientación, presencia y soporte.
+- U2: epistemología.
+- U3–U12: H1–H10.
+- U13: metodología PROEMA.
+- U14: producción intelectual PROEMA.
+- U15: integración, evidencias, metacognición y cierre.
 
 ### PROEMA
 
-Una investigación única:
+Una investigación longitudinal única:
+`tema común → subgrupo máx. 3 → contribución individual → cinco hitos evolutivos → presentación grupal → artículo individual`.
 
-`tema de clase → subgrupo máx. 3 → autoría individual`
-
-Progresión:
-
-`Ensayo 1 → Ensayo 2 → Ensayo 3 → Ensayo 4 → Ensayo 5 → presentación grupal → artículo individual`
-
-### Laboratorio
+### Laboratorio / REC
 
 - 10 experiencias × 2 puntos.
-- Ficha REC: seis campos invariantes + 1–2 adaptativos.
-- rúbrica base: evidencia/descripción + razonamiento/límite/mejora.
-- progresión competencial H1–H10 documentada.
+- Ficha REC común/adaptable.
+- evidencia personal + razonamiento + límites/incertidumbre + mejora + metacognición.
 
 ### Evaluación
 
 - Clase 75.
 - Laboratorio 25.
 - Total 100.
-- equivalencia piloto provisional.
 
-### NLEP
+### Feedback
 
-Decisión transversal por nodo. Escala descriptiva 0–3. Hito 5 no requiere NLEP-3. F5 debe resolver arco global y continuidad.
+`cohorte → grupo → individuo` según REC, impacto, necesidad y sostenibilidad.
 
-### Fuentes/proveniencia
+## 4. F4 consolidada
 
-Cuatro estratos:
+F4 resolvió microdiseño profundo U1–U15 principalmente a G2–G3 mediante Protocolo OVAt, calibración de patrón y Documento Maestro U1–U15.
 
-1. anclajes del prontuario/FEHE;
-2. bibliografía viva;
-3. materiales docentes/IA con proveniencia proporcional;
-4. horizonte `Núcleo | Profundización | Exploración`.
+Principios consolidados:
+- integrar antes que añadir;
+- objeto intelectual único cuando varias capas convergen;
+- REC progresivo;
+- PROEMA único;
+- U15 organizador/no duplicador;
+- carga como techo con margen;
+- G4 sustituible diferido a F8.
 
-F4 fija arquitectura; F8 verifica G4.
+Resultado: PASS SISTÉMICO CON CONDICIONES TRANSPORTABLES.
 
----
+## 5. F5 consolidada
 
-## 4. Carga
+F5 probó que los quince nodos podían funcionar como una experiencia única y reconocible sin adelantar G4.
 
-Regla vigente:
+Principios:
+- simetría antes que igualdad mecánica;
+- arco global;
+- cartografía funcional;
+- NLEP proporcional;
+- metacognición micro/meso/macro;
+- dominancia productiva única en H10;
+- demostrador G2–G3 resistente a sustitución de recursos.
 
-> la carga es techo con margen, no meta a llenar.
+Resultado: PASS SISTÉMICO CON CONDICIONES TRANSPORTABLES.
 
-Orientación v0.3:
+Gate F5→F6: GO CON CONDICIONES RATIFICADO.
 
-- 80–90% núcleo habitual;
-- 10–20% margen;
-- excepciones justificadas.
+## 6. F6 consolidada
 
-H1 permanece 395/420 min y debe medirse en F9.
+F6 probó inclusión y responsabilidad tecnológica sin crear sistemas paralelos ni erosionar rigor.
 
----
+Principios:
+- simetría educativa;
+- `REC + criterio + función + dignidad académica`;
+- accesibilidad al rigor;
+- primero REC, después medio;
+- apoyo ≠ sustitución de autoría;
+- IA no-oráculo;
+- privacidad por minimización;
+- proveniencia proporcional;
+- justicia epistemológica;
+- SAMR describe transformación, no valor;
+- mínima tecnología suficiente;
+- salida segura y control de dependencia;
+- licenciamiento como parte de la arquitectura;
+- nada entra al sistema sólo porque sea posible.
 
-## 5. Condiciones transportables principales
+Resultado: PASS SISTÉMICO CON CONDICIONES TRANSPORTABLES.
 
-1. Resolver arco global NLEP en F5.
-2. No consumir márgenes de carga recuperados.
-3. Auditar triple dominancia U2/U13/U14 en H10.
-4. Mantener PROEMA como una sola investigación.
-5. Preservar Ficha REC común con adaptación, no fragmentación.
-6. Diferenciar bibliografía `Núcleo | Profundización | Exploración`.
-7. Preservar equivalencia DUA de REC/criterio.
-8. Mantener U15 como organizador, no duplicador.
-9. Conservar trazabilidad IA/proveniencia.
-10. Diferir G4 sustituible a F8.
-11. Preservar señales F9 y sostenibilidad docente.
+Gate F6→F7: GO CON CONDICIONES RATIFICADO.
 
----
+## 7. Condiciones hacia F7
 
-## 6. Momentos de reflexión de alto impacto
+F7 deberá auditar:
+1. alineación REC–actividad–evaluación;
+2. claridad de instrucciones;
+3. navegación y orientación;
+4. consistencia entre variantes;
+5. equivalencia sin cambio de criterio;
+6. lenguaje accesible sin pérdida de rigor;
+7. participación e interacción;
+8. H10 por carga/convergencia;
+9. PROEMA por autoría/consistencia;
+10. feedback;
+11. evaluación bajo equivalencia;
+12. protección de principios F6 durante QA.
 
-La bitácora de cierre registra cinco inflexiones:
+## 8. Diferimientos vigentes
 
-1. F4 ampliada a cinco hitos y Documento Maestro U1–U15.
-2. recuperación NLEP desde genealogía OVAt.
-3. calibración H1 → carga/margen, REC adaptable y feedback focal.
-4. recuperación de bibliografía viva/proveniencia antes de v0.3.
-5. Hito 5 entendido como prueba de armonía sistémica, no producción de quince fichas aisladas.
+### F8
 
-Documento:
+G4, LMS, recursos concretos, accesibilidad técnica, herramientas, licencias específicas, privacidad/retención de servicios, interoperabilidad, portabilidad y contingencias.
 
-`18_DOCUMENTACION_ACTIVA/CIFI3065_CIERRE_SESION_F4_2026-08-25.md`
+### F9
 
----
+Validación empírica de carga, barreras, pertenencia, uso IA, fricción, alternativas, feedback y sostenibilidad docente.
 
-## 7. Próximo acto permitido
+## 9. Deuda documental pagada al cierre F6
 
-### Antes de trabajo sustantivo F5
+- F5 y F6 cuentan con cierre formal y Gates ratificados.
+- Estado Maestro v4.0 actualizado al cierre real de F6.
+- Se crea/actualiza bitácora retrospectiva F1–F6.
+- `CIFI3065_MAPA_RUTA_MAESTRO_F0-F10_v1.0.md` permanece congelado como referencia histórica por decisión humana.
+- Los aprendizajes metodológicos se acumulan para una futura versión 2.0 retrospectiva e integrada del marco/protocolo, sin congelarla todavía.
 
-Ratificar explícitamente el Gate F4→F5.
+## 10. Próximo movimiento permitido
 
-Recomendación técnica:
-
-`GO CON CONDICIONES`
-
-### Después de ratificación
-
-Abrir F5 con el kit de continuidad y ejecutar primero recuperación/verificación antes de crear artefactos nuevos.
-
----
-
-## 8. Mandato inicial F5 propuesto
-
-> Convertir los quince nodos microdiseñados en una experiencia única, coherente, reconocible y viable de Materia Mundi, construyendo arco global y prototipo/MVP didáctico sin erosionar las decisiones F1–F4.
-
-F5 no debe reabrir herencias cerradas por conveniencia de producción.
+**F7 puede abrirse únicamente por instrucción humana explícita.**
