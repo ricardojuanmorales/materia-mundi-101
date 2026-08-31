@@ -70,7 +70,7 @@ Su función queda redefinida como:
 
 Los Expedientes Unitarios contienen el detalle constructivo.
 
-## 7. Producción realizada en esta corrección
+## 7. Producción inicial de H6-R2
 
 Se crean como candidatos:
 
@@ -144,14 +144,71 @@ v0.2 añade:
 
 Las decisiones sustituibles siguen abiertas honestamente. Mayor ejecutabilidad no significa fingir que selección = montaje.
 
-## 14. Estado del patrón después de v0.2
+## 14. Estado del patrón después de v0.2 U3/H1
 
 - Arquitectura federada: **VALIDADA COMO DIRECCIÓN**.
 - U3/H1 v0.1: preservado como genealogía del prototipo inicial / NO PROPAGAR.
 - U3/H1 v0.2: **CANDIDATO DE EJECUTABILIDAD REFORZADA / PENDIENTE DE APROBACIÓN HUMANA FINAL DEL PATRÓN**.
 - U1–U15: no propagar todavía.
 
-## 15. Reflexión sobre el protocolo
+## 15. Decisión D8-R15 — Opción 1C ratificada
+
+El humano decide **integrar primero los aprendizajes de U3/H1 y producir Especificación Maestra v0.2 CANDIDATO antes de aprobación final**.
+
+Consecuencia:
+- v0.1 se preserva como patrón inicial probado;
+- se crea `CIFI3065_F8_ESPECIFICACION_MAESTRA_EXPEDIENTE_UNITARIO_G4_v0.2_CANDIDATO.md`;
+- v0.2 incorpora ejecutabilidad por objeto, copy mínimo, contratos fuertes G4-C, QA/EO por objeto, control terminológico y regla anti-detalle improductivo.
+
+## 16. Decisión D8-R16 — Opción 2B ratificada
+
+La frontera H/M/IA queda gobernada así:
+
+> **IA y máquina completan lo determinado por herencia canónica; toda bifurcación pedagógicamente significativa se eleva al humano.**
+
+No se interrumpe al humano por decisiones cosméticas, técnicas, reversibles o inequívocas.
+
+Se eleva cuando una decisión pueda alterar REC, criterio, evaluación, continuidad, autoría, rigor/equivalencia, carga sustantiva, CP7/G7, herencias F1–F7 o frontera F8/F9.
+
+## 17. Decisión D8-R17 — Opción 3C+D retroalimentada
+
+Se adopta estrategia híbrida para máxima eficiencia sin perder detalle relevante:
+
+### C — validación arquetípica
+Antes de propagación total se validarán tres arquetipos:
+1. U1 — entrada/orientación/persistencia;
+2. U3/H1 — unidad histórica compleja;
+3. U15 — recuperación/autoría/metacognición/cierre.
+
+### D — propagación secuencial sin mini-Gates
+Una vez aprobado el patrón por los tres arquetipos:
+- se produce cada unidad individualmente;
+- IA/máquina ejecutan y verifican lo determinado;
+- se genera reporte compacto de excepciones;
+- sólo se solicita intervención humana ante bifurcación material, F-P o excepción significativa;
+- se realizan muestreos humanos periódicos y revisión completa de nodos críticos.
+
+Esto evita dos extremos: producción masiva ciega y quince aprobaciones burocráticas independientes.
+
+## 18. Protocolo H/M/IA derivado
+
+Se crea:
+`CIFI3065_F8_H6R2_PROTOCOLO_PROPAGACION_H-M-IA_v0.1_CANDIDATO.md`.
+
+Estados de propagación:
+- **VERDE:** sin F-P/bifurcación, avanza por IA/máquina;
+- **ÁMBAR:** decisión material sensible, consulta humana focal;
+- **ROJO:** F-P/regresión, detener unidad y gobernanza humana.
+
+## 19. Regla anti-detalle improductivo
+
+Se adopta el principio:
+
+> **Conservar el detalle que gobierna, monta o verifica; omitir el detalle que sólo engorda.**
+
+Un detalle merece vivir en el expediente si afecta experiencia, REC/evidencia, criterio/evaluación, feedback, continuidad, accesibilidad, autoría/IA, carga, seguridad/privacidad, proveniencia/licencia, configuración, verificabilidad, sustitución o control CP7/G7/VD8/QM-B.
+
+## 20. Reflexión sobre el protocolo
 
 Aprendizajes metodológicos transferibles:
 
@@ -161,17 +218,18 @@ Aprendizajes metodológicos transferibles:
 
 > **La prueba de un patrón no es que describa bien una unidad, sino que reduzca de forma suficiente la necesidad de reinterpretación durante el montaje.**
 
-Estos hallazgos modifican la interpretación operativa del principio de autosuficiencia documental para futuras implementaciones de la metodología.
+> **La eficiencia de la gobernanza no consiste en eliminar al humano, sino en reservar su atención para las decisiones que realmente cambian el sistema.**
 
-## 16. Próxima decisión humana
+## 21. Próximo movimiento
 
-Revisar conjuntamente:
-1. Especificación Maestra del Expediente Unitario G4 v0.1;
-2. U3/H1 Expediente G4 v0.2;
-3. Guión Maestro v1.2.
+Revisión humana del nuevo paquete de patrón:
+1. Especificación Maestra v0.2;
+2. U3/H1 Expediente v0.2;
+3. Protocolo H/M/IA v0.1;
+4. Guión Maestro v1.2 como orquestador.
 
-Si el patrón se aprueba, propagar U1–U15 de forma controlada y reanudar H6.
+Luego producir U1 y U15 como segundo y tercer arquetipo antes de propagar el resto.
 
-## 17. Dictamen de sesión
+## 22. Dictamen de sesión
 
-**REFLEXIÓN H6-R2 = CONVERGENTE / PATRÓN FEDERADO VALIDADO COMO DIRECCIÓN / U3-H1 v0.2 EN VALIDACIÓN HUMANA FINAL / PROPAGACIÓN TODAVÍA BLOQUEADA.**
+**REFLEXIÓN H6-R2 = CONVERGENTE / DECISIONES 1C + 2B + 3C-D RATIFICADAS / ESPECIFICACIÓN v0.2 PRODUCIDA / VALIDACIÓN ARQUETÍPICA PENDIENTE / PROPAGACIÓN TOTAL TODAVÍA BLOQUEADA.**
