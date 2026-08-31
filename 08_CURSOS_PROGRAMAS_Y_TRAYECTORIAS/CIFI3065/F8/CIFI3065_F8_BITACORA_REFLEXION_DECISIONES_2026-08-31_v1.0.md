@@ -113,23 +113,65 @@ Debe permitir responder sin reconstrucción externa:
 - qué prueba demuestra funcionamiento;
 - qué queda reservado para F9.
 
-## 12. Próxima decisión humana
+## 12. Revisión guiada del prototipo v0.1
 
-Revisar:
-1. Especificación Maestra del Expediente Unitario G4 v0.1;
-2. Expediente U3/H1 v0.1;
-3. Guión Maestro v1.2.
+La revisión del expediente U3/H1 v0.1 produce:
 
-Si el patrón se aprueba, propagar U1–U15 de forma controlada.
+**PASS ESTRUCTURAL / PASS DE INTEGRACIÓN / CONDICIÓN DE MAYOR EJECUTABILIDAD ANTES DE PROPAGACIÓN.**
 
-## 13. Reflexión sobre el protocolo
+El patrón federado demuestra que puede conservar la riqueza G3 y añadir granularidad G4. Sin embargo, se identifican cinco brechas antes de aprobar el patrón:
 
-Aprendizaje metodológico transferible:
+- **R2-B01:** copy insuficiente para todas las superficies estudiantiles principales;
+- **R2-B02:** configuración LMS/gradebook todavía demasiado implícita;
+- **R2-B03:** slots G4-C de fuentes, Lab y medio FEHE necesitan contratos de selección y aceptación más ejecutables;
+- **R2-B04:** QA requiere matriz `objeto → prueba → EO → defecto → destino`;
+- **R2-B05:** debe evitarse colisión terminológica entre puerto adaptativo de profundización y jerarquía de recurso Profundización sin renombrar silenciosamente términos canónicos.
+
+Regla: **NO PROPAGAR v0.1.**
+
+## 13. Decisión D8-R14 — Reforzar ejecutabilidad antes de propagar
+
+Se produce `UNIDADES/CIFI3065_F8_G4_U03-H1_EXPEDIENTE_MONTAJE_INTEGRACION_v0.2_CANDIDATO.md`.
+
+v0.2 añade:
+- Matriz de Producción LMS U03-G4-01–16;
+- Copy Pack completo para las superficies principales;
+- configuración LMS evaluativa para Foro, REC1, E1 y DR1;
+- contratos G4-C reforzados para fuentes, laboratorio y medio FEHE;
+- Matriz QA/EO por objeto;
+- desambiguación operacional del puerto adaptativo frente a la jerarquía de recursos;
+- checklist de aceptación del patrón.
+
+Las decisiones sustituibles siguen abiertas honestamente. Mayor ejecutabilidad no significa fingir que selección = montaje.
+
+## 14. Estado del patrón después de v0.2
+
+- Arquitectura federada: **VALIDADA COMO DIRECCIÓN**.
+- U3/H1 v0.1: preservado como genealogía del prototipo inicial / NO PROPAGAR.
+- U3/H1 v0.2: **CANDIDATO DE EJECUTABILIDAD REFORZADA / PENDIENTE DE APROBACIÓN HUMANA FINAL DEL PATRÓN**.
+- U1–U15: no propagar todavía.
+
+## 15. Reflexión sobre el protocolo
+
+Aprendizajes metodológicos transferibles:
 
 > **Un producto autosostenido no tiene que ser monolítico. Puede ser un sistema federado siempre que la navegación, los contratos, las dependencias y la fuente de verdad hagan reconstruible el todo.**
 
-Este hallazgo modifica la interpretación operativa del principio de autosuficiencia documental para futuras implementaciones de la metodología.
+> **Un slot diferido sólo es operacionalmente válido cuando su contrato permite seleccionar, sustituir y verificar sin reabrir la pedagogía.**
 
-## 14. Dictamen de sesión
+> **La prueba de un patrón no es que describa bien una unidad, sino que reduzca de forma suficiente la necesidad de reinterpretación durante el montaje.**
 
-**REFLEXIÓN H6-R2 = CONVERGENTE / CORRECCIÓN EJECUTADA / PATRÓN FEDERADO EN VALIDACIÓN HUMANA.**
+Estos hallazgos modifican la interpretación operativa del principio de autosuficiencia documental para futuras implementaciones de la metodología.
+
+## 16. Próxima decisión humana
+
+Revisar conjuntamente:
+1. Especificación Maestra del Expediente Unitario G4 v0.1;
+2. U3/H1 Expediente G4 v0.2;
+3. Guión Maestro v1.2.
+
+Si el patrón se aprueba, propagar U1–U15 de forma controlada y reanudar H6.
+
+## 17. Dictamen de sesión
+
+**REFLEXIÓN H6-R2 = CONVERGENTE / PATRÓN FEDERADO VALIDADO COMO DIRECCIÓN / U3-H1 v0.2 EN VALIDACIÓN HUMANA FINAL / PROPAGACIÓN TODAVÍA BLOQUEADA.**
