@@ -92,25 +92,48 @@ Secuencia acordada:
 6. R3.6 — Guía Maestra + Expedientes U1–U15 + mapa de prioridad;
 7. R3.7 — Auditoría final H6-R3 + Documento Maestro + Gate F8→F9.
 
-## 8. Producción H6-R3.1
+## 8. Cierre H6-R3.1
+
+Se aprobó y canonicalizó:
+`CIFI3065_F8_H6R3_ADENDA_REBASELINING_PLAN_ESTRATEGICO_v1.0_APROBADA.md`.
+
+Dictamen humano: **APROBADO CON AJUSTE MENOR INCORPORADO**.
+
+El ajuste añadió una guía breve para el profesor que explica el significado y aporte al diseño de REC, evidencia, evaluación, continuidad, carga, accesibilidad, adaptabilidad, interacción, PROEMA/DR, recursos, límites, decisiones pendientes, G4 y QA.
+
+Estado: **R3.1 CERRADO / APROBADO / R3.2 EXPEDITO**.
+
+## 9. Producción H6-R3.2
 
 Se produjo:
-`CIFI3065_F8_H6R3_ADENDA_REBASELINING_PLAN_ESTRATEGICO_v0.1_CANDIDATA.md`.
+`CIFI3065_F8_H6R3_ARQUITECTURA_MAESTRA_CARRIL_A-B_v0.1_CANDIDATA.md`.
 
-El candidato:
-- preserva Plan Estratégico F8 v1.0 como base aprobada;
-- no reabre F1–F7 ni H1–H5;
-- propone Sistema Federado de Guía y Gobernanza del Montaje como producto final F8;
-- distingue formalmente Carril A y Carril B;
-- redefine el Expediente como estructural fuerte y no como pre-montaje exhaustivo;
-- incorpora “Sentido de la unidad” como capa humana;
-- propone prueba U03/H1 A→B→A;
-- propone Definition of Done revisada;
-- propone reinterpretación del Gate F8→F9;
-- deja H6-R2 como genealogía y fuente de componentes.
+El candidato define:
+- autoridad y función diferenciada de Carril A y Carril B;
+- Kit de Activación Unitario suficiente como entrada a B;
+- libertad creativa gobernada del profesor;
+- semáforo verde/ámbar/rojo;
+- responsabilidades Humano/IA/Máquina;
+- Bitácora Ligera como registro de decisiones significativas, no transcripción;
+- Documento de Montaje Explícito como producto central de retorno;
+- Paquete de Retorno B→A;
+- revisión focalizada de reingreso a A;
+- familias documentales de repositorio;
+- actualización del mapa F8;
+- estados de flujo A/B diferenciados de G4;
+- contratos de activación y cierre de Taller B;
+- continuidad entre múltiples sesiones;
+- frontera F8/F9 durante producción progresiva;
+- QA del sistema A↔B.
 
-Estado: **CANDIDATO / PENDIENTE DE APROBACIÓN HUMANA / R3.2 BLOQUEADO**.
+Principios emergentes:
 
-## 9. Estado
+> **La autoridad permanece centralizada; la creación puede distribuirse.**
 
-**H6-R3 = ABIERTO / R3.1 PRODUCIDO COMO CANDIDATO / NO CANONIZAR REBASELINING NI INICIAR R3.2 HASTA APROBACIÓN HUMANA EXPLÍCITA.**
+> **A no necesita releer toda la conversación B para entender qué pasó.**
+
+Estado: **R3.2 CANDIDATO / PENDIENTE DE APROBACIÓN HUMANA / R3.3 BLOQUEADO**.
+
+## 10. Estado
+
+**H6-R3 = ABIERTO / R3.1 CERRADO Y CANÓNICO / R3.2 PRODUCIDO COMO CANDIDATO / NO INICIAR R3.3 HASTA APROBACIÓN HUMANA EXPLÍCITA.**
