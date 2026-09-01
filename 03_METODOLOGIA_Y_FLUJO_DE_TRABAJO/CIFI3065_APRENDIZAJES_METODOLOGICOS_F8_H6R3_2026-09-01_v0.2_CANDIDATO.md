@@ -3,51 +3,117 @@
 
 **Versión:** 0.2 CANDIDATO  
 **Fecha:** 1 de septiembre de 2026  
-**Origen:** F8 H6-R3.1  
+**Origen:** F8 H6-R3  
 **Estado:** BITÁCORA METODOLÓGICA VIVA / NO INTEGRADA AÚN A PROTOCOLOS CANÓNICOS
 
 ## 1. Genealogía
 
-Sucede a `CIFI3065_APRENDIZAJES_METODOLOGICOS_F8_H6R3_2026-09-01_v0.1_CANDIDATO.md` y conserva sus aprendizajes A–G.
+Sucede a `CIFI3065_APRENDIZAJES_METODOLOGICOS_F8_H6R3_2026-09-01_v0.1_CANDIDATO.md` y conserva sus aprendizajes anteriores.
 
-## 2. Aprendizaje H — Explicar la función de las categorías estructurales al usuario humano
+## 2. Aprendizaje H — Explicar la función de las categorías estructurales
 
-Cuando un artefacto estructural será utilizado durante creación situada, no basta con nombrar categorías, siglas o controles. Conviene añadir una microexplicación de:
+Cuando un artefacto será utilizado durante creación situada, no basta con nombrar categorías, siglas o controles. Conviene añadir:
 
-`qué significa la categoría → qué pregunta ayuda a responder → qué aporta/protege dentro del diseño`.
+`qué significa → qué pregunta ayuda a responder → qué aporta/protege dentro del diseño`.
 
-Esto permite que elementos como REC, evidencia, evaluación, continuidad, carga, accesibilidad, adaptabilidad, interacción, PROEMA/DR, recursos, límites, decisiones pendientes, G4 y QA funcionen como **lentes de diseño** y no como campos burocráticos.
-
-Principio transferible:
+Principio:
 
 > **Una taxonomía técnica se vuelve herramienta humana cuando quien la usa entiende qué decisión mejora gracias a ella.**
 
 ## 3. Aprendizaje I — Humanización no equivale a simplificación
 
-Humanizar un expediente no requiere eliminar rigor ni reducir controles. Puede lograrse mediante dos capas coordinadas:
+Humanizar conserva rigor pero cambia la experiencia de acceso al rigor.
 
-1. **capa de sentido**, que orienta propósito, transformación y relaciones protegidas;
-2. **capa estructural explicada**, que conserva categorías técnicas pero traduce su utilidad práctica para el profesor.
+Patrón:
+1. capa de sentido;
+2. capa estructural explicada;
+3. detalle técnico disponible bajo demanda.
 
-Esto reduce carga cognitiva sin empobrecer el sistema.
+## 4. Aprendizaje J — Aprobación con ajuste menor
 
-## 4. Aprendizaje J — Aprobación con ajuste menor como mecanismo eficiente
+Cuando una corrección localizada no altera arquitectura:
 
-Cuando el humano aprueba el producto de un hito con una corrección localizada que no altera su arquitectura, el proceso puede registrar:
+`APROBADO CON AJUSTE MENOR INCORPORADO → nueva versión aprobada → candidato preservado → siguiente hito expedito`.
 
-`APROBADO CON AJUSTE MENOR INCORPORADO → nueva versión aprobada → preservación de candidato → siguiente hito expedito`.
+Esto reduce fricción sin reducir gobernanza.
 
-Esto evita reabrir innecesariamente un ciclo completo de reflexión mientras conserva trazabilidad y autoridad humana.
+## 5. Aprendizaje K — Autoridad centralizada, creación distribuida
 
-## 5. Hipótesis de integración futura
+Patrón:
 
-Al revisar los protocolos después del cierre F8, evaluar incorporar:
+`Carril A gobierna → Carril B crea → Carril B devuelve → Carril A verifica e integra`.
 
-- microexplicaciones de categorías técnicas cuando los productos sean herramientas de uso humano;
-- distinción explícita entre humanización y simplificación;
-- mecanismo de aprobación con ajuste menor incorporado;
-- principio de taxonomías técnicas como lentes de decisión.
+La distribución funciona cuando la fuente de verdad permanece explícita, B recibe contexto suficiente, la libertad local está definida por invariantes y el retorno es estructurado.
 
-## 6. Estado
+## 6. Aprendizaje L — Retorno autosostenido, no relectura de conversación
 
-**REGISTRO ABIERTO.** H6-R3.1 aporta evidencia metodológica adicional. La integración a protocolos canónicos sigue reservada al cierre de F8 y a decisión humana posterior.
+El carril de gobernanza no debe depender de releer toda una conversación satélite.
+
+El producto de retorno debe condensar:
+- realización alcanzada;
+- decisiones significativas;
+- excepciones abiertas;
+- evidencia/QA;
+- impacto documental.
+
+Principio:
+
+> **La conversación es espacio de trabajo; el documento de retorno es memoria institucional.**
+
+## 7. Aprendizaje M — Estados de flujo no son estados de calidad
+
+Separar dónde está el trabajo de cuán preparado está el producto.
+
+Ejemplo:
+- `B-ABIERTO` describe flujo;
+- `G4-B` describe readiness.
+
+Esto evita convertir actividad en evidencia de calidad.
+
+## 8. Aprendizaje N — Diseñar documentos con velocidades de lectura
+
+R3.3 propone que un documento técnico destinado a uso humano permita distintas profundidades:
+
+1. **orientarse** rápidamente;
+2. **diseñar** con categorías explicadas;
+3. **verificar** mediante anexos técnicos.
+
+Principio:
+
+> **La profundidad técnica debe estar disponible sin convertirse en la puerta de entrada.**
+
+Este patrón puede ser transferible a otros artefactos de virtualización complejos.
+
+## 9. Aprendizaje O — Arquitectura documental por capas
+
+Un artefacto complejo puede separar:
+- sentido/orientación;
+- mapa estructural compacto;
+- fichas de diseño;
+- anexos de trazabilidad y QA.
+
+Esto permite conservar densidad sin obligar a todos los usuarios a consumirla en el mismo orden.
+
+## 10. Aprendizaje P — El detalle debe demostrar su valor de gobernanza
+
+Regla candidata derivada de R3.3:
+
+> **Si un detalle no cambia sentido, criterio, función, continuidad, acceso, carga, autoría, verificación o gobernanza, probablemente no necesita ocupar el cuerpo principal del artefacto.**
+
+Este criterio puede servir como control de sobreproducción documental en futuros proyectos.
+
+## 11. Hipótesis para integración futura
+
+Al revisar los protocolos después de F8, evaluar incorporar:
+- microexplicaciones de categorías técnicas;
+- velocidades de lectura;
+- arquitectura documental por capas;
+- autoridad centralizada con creación distribuida;
+- retorno autosostenido;
+- separación flujo/calidad;
+- aprobación con ajuste menor;
+- criterio de valor de gobernanza para decidir nivel de detalle.
+
+## 12. Estado
+
+**REGISTRO ABIERTO.** R3.1–R3.3 aportan evidencia metodológica. La integración a protocolos canónicos sigue reservada al cierre F8 y a decisión humana posterior.
