@@ -99,6 +99,26 @@ Evaluar incorporar explícitamente:
 - rebaselining como mecanismo formal;
 - cierre por producto autosostenido que habilita implementación progresiva.
 
-## 10. Estado
+## 10. Aprendizaje H — Rebaselining mediante adenda, no reescritura destructiva
+
+H6-R3.1 mostró una forma concreta de corregir alcance sin borrar autoridad previa:
+
+`plan aprobado → hallazgo metodológico → adenda candidata → revisión humana → eventual ratificación → reauditoría`.
+
+La adenda puede distinguir explícitamente:
+- qué permanece protegido;
+- qué interpretación operacional cambia;
+- cuál es el nuevo producto tangible;
+- cómo cambia la Definition of Done;
+- cómo cambia el significado del Gate;
+- qué candidatos previos quedan como genealogía o insumo.
+
+Principio transferible:
+
+> **Cuando el fundamento sigue siendo válido pero la interpretación operacional del producto cambia, una adenda de rebaselining puede ser más íntegra que reescribir retrospectivamente el plan original.**
+
+Este patrón debe evaluarse para incorporación futura al Protocolo General de Sesión y al Protocolo de Virtualización.
+
+## 11. Estado
 
 **REGISTRO ABIERTO.** Se actualizará por hitos durante H6-R3. Su integración al Protocolo de Virtualización y al Protocolo de Sesión queda reservada para el cierre de F8 y decisión humana posterior.
