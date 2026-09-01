@@ -119,6 +119,62 @@ Principio transferible:
 
 Este patrón debe evaluarse para incorporación futura al Protocolo General de Sesión y al Protocolo de Virtualización.
 
-## 11. Estado
+## 11. Aprendizaje I — Humanizar categorías técnicas sin perder rigor
+
+La aprobación de R3.1 añadió una capa interpretativa dirigida al profesor para explicar qué significa cada categoría estructural y qué aporta al diseño.
+
+Principio transferible:
+
+> **Humanizar un artefacto no significa eliminar sus controles; significa hacer visible para la persona usuaria qué decisión mejora gracias a cada control.**
+
+Esto permite conservar categorías densas como REC, G4 y QA sin convertir el documento en un formulario opaco.
+
+## 12. Aprendizaje J — Autoridad centralizada, creación distribuida
+
+R3.2 propone que una arquitectura de trabajo pueda separar gobernanza y creación sin fragmentar el proyecto.
+
+Patrón:
+
+`Carril A gobierna → Carril B crea → Carril B devuelve → Carril A verifica e integra`.
+
+La distribución funciona cuando:
+- la fuente de verdad permanece explícita;
+- B recibe contexto suficiente y no toda la historia documental;
+- la libertad local está definida por invariantes;
+- existe semáforo para bifurcaciones reales;
+- el retorno es documental y estructurado.
+
+Principio:
+
+> **La autoridad puede permanecer centralizada mientras la creación se distribuye.**
+
+## 13. Aprendizaje K — Retorno autosostenido, no relectura de conversación
+
+Una conversación práctica separada sólo escala si el carril de gobernanza no necesita releerla completa.
+
+El producto de retorno debe condensar:
+- realización alcanzada;
+- decisiones significativas;
+- excepciones abiertas;
+- evidencia/QA;
+- impacto sobre documentos de gobernanza.
+
+Principio:
+
+> **La conversación es espacio de trabajo; el documento de retorno es memoria institucional.**
+
+Este principio debe evaluarse para el protocolo de sesión cuando existan conversaciones satélite, talleres o subprocesos.
+
+## 14. Aprendizaje L — Estados de flujo no deben confundirse con estados de calidad
+
+R3.2 distingue estados operativos del proceso A/B de estados de readiness como G4.
+
+Ejemplo:
+- `B-ACTIVO` describe dónde está el trabajo;
+- `G4-B` describe cuán preparado está un objeto.
+
+Separar ambas dimensiones evita que una etiqueta de flujo se convierta accidentalmente en juicio de calidad.
+
+## 15. Estado
 
 **REGISTRO ABIERTO.** Se actualizará por hitos durante H6-R3. Su integración al Protocolo de Virtualización y al Protocolo de Sesión queda reservada para el cierre de F8 y decisión humana posterior.
