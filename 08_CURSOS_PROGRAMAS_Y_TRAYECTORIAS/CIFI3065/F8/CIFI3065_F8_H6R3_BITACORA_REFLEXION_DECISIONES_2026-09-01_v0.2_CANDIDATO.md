@@ -17,8 +17,6 @@ Queda canónica:
 
 Dictamen humano: **APROBADO CON AJUSTE MENOR INCORPORADO**.
 
-El ajuste añadió una guía breve para el profesor sobre REC, evidencia, evaluación, continuidad, carga, accesibilidad, adaptabilidad, interacción, PROEMA/DR, recursos, límites, decisiones pendientes, G4 y QA.
-
 ## 3. Cierre H6-R3.2
 
 Queda canónica:
@@ -26,53 +24,57 @@ Queda canónica:
 
 Dictamen humano: **APROBADO**.
 
-R3.2 fija:
-- autoridad y memoria institucional en Carril A;
-- creación situada en Carril B;
-- Kit de Activación como entrada suficiente;
-- semáforo verde/ámbar/rojo;
-- gobernanza H/IA/M;
-- Documento de Montaje Explícito + Bitácora Ligera;
-- Paquete de Retorno autosostenido;
-- reingreso A, QA, repositorio y actualización del mapa;
-- estados de flujo separados de G4;
-- frontera F8/F9 durante montaje progresivo.
-
 Principios ratificados:
 
 > **La autoridad permanece centralizada; la creación puede distribuirse.**
 
 > **A no necesita releer toda la conversación B para entender qué pasó.**
 
-## 4. Producción H6-R3.3
+## 4. Cierre H6-R3.3
 
-Se produjo:
-`CIFI3065_F8_H6R3_ESPECIFICACION_EXPEDIENTE_MONTAJE_INTEGRACION_HUMANIZADO_v0.1_CANDIDATA.md`.
+Queda canónica:
+`CIFI3065_F8_H6R3_ESPECIFICACION_EXPEDIENTE_MONTAJE_INTEGRACION_HUMANIZADO_v1.0_APROBADA.md`.
 
-El candidato redefine el Expediente de Montaje e Integración como guía estructural humanizada de Carril A.
+Dictamen humano: **APROBADO**.
 
-Propone tres velocidades de lectura:
-1. orientarse;
-2. diseñar;
-3. verificar.
+R3.3 ratifica:
+- tres velocidades de lectura: orientarse, diseñar, verificar;
+- cuatro capas: sentido, mapa estructural, fichas humanizadas, anexos técnicos;
+- 14 categorías expresadas como `qué es → por qué importa → qué define A → qué resuelve B → cuándo regresar a A`;
+- A–W preservado como genealogía/repertorio técnico sin dominar la experiencia de lectura.
 
-Y cuatro capas:
-1. Sentido y orientación humana;
-2. Mapa estructural compacto;
-3. Fichas humanizadas por categoría;
-4. Anexos técnicos y de trazabilidad.
-
-Las 14 categorías usan:
-`qué es → por qué importa → qué define A → qué puede resolver B → cuándo regresar a A`.
-
-A–W de H6-R2 se preserva como genealogía, repertorio/checklist técnico y reserva de detalle, pero deja de dominar la experiencia de lectura.
-
-Principios emergentes:
-
-> **El expediente debe ser suficientemente estructural para gobernar y suficientemente humano para inspirar y orientar la creación.**
+Principio ratificado:
 
 > **La profundidad técnica debe estar disponible sin convertirse en la puerta de entrada.**
 
-## 5. Estado
+## 5. Producción H6-R3.4
 
-**H6-R3 = ABIERTO / R3.1 Y R3.2 CERRADOS Y CANÓNICOS / R3.3 PRODUCIDO COMO CANDIDATO / R3.4 BLOQUEADO HASTA APROBACIÓN HUMANA DE R3.3.**
+Se produjeron como candidatos coordinados:
+
+1. `CIFI3065_F8_H6R3_SISTEMA_DOCUMENTAL_CARRIL_B_v0.1_CANDIDATO.md`;
+2. `CIFI3065_F8_H6R3_PROMPT_MAESTRO_ACTIVACION_TALLER_UNITARIO_v0.1_CANDIDATO.md`;
+3. `CIFI3065_F8_H6R3_PLANTILLA_DOCUMENTO_MONTAJE_EXPLICITO_v0.1_CANDIDATO.md`;
+4. `CIFI3065_F8_H6R3_PLANTILLA_BITACORA_LIGERA_TALLER_v0.1_CANDIDATO.md`.
+
+El sistema propone:
+- Kit de Activación como entrada suficiente;
+- conversación por bloques `comprender → proponer → decidir → producir → verificar → registrar`;
+- profesor como autoridad situada;
+- IA como coproductora gobernada;
+- semáforo verde/ámbar/rojo;
+- DME como realización explícita;
+- BLT como genealogía de decisiones, no transcripción;
+- Resumen de Retorno B→A;
+- continuidad multisesión mediante artefactos;
+- estados de flujo separados de G4, QA y semáforo;
+- cierre de taller verificable.
+
+Principios candidatos:
+
+> **La conversación es espacio de creación; el documento de retorno es memoria institucional.**
+
+> **La continuidad se transmite por artefactos, no por memoria conversacional.**
+
+## 6. Estado
+
+**H6-R3 = ABIERTO / R3.1–R3.3 CERRADOS Y CANÓNICOS / R3.4 PRODUCIDO COMO CANDIDATO / R3.5 BLOQUEADO HASTA APROBACIÓN HUMANA DE R3.4.**
