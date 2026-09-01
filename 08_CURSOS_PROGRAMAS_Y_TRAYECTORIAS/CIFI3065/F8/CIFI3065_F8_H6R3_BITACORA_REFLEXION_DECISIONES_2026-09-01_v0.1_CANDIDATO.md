@@ -79,10 +79,38 @@ Se corrige la tendencia a convertir el Expediente en pre-montaje exhaustivo. El 
 
 F8 puede cerrar legítimamente si demuestra que el sistema A→B→A es autosostenido, gobernado, trazable y funcional mediante una prueba de concepto completa, y si deja los expedientes estructurales necesarios para el montaje progresivo.
 
-## 7. Próximo movimiento
+## 7. Protocolo de sesión H6-R3
 
 Trabajar H6-R3 por hitos y bloques. Cada hito produce un artefacto CANDIDATO visible, entregado al humano en MD y PDF para revisión y aprobación antes de avanzar.
 
-## 8. Estado
+Secuencia acordada:
+1. R3.1 — Rebaselining formal del producto F8;
+2. R3.2 — Arquitectura Maestra Carril A ↔ Carril B;
+3. R3.3 — Rediseño humanizado del Expediente de Montaje e Integración;
+4. R3.4 — Sistema documental del Carril B;
+5. R3.5 — Prueba de concepto U03/H1 A→B→A;
+6. R3.6 — Guía Maestra + Expedientes U1–U15 + mapa de prioridad;
+7. R3.7 — Auditoría final H6-R3 + Documento Maestro + Gate F8→F9.
 
-**H6-R3 = AUTORIZADO PARA PLANIFICACIÓN DE SESIÓN / NO CANONIZAR REBASELINING NI REDEFINIR GATE HASTA APROBACIÓN HUMANA DE LOS PRODUCTOS CANDIDATOS CORRESPONDIENTES.**
+## 8. Producción H6-R3.1
+
+Se produjo:
+`CIFI3065_F8_H6R3_ADENDA_REBASELINING_PLAN_ESTRATEGICO_v0.1_CANDIDATA.md`.
+
+El candidato:
+- preserva Plan Estratégico F8 v1.0 como base aprobada;
+- no reabre F1–F7 ni H1–H5;
+- propone Sistema Federado de Guía y Gobernanza del Montaje como producto final F8;
+- distingue formalmente Carril A y Carril B;
+- redefine el Expediente como estructural fuerte y no como pre-montaje exhaustivo;
+- incorpora “Sentido de la unidad” como capa humana;
+- propone prueba U03/H1 A→B→A;
+- propone Definition of Done revisada;
+- propone reinterpretación del Gate F8→F9;
+- deja H6-R2 como genealogía y fuente de componentes.
+
+Estado: **CANDIDATO / PENDIENTE DE APROBACIÓN HUMANA / R3.2 BLOQUEADO**.
+
+## 9. Estado
+
+**H6-R3 = ABIERTO / R3.1 PRODUCIDO COMO CANDIDATO / NO CANONIZAR REBASELINING NI INICIAR R3.2 HASTA APROBACIÓN HUMANA EXPLÍCITA.**
