@@ -10,110 +10,82 @@
 
 Sucede a `CIFI3065_APRENDIZAJES_METODOLOGICOS_F8_H6R3_2026-09-01_v0.1_CANDIDATO.md` y conserva sus aprendizajes anteriores.
 
-## 2. Aprendizaje H — Explicar la función de las categorías estructurales
+## 2. Aprendizajes H–P preservados
 
-Cuando un artefacto será utilizado durante creación situada, no basta con nombrar categorías, siglas o controles. Conviene añadir:
-
-`qué significa → qué pregunta ayuda a responder → qué aporta/protege dentro del diseño`.
-
-Principio:
-
-> **Una taxonomía técnica se vuelve herramienta humana cuando quien la usa entiende qué decisión mejora gracias a ella.**
-
-## 3. Aprendizaje I — Humanización no equivale a simplificación
-
-Humanizar conserva rigor pero cambia la experiencia de acceso al rigor.
-
-Patrón:
-1. capa de sentido;
-2. capa estructural explicada;
-3. detalle técnico disponible bajo demanda.
-
-## 4. Aprendizaje J — Aprobación con ajuste menor
-
-Cuando una corrección localizada no altera arquitectura:
-
-`APROBADO CON AJUSTE MENOR INCORPORADO → nueva versión aprobada → candidato preservado → siguiente hito expedito`.
-
-Esto reduce fricción sin reducir gobernanza.
-
-## 5. Aprendizaje K — Autoridad centralizada, creación distribuida
-
-Patrón:
-
-`Carril A gobierna → Carril B crea → Carril B devuelve → Carril A verifica e integra`.
-
-La distribución funciona cuando la fuente de verdad permanece explícita, B recibe contexto suficiente, la libertad local está definida por invariantes y el retorno es estructurado.
-
-## 6. Aprendizaje L — Retorno autosostenido, no relectura de conversación
-
-El carril de gobernanza no debe depender de releer toda una conversación satélite.
-
-El producto de retorno debe condensar:
-- realización alcanzada;
-- decisiones significativas;
-- excepciones abiertas;
-- evidencia/QA;
-- impacto documental.
-
-Principio:
-
-> **La conversación es espacio de trabajo; el documento de retorno es memoria institucional.**
-
-## 7. Aprendizaje M — Estados de flujo no son estados de calidad
-
-Separar dónde está el trabajo de cuán preparado está el producto.
-
-Ejemplo:
-- `B-ABIERTO` describe flujo;
-- `G4-B` describe readiness.
-
-Esto evita convertir actividad en evidencia de calidad.
-
-## 8. Aprendizaje N — Diseñar documentos con velocidades de lectura
-
-R3.3 propone que un documento técnico destinado a uso humano permita distintas profundidades:
-
-1. **orientarse** rápidamente;
-2. **diseñar** con categorías explicadas;
-3. **verificar** mediante anexos técnicos.
-
-Principio:
-
-> **La profundidad técnica debe estar disponible sin convertirse en la puerta de entrada.**
-
-Este patrón puede ser transferible a otros artefactos de virtualización complejos.
-
-## 9. Aprendizaje O — Arquitectura documental por capas
-
-Un artefacto complejo puede separar:
-- sentido/orientación;
-- mapa estructural compacto;
-- fichas de diseño;
-- anexos de trazabilidad y QA.
-
-Esto permite conservar densidad sin obligar a todos los usuarios a consumirla en el mismo orden.
-
-## 10. Aprendizaje P — El detalle debe demostrar su valor de gobernanza
-
-Regla candidata derivada de R3.3:
-
-> **Si un detalle no cambia sentido, criterio, función, continuidad, acceso, carga, autoría, verificación o gobernanza, probablemente no necesita ocupar el cuerpo principal del artefacto.**
-
-Este criterio puede servir como control de sobreproducción documental en futuros proyectos.
-
-## 11. Hipótesis para integración futura
-
-Al revisar los protocolos después de F8, evaluar incorporar:
-- microexplicaciones de categorías técnicas;
+Se preservan como candidatos transferibles los aprendizajes sobre:
+- función humana de categorías estructurales;
+- humanización sin simplificación;
+- aprobación con ajuste menor;
+- autoridad centralizada y creación distribuida;
+- retorno autosostenido;
+- separación de estados de flujo y calidad;
 - velocidades de lectura;
 - arquitectura documental por capas;
-- autoridad centralizada con creación distribuida;
-- retorno autosostenido;
-- separación flujo/calidad;
-- aprobación con ajuste menor;
-- criterio de valor de gobernanza para decidir nivel de detalle.
+- criterio de valor de gobernanza para controlar detalle.
 
-## 12. Estado
+## 3. Aprendizaje Q — Conversación como espacio de producción, artefacto como memoria
 
-**REGISTRO ABIERTO.** R3.1–R3.3 aportan evidencia metodológica. La integración a protocolos canónicos sigue reservada al cierre F8 y a decisión humana posterior.
+R3.4 refuerza que una conversación satélite no debe convertirse en archivo institucional implícito.
+
+Patrón:
+
+`conversación B → producción situada → DME + BLT + resumen de retorno → A`.
+
+Principio:
+
+> **La conversación es espacio de creación; el artefacto de retorno es memoria institucional.**
+
+## 4. Aprendizaje R — Registrar decisiones, no transcribir procesos
+
+Una bitácora útil no necesita capturar cada turno ni cada variante descartada.
+
+Debe registrar sólo aquello que pueda explicar después:
+- por qué se eligió una alternativa;
+- qué excepción apareció;
+- qué QA corrigió un defecto;
+- qué decisión requiere gobernanza;
+- qué aprendizaje puede cambiar el método.
+
+Principio:
+
+> **La bitácora conserva decisiones, no ruido conversacional.**
+
+## 5. Aprendizaje S — Continuidad por artefactos autosostenidos
+
+Cuando un trabajo distribuido ocupa varias sesiones o conversaciones, la continuidad no debe depender de recuperar memoria del chat anterior.
+
+La sesión siguiente debe poder reactivarse mediante:
+- última versión del producto explícito;
+- bitácora vigente;
+- pendientes;
+- fuente estructural vigente.
+
+Principio:
+
+> **La continuidad se transmite por artefactos, no por memoria conversacional.**
+
+## 6. Aprendizaje T — Prompt como interfaz de gobernanza
+
+El prompt de activación no es sólo una instrucción para IA. Puede funcionar como interfaz contractual entre arquitectura y creación cuando define:
+- fuente de autoridad;
+- alcance;
+- libertad;
+- semáforo;
+- roles H/M/IA;
+- productos obligatorios de retorno;
+- condición de cierre.
+
+Esto debe evaluarse como componente explícito del futuro protocolo de virtualización.
+
+## 7. Hipótesis para integración futura
+
+Al revisar los protocolos después de F8, evaluar incorporar:
+- prompts de activación como contratos operativos;
+- continuidad por artefactos;
+- bitácoras de decisiones y no transcripciones;
+- documento de retorno obligatorio para conversaciones satélite;
+- cierre de sesión con producto de continuidad autosostenido.
+
+## 8. Estado
+
+**REGISTRO ABIERTO.** R3.1–R3.4 aportan evidencia metodológica. La integración a protocolos canónicos sigue reservada al cierre F8 y a decisión humana posterior.
