@@ -4,11 +4,11 @@
 
 ## Estado actual del proyecto
 
-**Fecha de corte:** 8 de septiembre de 2026  
+**Fecha de corte:** 10 de septiembre de 2026  
 **Fuente versionada de verdad:** GitHub `main`  
 **Nivel:** N3 Avanzado  
 **Caleidoscopio rector:** C4 Integral  
-**Estado global:** **F8 CERRADA — Gate F8→F9 = GO CON CONDICIONES / RATIFICADO — montaje progresivo post-F8 habilitado**.
+**Estado global:** **F8 CERRADA — Gate F8→F9 = GO CON CONDICIONES / RATIFICADO — montaje progresivo post-F8 activo — U05/H3 absorbida — U06/H4 autorizada para producción situada.**
 
 F9 no está activada como fase empírica: requiere evidencia real de estudiantes. La producción, montaje y QA post-F8 preparan F9, pero no constituyen por sí mismos evidencia F9.
 
@@ -32,7 +32,7 @@ Gramática común:
 
 `Bienvenida/orientación → FEHE → actividad central → interacción analítica → Lab/REC → cierre de continuidad`
 
-La regla es **simetría funcional y navegacional, no copia literal**.
+Regla: **simetría funcional y navegacional, no copia literal**.
 
 ## Baseline post-F8 vigente
 
@@ -44,6 +44,7 @@ La regla es **simetría funcional y navegacional, no copia literal**.
 6. Gate F8→F9 v1.0 RATIFICADO.
 7. Registro Evolutivo de Transferencia Metodológica v1.0 ESTABILIZADO POST-F8.
 8. Delta metodológico v1.1 POST-U04/H2.
+9. Delta metodológico v1.2 POST-U05/H3.
 
 ## Carril A ↔ Carril B
 
@@ -75,44 +76,56 @@ Ruta:
 
 `08_CURSOS_PROGRAMAS_Y_TRAYECTORIAS/CIFI3065/POST_F8/U04-H2/`
 
-El retorno quedó formalizado en:
-
-- `CIFI3065_POSTF8_U04-H2_RETORNO_B-A_INTEGRADO_v1.0_APROBADO.md`
-- `CIFI3065_POSTF8_U04-H2_REGISTRO_FUENTES_ACERVO_v1.0_APROBADO.md`
-
-Aprendizajes post-H2 incorporados al registro evolutivo:
-
-- un producto a la vez;
-- precedente situado primero;
-- reutilización cognitiva entre superficies;
-- DME estricto `PRODUCIDO → MONTADO → VERIFICADO-SITUADO`;
-- fuentes nuevas requieren asiento formal de Carril A;
-- Página Moodle breve + guía autónoma profunda como patrón preferente condicionado.
-
 ### U05/H3
 
-**GO CON CONDICIONES RATIFICADO / CONDICIONES DOCUMENTALES SATISFECHAS / AUTORIZADA PARA CARRIL B.**
+**CERRADA EN CARRIL B / VERIFICADO-SITUADO / VERDE SISTÉMICO / RETORNO B→A INTEGRADO.**
 
 Ruta:
 
 `08_CURSOS_PROGRAMAS_Y_TRAYECTORIAS/CIFI3065/POST_F8/U05-H3/`
 
+Documentos canónicos:
+
+- `CIFI3065_POSTF8_U05-H3_RETORNO_B-A_INTEGRADO_v1.0_APROBADO.md`
+- `CIFI3065_POSTF8_U05-H3_REGISTRO_FUENTES_ACERVO_v1.0_APROBADO.md`
+- `CIFI3065_POSTF8_U05-H3_BLT_LECCIONES_TRANSPORTABLES_v1.0_APROBADO.md`
+- `03_METODOLOGIA_Y_FLUJO_DE_TRABAJO/CIFI3065_REGISTRO_EVOLUTIVO_TRANSFERENCIA_METODOLOGICA_v1.2_POST-U05-H3.md`
+
+Aprendizajes post-H3 absorbidos:
+
+- reutilización cognitiva profunda;
+- equivalencia accesible por función cognitiva, rigor, criterio y destino epistemológico;
+- proveniencia explícita de datasets docentes/sintéticos;
+- no fabricar ruido/error que un recurso ideal no produce;
+- atribuir incertidumbre a fuentes plausibles;
+- instrumento como parte de la producción de evidencia, no autoridad automática.
+
+### U06/H4
+
+**KIT A→B APROBADO / AUTORIZADA PARA PRODUCCIÓN SITUADA EN CARRIL B.**
+
+Ruta:
+
+`08_CURSOS_PROGRAMAS_Y_TRAYECTORIAS/CIFI3065/POST_F8/U06-H4/`
+
 Artefactos de activación:
 
-- `CIFI3065_POSTF8_U05-H3_KIT_ACTIVACION_CARRIL_B_v1.0.md`
-- `CIFI3065_POSTF8_U05-H3_PROMPT_INDEPENDIENTE_ACTIVACION_CARRIL_B_v1.0.md`
+- `CIFI3065_POSTF8_U06-H4_KIT_ACTIVACION_CARRIL_B_v1.0.md`
+- `CIFI3065_POSTF8_U06-H4_PROMPT_INDEPENDIENTE_ACTIVACION_CARRIL_B_v1.0.md`
 
 Configuración protegida:
 
-- pregunta: **¿Qué cambia cuando una afirmación debe sostenerse mediante instrumentos, mediciones y procedimientos públicos?**
-- transformación: `observación cualitativa → medición controlada → instrumento como parte de la evidencia`;
-- verbo: `medir / instrumentar`;
-- REC3: `medición/error/control`;
-- PROEMA: micro-movimiento de calidad de evidencia/método, sin ensayo nuevo;
-- carga: techo 360 min, núcleo 300–315, margen 45–60 min;
-- puente: `H2 transformar/registrar → H3 medir/instrumentar → H4 cuantificar`.
+- identidad: **Cuantificación, controversia y evidencia**;
+- FEHE: **Revolución química: del flogisto a Lavoisier**;
+- transformación: `medición comparada → cuantificación de relaciones/balances → contraste de predicciones → juicio sobre evidencia y teoría`;
+- REC4 dominante: `cuantificar`;
+- PROEMA: **Ensayo 2 / ruta de indagación y base de evidencia**, sin reiniciar proyecto ni crear tarea paralela;
+- riesgo: semana de alta densidad, proteger economía cognitiva;
+- puente: `H3 medir/instrumentar → H4 cuantificar/discriminar → H5 datos/relaciones/modelo`.
 
-El primer movimiento de Carril B debe ser **inventario + Mapa de Realización**, no producción anticipada.
+Primer movimiento Carril B:
+
+`snapshot main → FEHE H4 → inventario PROEMA → precedente H3 → Mapa de Realización H4 → revisión humana → producción situada`
 
 ## Estructura de cartapacios
 
@@ -148,7 +161,7 @@ Regla: **no crear contenido para completar una taxonomía; abrir sólo cuando ex
 
 ### Control maestro
 
-- `00_CONTROL_MAESTRO/ESTADO_MAESTRO_CIFI3065_v20.0.md`
+- `00_CONTROL_MAESTRO/ESTADO_MAESTRO_CIFI3065_v21.0.md`
 - `00_CONTROL_MAESTRO/MANIFEST_CANONICO_CIFI3065_v18.0.md`
 - `00_CONTROL_MAESTRO/CIFI3065_MAPA_RUTA_MAESTRO_F0-F10_v1.0.md`
 
@@ -157,6 +170,7 @@ Regla: **no crear contenido para completar una taxonomía; abrir sólo cuando ex
 - `03_METODOLOGIA_Y_FLUJO_DE_TRABAJO/Protocolo_General_Sesion_Concertada_Verificable_v1_1.md`
 - `03_METODOLOGIA_Y_FLUJO_DE_TRABAJO/CIFI3065_REGISTRO_EVOLUTIVO_TRANSFERENCIA_METODOLOGICA_v1.0_ESTABILIZADO_POST-F8.md`
 - `03_METODOLOGIA_Y_FLUJO_DE_TRABAJO/CIFI3065_REGISTRO_EVOLUTIVO_TRANSFERENCIA_METODOLOGICA_v1.1_POST-U04-H2.md`
+- `03_METODOLOGIA_Y_FLUJO_DE_TRABAJO/CIFI3065_REGISTRO_EVOLUTIVO_TRANSFERENCIA_METODOLOGICA_v1.2_POST-U05-H3.md`
 
 ### Baseline post-F8
 
@@ -174,11 +188,8 @@ Regla: **no crear contenido para completar una taxonomía; abrir sólo cuando ex
 
 - `08_CURSOS_PROGRAMAS_Y_TRAYECTORIAS/CIFI3065/POST_F8/`
 - H2 cerrado/integrado: `POST_F8/U04-H2/`
-- H3 activo/autorizado: `POST_F8/U05-H3/`
-
-### Fuentes institucionales
-
-- `08_CURSOS_PROGRAMAS_Y_TRAYECTORIAS/CIFI3065/FUENTES_INSTITUCIONALES/`
+- H3 cerrado/integrado: `POST_F8/U05-H3/`
+- H4 autorizado para producción: `POST_F8/U06-H4/`
 
 ### Genealogía
 
@@ -217,10 +228,4 @@ Leer, en este orden:
 
 ## Próximo movimiento
 
-**Abrir U05/H3 en Carril B desde su Kit/Prompt canónico.**
-
-Carril B debe comenzar por recuperar FEHE H3, inventariar precedentes/recursos y producir el **Mapa de Realización H3**. No debe comenzar redactando la unidad completa ni reconstruir fases cerradas.
-
-## Licencia
-
-Consultar `LICENSE` en la raíz del repositorio.
+**Abrir U06/H4 en Carril B desde su Kit/Prompt canónico y comenzar por inventario + Mapa de Realización.**
