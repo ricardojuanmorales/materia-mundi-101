@@ -4,11 +4,11 @@
 
 ## Estado actual del proyecto
 
-**Fecha de corte:** 10 de septiembre de 2026  
+**Fecha de corte:** 16 de septiembre de 2026  
 **Fuente versionada de verdad:** GitHub `main`  
 **Nivel:** N3 Avanzado  
 **Caleidoscopio rector:** C4 Integral  
-**Estado global:** **F8 CERRADA — Gate F8→F9 = GO CON CONDICIONES / RATIFICADO — montaje progresivo post-F8 activo — U05/H3 absorbida — U06/H4 autorizada para producción situada.**
+**Estado global:** **F8 CERRADA — Gate F8→F9 = GO CON CONDICIONES / RATIFICADO — montaje progresivo post-F8 activo — U06/H4 absorbida — U07/H5 autorizada para activación en Carril B con condiciones.**
 
 F9 no está activada como fase empírica: requiere evidencia real de estudiantes. La producción, montaje y QA post-F8 preparan F9, pero no constituyen por sí mismos evidencia F9.
 
@@ -45,6 +45,7 @@ Regla: **simetría funcional y navegacional, no copia literal**.
 7. Registro Evolutivo de Transferencia Metodológica v1.0 ESTABILIZADO POST-F8.
 8. Delta metodológico v1.1 POST-U04/H2.
 9. Delta metodológico v1.2 POST-U05/H3.
+10. Delta metodológico v1.3 POST-U06/H4.
 
 ## Carril A ↔ Carril B
 
@@ -84,13 +85,6 @@ Ruta:
 
 `08_CURSOS_PROGRAMAS_Y_TRAYECTORIAS/CIFI3065/POST_F8/U05-H3/`
 
-Documentos canónicos:
-
-- `CIFI3065_POSTF8_U05-H3_RETORNO_B-A_INTEGRADO_v1.0_APROBADO.md`
-- `CIFI3065_POSTF8_U05-H3_REGISTRO_FUENTES_ACERVO_v1.0_APROBADO.md`
-- `CIFI3065_POSTF8_U05-H3_BLT_LECCIONES_TRANSPORTABLES_v1.0_APROBADO.md`
-- `03_METODOLOGIA_Y_FLUJO_DE_TRABAJO/CIFI3065_REGISTRO_EVOLUTIVO_TRANSFERENCIA_METODOLOGICA_v1.2_POST-U05-H3.md`
-
 Aprendizajes post-H3 absorbidos:
 
 - reutilización cognitiva profunda;
@@ -102,30 +96,74 @@ Aprendizajes post-H3 absorbidos:
 
 ### U06/H4
 
-**KIT A→B APROBADO / AUTORIZADA PARA PRODUCCIÓN SITUADA EN CARRIL B.**
+**CERRADA EN CARRIL B / VERIFICADO-SITUADO / RETORNO B→A INTEGRADO.**
 
 Ruta:
 
 `08_CURSOS_PROGRAMAS_Y_TRAYECTORIAS/CIFI3065/POST_F8/U06-H4/`
 
+Documentos canónicos de absorción:
+
+- `CIFI3065_POSTF8_U06-H4_RETORNO_B-A_INTEGRADO_v1.0_APROBADO.md`
+- `CIFI3065_POSTF8_U06-H4_REGISTRO_FUENTES_ACERVO_v1.0_APROBADO.md`
+- `CIFI3065_POSTF8_U06-H4_BLT_LECCIONES_TRANSPORTABLES_v1.0_APROBADO.md`
+- `03_METODOLOGIA_Y_FLUJO_DE_TRABAJO/CIFI3065_REGISTRO_EVOLUTIVO_TRANSFERENCIA_METODOLOGICA_v1.3_POST-U06-H4.md`
+
+Realización absorbida:
+
+`observación → juicio provisional → teorías rivales → evidencia discriminante → cuantificación → balance → contraste de predicciones → juicio revisado → límite`
+
+Laboratorio situado:
+
+**Calcinar, medir, balancear — Calcinación de cobre**.
+
+Distinción crítica:
+
+**masa de la muestra ≠ masa del sistema**.
+
+Aprendizajes post-H4 absorbidos:
+
+- cuantificación progresiva `localizar→extraer→organizar→calcular→comparar→interpretar`;
+- no prefabricar la relación decisiva cuando extraer/organizar datos es parte del objetivo;
+- distinguir parte y sistema cuando la frontera afecta balance/conservación;
+- diferenciar fuente histórica, fuente secundaria, recreación didáctica, datos docentes y materiales sintéticos;
+- reutilizar una misma evidencia mediante operaciones cognitivas distintas;
+- sistema abierto→cerrado como patrón preferente condicionado, no plantilla universal;
+- DME estricto reforzado.
+
+Evidencia situada reconocida pero no portable/versionada como binario:
+
+- videos docentes de calcinación;
+- Foto Ensayo anotado del sistema abierto;
+- Foto Ensayo anotado del sistema cerrado.
+
+### U07/H5
+
+**KIT A→B APROBADO / GO CON CONDICIONES / AUTORIZADA PARA ACTIVACIÓN EN CARRIL B.**
+
+Ruta:
+
+`08_CURSOS_PROGRAMAS_Y_TRAYECTORIAS/CIFI3065/POST_F8/U07-H5/`
+
 Artefactos de activación:
 
-- `CIFI3065_POSTF8_U06-H4_KIT_ACTIVACION_CARRIL_B_v1.0.md`
-- `CIFI3065_POSTF8_U06-H4_PROMPT_INDEPENDIENTE_ACTIVACION_CARRIL_B_v1.0.md`
+- `CIFI3065_POSTF8_U07-H5_KIT_ACTIVACION_CARRIL_B_v1.0.md`
+- `CIFI3065_POSTF8_U07-H5_PROMPT_INDEPENDIENTE_ACTIVACION_CARRIL_B_v1.0.md`
 
 Configuración protegida:
 
-- identidad: **Cuantificación, controversia y evidencia**;
-- FEHE: **Revolución química: del flogisto a Lavoisier**;
-- transformación: `medición comparada → cuantificación de relaciones/balances → contraste de predicciones → juicio sobre evidencia y teoría`;
-- REC4 dominante: `cuantificar`;
-- PROEMA: **Ensayo 2 / ruta de indagación y base de evidencia**, sin reiniciar proyecto ni crear tarea paralela;
-- riesgo: semana de alta densidad, proteger economía cognitiva;
-- puente: `H3 medir/instrumentar → H4 cuantificar/discriminar → H5 datos/relaciones/modelo`.
+- identidad: **De las leyes ponderales a la teoría atómica**;
+- pregunta: **¿Qué regularidades macroscópicas justifican proponer entidades invisibles?**;
+- transformación: `datos de composición/masa/volumen → patrones y razones → generalización empírica → modelo corpuscular → predicción/explicación → límite`;
+- REC5 dominante: **cuantificar/representar**, distinguiendo patrón de datos de inferencia/modelo;
+- núcleo histórico: Proust, Dalton, Gay-Lussac y Avogadro como problemas de evidencia/modelización, no desfile biográfico;
+- PROEMA: organización y profundización de investigación existente, sin ensayo nuevo ni tarea paralela;
+- carga: **295–310 / 360 min**;
+- estado G4: patrón/arquitectura G4-B; datasets y fuentes finales G4-C hasta decisión situada.
 
 Primer movimiento Carril B:
 
-`snapshot main → FEHE H4 → inventario PROEMA → precedente H3 → Mapa de Realización H4 → revisión humana → producción situada`
+`snapshot main → FEHE H5 → Microdiseño/Guion U07 → precedente H4 → inventario fuentes/datasets → experiencia datos→modelo + equivalente accesible → Mapa de Realización H5 → revisión humana → producción situada`
 
 ## Estructura de cartapacios
 
@@ -161,7 +199,7 @@ Regla: **no crear contenido para completar una taxonomía; abrir sólo cuando ex
 
 ### Control maestro
 
-- `00_CONTROL_MAESTRO/ESTADO_MAESTRO_CIFI3065_v21.0.md`
+- `00_CONTROL_MAESTRO/ESTADO_MAESTRO_CIFI3065_v22.0.md`
 - `00_CONTROL_MAESTRO/MANIFEST_CANONICO_CIFI3065_v18.0.md`
 - `00_CONTROL_MAESTRO/CIFI3065_MAPA_RUTA_MAESTRO_F0-F10_v1.0.md`
 
@@ -171,6 +209,7 @@ Regla: **no crear contenido para completar una taxonomía; abrir sólo cuando ex
 - `03_METODOLOGIA_Y_FLUJO_DE_TRABAJO/CIFI3065_REGISTRO_EVOLUTIVO_TRANSFERENCIA_METODOLOGICA_v1.0_ESTABILIZADO_POST-F8.md`
 - `03_METODOLOGIA_Y_FLUJO_DE_TRABAJO/CIFI3065_REGISTRO_EVOLUTIVO_TRANSFERENCIA_METODOLOGICA_v1.1_POST-U04-H2.md`
 - `03_METODOLOGIA_Y_FLUJO_DE_TRABAJO/CIFI3065_REGISTRO_EVOLUTIVO_TRANSFERENCIA_METODOLOGICA_v1.2_POST-U05-H3.md`
+- `03_METODOLOGIA_Y_FLUJO_DE_TRABAJO/CIFI3065_REGISTRO_EVOLUTIVO_TRANSFERENCIA_METODOLOGICA_v1.3_POST-U06-H4.md`
 
 ### Baseline post-F8
 
@@ -189,7 +228,8 @@ Regla: **no crear contenido para completar una taxonomía; abrir sólo cuando ex
 - `08_CURSOS_PROGRAMAS_Y_TRAYECTORIAS/CIFI3065/POST_F8/`
 - H2 cerrado/integrado: `POST_F8/U04-H2/`
 - H3 cerrado/integrado: `POST_F8/U05-H3/`
-- H4 autorizado para producción: `POST_F8/U06-H4/`
+- H4 cerrado/integrado: `POST_F8/U06-H4/`
+- H5 autorizado para activación: `POST_F8/U07-H5/`
 
 ### Genealogía
 
@@ -228,4 +268,4 @@ Leer, en este orden:
 
 ## Próximo movimiento
 
-**Abrir U06/H4 en Carril B desde su Kit/Prompt canónico y comenzar por inventario + Mapa de Realización.**
+**Abrir U07/H5 en Carril B desde su Kit/Prompt canónico y comenzar por snapshot + inventario + Mapa de Realización H5.**
