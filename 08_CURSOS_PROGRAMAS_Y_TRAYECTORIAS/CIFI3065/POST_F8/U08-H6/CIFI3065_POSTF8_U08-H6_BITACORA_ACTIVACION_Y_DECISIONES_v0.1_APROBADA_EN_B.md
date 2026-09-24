@@ -405,3 +405,26 @@ Después de la reflexión:
 **El Paso 1 funciona mejor cuando se entiende como espacio de decisión curricular humano–IA, no como formulario de preproducción.**
 
 Su éxito se mide por cuánto mejora la realización **antes de producir**, no por cuántas páginas documenta.
+
+---
+
+## 18. Cierre de sesión post-Paso 1 / pre-G4-C
+
+Se formaliza pausa de Carril B después del Paso 1 refinado, pulido y alineado.
+
+Artefactos de continuidad:
+
+- `18_DOCUMENTACION_ACTIVA/CIFI3065_CIERRE_SESION_CARRIL_B_U08-H6_POST-PASO1_PRE-G4-C_v1.0.md`;
+- `08_CURSOS_PROGRAMAS_Y_TRAYECTORIAS/CIFI3065/POST_F8/U08-H6/CIFI3065_POSTF8_U08-H6_PROMPT_CONTINUIDAD_POST-PASO1_PRE-G4-C_v1.0.md`.
+
+Estado formal:
+
+**U08/H6 = ACTIVADA EN CARRIL B / PASO 1 APROBADO / PRE-G4-C / SESIÓN PAUSADA.**
+
+Reapertura obligatoria:
+
+`recuperar main → validar cierre/bitácora → G4-C fuentes + corpus + mecánica del laboratorio → revisión humana → sólo entonces F1-Bienvenida`
+
+El cruce momentáneo hacia temas de Carril C fue identificado como mezcla de carriles y no modifica la continuidad de H6.
+
+**Carril B queda pausado, no cerrado.**
