@@ -4,11 +4,11 @@
 
 ## Estado actual del proyecto
 
-**Fecha de corte:** 23 de septiembre de 2026  
+**Fecha de corte:** 2 de octubre de 2026  
 **Fuente versionada de verdad:** GitHub `main`  
 **Nivel:** N3 Avanzado  
 **Caleidoscopio rector:** C4 Integral  
-**Estado global:** **F8 CERRADA — Gate F8→F9 = GO CON CONDICIONES / RATIFICADO — montaje progresivo post-F8 activo — U07/H5 absorbida — U08/H6 autorizada en Carril B — Arquitectura A↔B↔C APROBADA — Carril C autorizado para longitudinales con prioridad PROEMA/E2.**
+**Estado global:** **F8 CERRADA — Gate F8→F9 = GO CON CONDICIONES / RATIFICADO — montaje progresivo post-F8 activo — U08/H6 absorbida y retorno B→A integrado — aplicación H6 externa no bloqueante — Arquitectura A↔B↔C APROBADA — Carril C autorizado para longitudinales con prioridad PROEMA/E2.**
 
 F9 no está activada como fase empírica: requiere evidencia real de estudiantes. Producción, montaje y QA post-F8 preparan F9, pero no constituyen por sí mismos evidencia F9.
 
@@ -78,6 +78,7 @@ No se copia automáticamente nombre de tarea, rúbrica, ponderación, secuencia,
 10. Delta v1.2 POST-U05/H3.
 11. Delta v1.3 POST-U06/H4.
 12. Delta v1.4 POST-U07/H5.
+13. Delta v1.5 POST-U08/H6.
 
 ## Estado de montaje histórico
 
@@ -123,18 +124,24 @@ Movimiento absorbido:
 `datos de composición/masa/volumen → patrones y razones → generalización empírica → modelo corpuscular → predicción/explicación → límite`.
 
 ### U08/H6
-**GO CON CONDICIONES / AUTORIZADA PARA ACTIVACIÓN EN CARRIL B.**
+**CERRADA EN B / MONTADA / VERIFICADA-SITUADA / RETORNO B→A INTEGRADO.**
 
 Ruta: `08_CURSOS_PROGRAMAS_Y_TRAYECTORIAS/CIFI3065/POST_F8/U08-H6/`
 
-Artefactos:
+Artefactos canónicos de absorción:
 
-- `CIFI3065_POSTF8_U08-H6_KIT_ACTIVACION_CARRIL_B_v1.0.md`
-- `CIFI3065_POSTF8_U08-H6_PROMPT_INDEPENDIENTE_ACTIVACION_CARRIL_B_v1.0.md`
+- `CIFI3065_POSTF8_U08-H6_RETORNO_B-A_INTEGRADO_v1.0_APROBADO.md`
+- `CIFI3065_POSTF8_U08-H6_BLT_LECCIONES_TRANSPORTABLES_v1.0_APROBADO.md`
 
-Movimiento protegido:
+Movimiento absorbido:
 
-`modelo corpuscular → lenguaje/representación → clasificación → periodicidad → predicción → límite`.
+`diversidad de sustancias/símbolos/masas → lenguaje común/comparabilidad → estandarización → clasificación → periodicidad → predicción → límite`.
+
+Aplicación interactiva: **EN DESARROLLO EXTERNO / NO BLOQUEANTE**.
+
+Puente siguiente:
+
+`H6 clasificación/periodicidad → H7 composición/valencia/estructura → conectividad → propiedades`.
 
 ## Estado de longitudinales / Carril C
 
@@ -180,7 +187,7 @@ Los demás cartapacios permanecen SUPPORT/LATENT según necesidad verificable. N
 
 ### Control maestro
 
-- `00_CONTROL_MAESTRO/ESTADO_MAESTRO_CIFI3065_v24.0.md`
+- `00_CONTROL_MAESTRO/ESTADO_MAESTRO_CIFI3065_v25.0.md`
 - `00_CONTROL_MAESTRO/MANIFEST_CANONICO_CIFI3065_v18.0.md`
 - `00_CONTROL_MAESTRO/CIFI3065_MAPA_RUTA_MAESTRO_F0-F10_v1.0.md`
 
@@ -188,7 +195,7 @@ Los demás cartapacios permanecen SUPPORT/LATENT según necesidad verificable. N
 
 - `03_METODOLOGIA_Y_FLUJO_DE_TRABAJO/Protocolo_General_Sesion_Concertada_Verificable_v1_1.md`
 - `03_METODOLOGIA_Y_FLUJO_DE_TRABAJO/CIFI3065_ARQUITECTURA_OPERATIVA_TRES_CARRILES_A-B-C_v1.0_APROBADA.md`
-- `03_METODOLOGIA_Y_FLUJO_DE_TRABAJO/CIFI3065_REGISTRO_EVOLUTIVO_TRANSFERENCIA_METODOLOGICA_v1.4_POST-U07-H5.md`
+- `03_METODOLOGIA_Y_FLUJO_DE_TRABAJO/CIFI3065_REGISTRO_EVOLUTIVO_TRANSFERENCIA_METODOLOGICA_v1.5_POST-U08-H6.md`
 
 ### Baseline post-F8
 
@@ -224,6 +231,7 @@ Leer, en este orden:
 
 ## Próximos movimientos
 
-1. **Carril B:** abrir U08/H6 desde su Kit/Prompt y comenzar por snapshot + inventario + Mapa de Realización H6.
-2. **Carril C:** continuar integración longitudinal según su Gate vigente, sin crear una entrega PROEMA paralela en H6.
-3. **Carril A:** recibir y absorber decisiones estructurales/retornos de B y C.
+1. **Carril A:** preparar el Gate U09/H7 recuperando FEHE H7, Microdiseño, Guion G4, retorno H6, BLT H6 y Registro Evolutivo v1.5 antes de autorizar Carril B.
+2. **Carril C:** continuar integración longitudinal según su Gate vigente, sin crear entregas PROEMA paralelas.
+3. **Aplicación H6:** continuar como línea externa no bloqueante; cuando exista prototipo, validar capa operativa, accesibilidad y procedencia sin reabrir arquitectura pedagógica salvo incompatibilidad material.
+4. **F9:** permanece cerrada hasta disponer de evidencia real de estudiantes.
