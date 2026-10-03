@@ -4,11 +4,11 @@
 
 ## Estado actual del proyecto
 
-**Fecha de corte:** 2 de octubre de 2026  
+**Fecha de corte:** 3 de octubre de 2026  
 **Fuente versionada de verdad:** GitHub `main`  
 **Nivel:** N3 Avanzado  
 **Caleidoscopio rector:** C4 Integral  
-**Estado global:** **F8 CERRADA — Gate F8→F9 = GO CON CONDICIONES / RATIFICADO — montaje progresivo post-F8 activo — U08/H6 absorbida y retorno B→A integrado — aplicación H6 externa no bloqueante — Arquitectura A↔B↔C APROBADA — Carril C autorizado para longitudinales con prioridad PROEMA/E2.**
+**Estado global:** **F8 CERRADA — Gate F8→F9 = GO CON CONDICIONES / RATIFICADO — montaje progresivo post-F8 activo — U08/H6 absorbida — U09/H7 autorizada para activación en Carril B — Arquitectura A↔B↔C APROBADA — Carril C longitudinal autorizado.**
 
 F9 no está activada como fase empírica: requiere evidencia real de estudiantes. Producción, montaje y QA post-F8 preparan F9, pero no constituyen por sí mismos evidencia F9.
 
@@ -143,6 +143,26 @@ Puente siguiente:
 
 `H6 clasificación/periodicidad → H7 composición/valencia/estructura → conectividad → propiedades`.
 
+### U09/H7
+**GO CON CONDICIONES / AUTORIZADA PARA ACTIVACIÓN EN CARRIL B.**
+
+Ruta: `08_CURSOS_PROGRAMAS_Y_TRAYECTORIAS/CIFI3065/POST_F8/U09-H7/`
+
+Artefactos de activación:
+
+- `CIFI3065_POSTF8_U09-H7_KIT_ACTIVACION_CARRIL_B_v1.0.md`
+- `CIFI3065_POSTF8_U09-H7_PROMPT_INDEPENDIENTE_ACTIVACION_CARRIL_B_v1.0.md`
+
+Configuración protegida:
+
+`composición elemental → conectividad/valencia → representación estructural → isomería → relación estructura–propiedad → predicción → límite`.
+
+REC7:
+
+**¿Qué predice tu modelo, con qué evidencia lo contrastas y qué rasgo del modelo no debe tomarse literalmente?**
+
+Semana: **amarilla controlada**, con Ensayo PROEMA 3 como síntesis mayor.
+
 ## Estado de longitudinales / Carril C
 
 **GO CON CONDICIONES / AUTORIZADO PARA ACTIVACIÓN.**
@@ -187,7 +207,7 @@ Los demás cartapacios permanecen SUPPORT/LATENT según necesidad verificable. N
 
 ### Control maestro
 
-- `00_CONTROL_MAESTRO/ESTADO_MAESTRO_CIFI3065_v25.0.md`
+- `00_CONTROL_MAESTRO/ESTADO_MAESTRO_CIFI3065_v26.0.md`
 - `00_CONTROL_MAESTRO/MANIFEST_CANONICO_CIFI3065_v18.0.md`
 - `00_CONTROL_MAESTRO/CIFI3065_MAPA_RUTA_MAESTRO_F0-F10_v1.0.md`
 
@@ -231,7 +251,7 @@ Leer, en este orden:
 
 ## Próximos movimientos
 
-1. **Carril A:** preparar el Gate U09/H7 recuperando FEHE H7, Microdiseño, Guion G4, retorno H6, BLT H6 y Registro Evolutivo v1.5 antes de autorizar Carril B.
-2. **Carril C:** continuar integración longitudinal según su Gate vigente, sin crear entregas PROEMA paralelas.
-3. **Aplicación H6:** continuar como línea externa no bloqueante; cuando exista prototipo, validar capa operativa, accesibilidad y procedencia sin reabrir arquitectura pedagógica salvo incompatibilidad material.
+1. **Carril B:** abrir U09/H7 desde su Kit/Prompt y ejecutar snapshot → baseline → inventario → Paso 1 → Mapa de Realización H7; detenerse para revisión humana antes de producción extensa.
+2. **Carril C:** mantener la gobernanza longitudinal de PROEMA; H7 incorpora Ensayo 3 sin transferir esa gobernanza a B.
+3. **Aplicación H6:** continuar como línea externa no bloqueante bajo su especificación funcional.
 4. **F9:** permanece cerrada hasta disponer de evidencia real de estudiantes.
