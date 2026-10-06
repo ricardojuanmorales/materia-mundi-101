@@ -4,7 +4,10 @@ Este cartapacio aloja implementaciones ejecutables y su infraestructura de publi
 
 ## Estructura inicial
 
-- `apps/h6-periodicidad/` — vertical slice / futura aplicación H6.
+- `apps/h6-periodicidad/` — aplicación H6 candidata.
+- `packages/session-portability/` — exportación/importación portable.
+- `packages/state-history/` — historial semántico y undo.
+- `packages/evidence-export/` — exportación de trayectoria/evidencia.
 - `site/` — shell del sitio de aplicaciones de Materia Mundi.
 
 ## Estrategia
