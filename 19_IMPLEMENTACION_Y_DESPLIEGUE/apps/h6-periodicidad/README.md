@@ -1,47 +1,41 @@
-# H6 · Ordenar el archivo — vertical slice
+# H6 · Ordenar el archivo — MVP pedagógico candidato
 
-Estado: **DEV / NO PARA AULA**
-
-Esta aplicación es el primer corte ejecutable del Laboratorio Interactivo H6 de Materia Mundi.
+Estado: **CANDIDATO / NO PARA AULA**
 
 ## Alcance actual
 
 Incluye:
 
-- 8 tarjetas sintéticas;
-- clasificación mediante estado semántico;
-- operación accesible `Mover a…`;
+- Mazo A candidato de 31 registros históricos;
+- Mazo B candidato de 10 registros;
+- masas históricas aproximadas de la tabla de 1871;
+- patrones de grupo históricos;
+- creación de grupos;
+- clasificación accesible con `Mover a…`;
+- serie propuesta con reordenamiento por teclado/botón;
 - declaración de criterio;
-- revelación de una segunda pista;
-- declaración de hueco;
-- predicción previa a contraste;
-- resumen de trayectoria;
-- persistencia en `localStorage`.
+- revelación de segunda evidencia;
+- expansión Mazo B;
+- declaración explícita de hueco;
+- predicción estructurada;
+- contraste histórico posterior con ≈68 y ≈72;
+- reflexión REC6 mínima;
+- resumen copiable/descargable;
+- persistencia local.
 
-Todavía no incluye:
+## Fuentes históricas candidatas
 
-- corpus histórico real;
-- Mazo A/B definitivo;
-- contraste Mendeleev;
-- REC6 completo;
-- drag-and-drop;
-- exportación de archivo;
-- GitHub Pages.
+- Mendeleev, tabla periódica de 1871, Science History Institute.
+- Royal Society of Chemistry, reproducción de la tabla de 1871 y desarrollo de la tabla periódica.
 
-## Ejecutar
+Los patrones de fórmulas de grupo se derivan de los encabezados históricos de la tabla de 1871. Las frases explicativas reconstruidas siguen marcadas como RH/DD y requieren QA.
 
-```bash
-cd 19_IMPLEMENTACION_Y_DESPLIEGUE/apps/h6-periodicidad
-npm install
-npm run dev
-```
+## Pendiente antes de aula
 
-## Compilar
-
-```bash
-npm run build
-```
-
-## Regla de gobernanza
-
-Los datos actuales están rotulados **DEV DATA · NO PARA AULA**. No sustituirlos por datos históricos hasta cerrar QA del corpus H6.
+- validar cada pista de tarjeta;
+- calibrar carga cognitiva;
+- probar descubribilidad del hueco;
+- verificar accesibilidad con usuarios/tecnología asistiva;
+- decidir 68 obligatorio / 72 opcional después de piloto;
+- completar REC6 según la versión final Moodle;
+- revisar copy y duración.
