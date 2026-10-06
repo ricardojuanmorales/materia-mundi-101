@@ -5,7 +5,9 @@ import {
 import { parseHistory, pushHistory, serializeHistory, undoHistory, type HistoryEntry } from '../../../packages/state-history/src'
 import { evidenceMarkdown } from '../../../packages/evidence-export/src'
 import { canTransition, progressOf, transitionLabel } from '../../../packages/pedagogical-flow/src'
+import { activeReveals, feedbackFor } from '../../../packages/reveal-feedback/src'
 import { H6_FLOW } from './flowConfig'
+import { H6_REVEAL_FEEDBACK } from './revealFeedbackConfig'
 import {
   createGroup as engineCreateGroup,
   groupedItems,
@@ -162,6 +164,17 @@ export default function App(){
     },
     reflection:state.reflection,
   }
+
+  const feedbackContext={
+    criterion:state.criterion,
+    seriesLength:state.series.length,
+    gapFrom:state.gapFrom,
+    gapTo:state.gapTo,
+    predictionMass:state.prediction.mass,
+  }
+  const stageFeedback=feedbackFor(H6_REVEAL_FEEDBACK,state.stage,feedbackContext)
+  const revealIds=activeReveals(H6_REVEAL_FEEDBACK,state.stage,feedbackContext)
+  const showSecondClue=state.revealed||revealIds.includes('segunda_pista')
 
   const go=(to:Stage)=>{
     if(!canTransition(H6_FLOW,state.stage,to,flowContext)){
@@ -327,7 +340,7 @@ export default function App(){
           <div className="symbol">{card.symbol}</div><h4>{card.name}</h4>
           <p><strong>Masa histórica aprox.:</strong> {card.mass}</p>
           <p><strong>Pista inicial:</strong> {card.initialClue}</p>
-          {state.revealed&&<p className="reveal"><strong>Nueva evidencia:</strong> {card.revealClue}</p>}
+          {showSecondClue&&<p className="reveal"><strong>Nueva evidencia:</strong> {card.revealClue}</p>}
           <label>Mover a…<select value={state.placements[card.id]} onChange={e=>moveCard(card.id,e.target.value)}>{state.groups.map(g=><option key={g}>{g}</option>)}</select></label>
           {seriesEnabled&&<button className="tertiary" onClick={()=>toggleSeries(card.id)}>{state.series.includes(card.id)?'Quitar de serie':'Añadir a serie'}</button>}
           <details><summary>Procedencia</summary><p>{card.provenance}</p></details>
@@ -355,7 +368,7 @@ export default function App(){
 
     {state.stage==='reveal'&&<section className="panel">
       <p className="eyebrow">Nueva evidencia</p><h2>Tu primera organización ya tiene algo que resistir</h2>
-      <p>Las pistas nuevas no corrigen automáticamente. Pueden confirmar, dividir o deshacer tus grupos.</p>
+      <p>{stageFeedback[0]?.message??'Las pistas nuevas no corrigen automáticamente. Pueden confirmar, dividir o deshacer tus grupos.'}</p>
       <div className="mini-grid">{visibleCards.map(c=><article className="mini-card" key={c.id}><strong>{c.symbol}</strong><span>{c.revealClue}</span></article>)}</div>
       <button onClick={()=>go('reorganize')}>Reorganizar y construir una serie si hace falta</button>
     </section>}
@@ -365,7 +378,7 @@ export default function App(){
 
     {state.stage==='gap'&&<section className="panel narrow">
       <p className="eyebrow">Hueco</p><h2>¿Tu representación necesita algo que no está?</h2>
-      <p>La app no te dirá dónde buscar. Declara un hueco sólo si tu sistema lo vuelve necesario.</p>
+      <p>{stageFeedback[0]?.message??'La app no te dirá dónde buscar. Declara un hueco sólo si tu sistema lo vuelve necesario.'}</p>
       <div className="two-col"><label>Después de<select value={state.gapFrom} onChange={e=>setState(s=>({...s,gapFrom:e.target.value}))}><option value="">Selecciona…</option>{visibleCards.map(c=><option key={c.id} value={c.id}>{c.symbol} · {c.mass}</option>)}</select></label><label>Antes de<select value={state.gapTo} onChange={e=>setState(s=>({...s,gapTo:e.target.value}))}><option value="">Selecciona…</option>{visibleCards.map(c=><option key={c.id} value={c.id}>{c.symbol} · {c.mass}</option>)}</select></label></div>
       <label>¿Por qué ese espacio tiene significado?<textarea rows={5} value={state.gapNote} onChange={e=>setState(s=>({...s,gapNote:e.target.value}))}/></label>
       <button disabled={!state.gapFrom||!state.gapTo||!state.gapNote.trim()} onClick={()=>{if(!canTransition(H6_FLOW,state.stage,'prediction',flowContext)){setAnnouncement('Completa y justifica el hueco antes de avanzar.');return}checkpoint('Registrar hueco');setState(s=>{const next=markGap(classificationOf(s),s.gapFrom,s.gapTo,s.gapNote);return {...applyClassification(s,next),stage:'prediction'}})}}>Registrar hueco</button>
@@ -389,6 +402,7 @@ export default function App(){
         <h3>{item.label}</h3><p><strong>Masa prevista:</strong> {item.predictedMass}</p><p><strong>Relación:</strong> {item.relation}</p><p><strong>Óxido previsto:</strong> {item.predictedOxide}</p><p><strong>Después:</strong> {item.discovered}, masa {item.observedMass}</p><p className="success-note"><strong>Qué funcionó:</strong> {item.success}</p><p className="limit-note"><strong>Qué limita el relato:</strong> {item.limit}</p>
       </article>)}</div>
       <p className="notice"><strong>El sistema también cambió:</strong> {SYSTEM_LIMIT}</p>
+      <p>{stageFeedback[0]?.message??''}</p>
       <details className="source-note"><summary>Procedencia candidata</summary><p>{SOURCE_NOTE}</p></details>
       <button onClick={()=>go('reflection')}>Preparar mi reflexión REC6</button>
     </section>}
