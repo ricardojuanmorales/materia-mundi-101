@@ -1,0 +1,41 @@
+name: H6 MVP CI
+
+on:
+  pull_request:
+    paths:
+      - "19_IMPLEMENTACION_Y_DESPLIEGUE/apps/h6-periodicidad/**"
+      - ".github/workflows/h6-ci.yml"
+  push:
+    branches:
+      - main
+      - "feat/h6-*"
+    paths:
+      - "19_IMPLEMENTACION_Y_DESPLIEGUE/apps/h6-periodicidad/**"
+      - ".github/workflows/h6-ci.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: 19_IMPLEMENTACION_Y_DESPLIEGUE/apps/h6-periodicidad
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: 19_IMPLEMENTACION_Y_DESPLIEGUE/apps/h6-periodicidad/package.json
+
+      - name: Install
+        run: npm install
+
+      - name: Build
+        run: npm run build

@@ -1,0 +1,65 @@
+name: Materia Mundi Pages
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - "19_IMPLEMENTACION_Y_DESPLIEGUE/apps/**"
+      - "19_IMPLEMENTACION_Y_DESPLIEGUE/site/**"
+      - ".github/workflows/pages.yml"
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Install H6 dependencies
+        working-directory: 19_IMPLEMENTACION_Y_DESPLIEGUE/apps/h6-periodicidad
+        run: npm install
+
+      - name: Build H6
+        working-directory: 19_IMPLEMENTACION_Y_DESPLIEGUE/apps/h6-periodicidad
+        run: npm run build
+
+      - name: Assemble Pages site
+        run: |
+          mkdir -p _site/h6
+          cp -R 19_IMPLEMENTACION_Y_DESPLIEGUE/site/. _site/
+          cp -R 19_IMPLEMENTACION_Y_DESPLIEGUE/apps/h6-periodicidad/dist/. _site/h6/
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
