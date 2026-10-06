@@ -1,5 +1,8 @@
 import { useEffect, useMemo, useState } from 'react'
 import {
+  buildPortableSession, downloadPortableText, parsePortableSession, serializePortableSession,
+} from '../../../packages/session-portability/src'
+import {
   DECK_A1, DECK_A2, DECK_B1, DECK_B2, HISTORICAL_CARDS,
   HISTORICAL_CONTRAST, SOURCE_NOTE, SYSTEM_LIMIT,
 } from './historicalData'
@@ -35,12 +38,6 @@ const STORAGE_KEY='materia-mundi:h6:pedagogical-mvp:v0.3'
 const SESSION_APP='materia-mundi:h6-periodicidad'
 const SESSION_FORMAT=1
 
-type PortableSession={
-  app:string
-  formatVersion:number
-  exportedAt:string
-  state:SavedState
-}
 const blankPrediction:Prediction={mass:'',family:'',formula:'',property:'',justification:''}
 const blankReflection:Reflection={changedBy:'',shows:'',hides:'',limit:''}
 const initialPlacements:Placement=Object.fromEntries(DECK_A1.map(c=>[c.id,'Sin clasificar']))
@@ -56,14 +53,8 @@ function loadState():SavedState{
   catch{return initialState}
 }
 
-function downloadFile(filename:string,text:string,type:string){
-  const blob=new Blob([text],{type})
-  const url=URL.createObjectURL(blob)
-  const a=document.createElement('a');a.href=url;a.download=filename;a.click();URL.revokeObjectURL(url)
-}
-
 function downloadText(filename:string,text:string){
-  downloadFile(filename,text,'text/markdown;charset=utf-8')
+  downloadPortableText(filename,text,'text/markdown;charset=utf-8')
 }
 
 function isSavedState(value:unknown):value is SavedState{
@@ -149,35 +140,33 @@ export default function App(){
   })
 
   const exportSession=()=>{
-    const portable:PortableSession={
-      app:SESSION_APP,
-      formatVersion:SESSION_FORMAT,
-      exportedAt:new Date().toISOString(),
-      state,
-    }
+    const portable=buildPortableSession(SESSION_APP,SESSION_FORMAT,state)
     const stamp=new Date().toISOString().slice(0,10)
-    downloadFile(`materia-mundi-h6-sesion-${stamp}.json`,JSON.stringify(portable,null,2),'application/json;charset=utf-8')
+    downloadPortableText(
+      `materia-mundi-h6-sesion-${stamp}.json`,
+      serializePortableSession(portable),
+    )
     setAnnouncement('Sesión exportada. Puedes guardarla y continuar en otro dispositivo.')
   }
 
   const importSession=async(file:File)=>{
-    try{
-      const parsed=JSON.parse(await file.text()) as Partial<PortableSession>
-      if(parsed.app!==SESSION_APP) throw new Error('Este archivo pertenece a otra aplicación.')
-      if(parsed.formatVersion!==SESSION_FORMAT) throw new Error('La versión del archivo no es compatible.')
-      if(!isSavedState(parsed.state)) throw new Error('El estado de la sesión está incompleto o dañado.')
-      const knownIds=new Set(HISTORICAL_CARDS.map(card=>card.id))
-      const unknownCards=Object.keys(parsed.state.placements).filter(id=>!knownIds.has(id))
-      if(unknownCards.length) throw new Error('El archivo contiene tarjetas que esta versión no reconoce.')
-      if(!confirm('Importar reemplazará la sesión actualmente guardada en este navegador. ¿Continuar?')) return
-      setState(parsed.state)
-      localStorage.setItem(STORAGE_KEY,JSON.stringify(parsed.state))
-      setAnnouncement('Sesión importada correctamente. Puedes continuar desde el punto guardado.')
-    }catch(error){
-      const message=error instanceof Error?error.message:'No se pudo leer el archivo.'
-      alert(`No se pudo importar la sesión: ${message}`)
+    const result=parsePortableSession(await file.text(),SESSION_APP,SESSION_FORMAT,isSavedState)
+    if(!result.ok){
+      alert(`No se pudo importar la sesión: ${result.error}`)
       setAnnouncement('La importación no se completó.')
+      return
     }
+    const knownIds=new Set(HISTORICAL_CARDS.map(card=>card.id))
+    const unknownCards=Object.keys(result.state.placements).filter(id=>!knownIds.has(id))
+    if(unknownCards.length){
+      alert('No se pudo importar la sesión: el archivo contiene tarjetas que esta versión no reconoce.')
+      setAnnouncement('La importación no se completó.')
+      return
+    }
+    if(!confirm('Importar reemplazará la sesión actualmente guardada en este navegador. ¿Continuar?')) return
+    setState(result.state)
+    localStorage.setItem(STORAGE_KEY,JSON.stringify(result.state))
+    setAnnouncement('Sesión importada correctamente. Puedes continuar desde el punto guardado.')
   }
 
   const reset=()=>{
