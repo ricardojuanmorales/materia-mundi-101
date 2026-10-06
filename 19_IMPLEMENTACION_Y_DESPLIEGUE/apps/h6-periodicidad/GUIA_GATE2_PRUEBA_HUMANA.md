@@ -1,6 +1,6 @@
 # H6 — Guía mínima de prueba humana Gate 2
 
-Estado: **LISTA PARA EJECUCIÓN**
+Estado: **VALIDADO / Gate 2 PASS**
 
 Objetivo: detectar **sobrecarga cognitiva y fricciones de uso**, no volver a evaluar el contenido histórico.
 
@@ -95,3 +95,19 @@ Fricciones:
 
 Decisión: PASS / PASS CON AJUSTES / FAIL
 ```
+
+
+## Cierre formal
+
+**Gate 2 = PASS**
+
+La prueba humana fue aprobada por validación humana.
+
+Se ratifica que:
+- la entrada es comprensible;
+- la carga 24 + 7 es aceptable para avanzar;
+- grupos y serie cumplen su función sin requerir rediseño inmediato;
+- el hueco puede proponerse sin ser regalado por la interfaz;
+- no se detectó una fricción que justifique ampliar el motor.
+
+Gate 2 queda cerrado y no debe reabrirse salvo evidencia concreta de Gates posteriores.
