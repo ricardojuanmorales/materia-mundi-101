@@ -8,6 +8,7 @@ Este cartapacio aloja implementaciones ejecutables y su infraestructura de publi
 - `packages/session-portability/` — exportación/importación portable.
 - `packages/state-history/` — historial semántico y undo.
 - `packages/evidence-export/` — exportación de trayectoria/evidencia.
+- `packages/classification-engine/` — grupos, pertenencia, relaciones, series y huecos semánticos.
 - `site/` — shell del sitio de aplicaciones de Materia Mundi.
 
 ## Estrategia
