@@ -1,6 +1,6 @@
 # H6 — QA histórico del corpus v0.1
 
-Estado: **PARCIALMENTE VALIDADO / Gate 1 NO CERRADO**
+Estado: **VALIDADO / Gate 1 PASS**
 
 ## Fuentes de control utilizadas
 
@@ -80,8 +80,18 @@ La versión actual se apoya principalmente en masas, fórmulas/patrones y analog
 
 ## Estado del Gate 1
 
-**NO PASS todavía.**
+**PASS.**
 
-La estructura histórica de masas, patrones, huecos y contraste está suficientemente sustentada.
+La estructura histórica de masas, patrones, huecos y contraste quedó validada.
 
-El bloqueo restante es acotado: revisar las frases RH de las 41 tarjetas y ratificar que cada una aporta evidencia sin revelar prematuramente la organización.
+Las 41 pistas interpretativas RH fueron revisadas por aprobación humana y ratificadas **tal como están**.
+
+### Decisión humana de cierre
+- corpus: aprobado como está;
+- pistas iniciales: aprobadas;
+- revelaciones: aprobadas;
+- densidad de pistas: aprobada;
+- poder de descubrimiento: aprobado;
+- corpus de 41 tarjetas: aprobado para avanzar a prueba humana prepíloto.
+
+Gate 1 queda cerrado y no debe reabrirse salvo que Gate 2, 3 o 4 detecte un problema histórico o cognitivo concreto.
