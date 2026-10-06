@@ -1,47 +1,28 @@
-# H6 · Ordenar el archivo — vertical slice
+# H6 · Ordenar el archivo — MVP pedagógico candidato v0.3
 
-Estado: **DEV / NO PARA AULA**
+Estado: **CANDIDATO / NO PARA AULA**
 
-Esta aplicación es el primer corte ejecutable del Laboratorio Interactivo H6 de Materia Mundi.
+## Decisiones humanas ratificadas
 
-## Alcance actual
+1. narrativa de investigador histórico reforzada;
+2. primera entrega reducida a 24 tarjetas y 7 adicionales antes de declarar criterio;
+3. la serie aparece sólo después de declarar criterio;
+4. las pistas iniciales alternan fórmula, masa y relación en lugar de mostrar siempre el mismo tipo de evidencia;
+5. Mazo B entra en dos olas de cinco registros;
+6. el hueco sigue siendo declarado libremente por el estudiante;
+7. predicción exige masa + relación + justificación; fórmula y propiedad son opcionales;
+8. ≈68 sigue siendo el objetivo principal y ≈72 permanece como segundo contraste;
+9. el contraste incluye aciertos, discrepancias y límites del sistema;
+10. la app conserva cuatro preguntas de preparación y Moodle mantiene REC6 formal.
 
-Incluye:
+## Flujo candidato
 
-- 8 tarjetas sintéticas;
-- clasificación mediante estado semántico;
-- operación accesible `Mover a…`;
-- declaración de criterio;
-- revelación de una segunda pista;
-- declaración de hueco;
-- predicción previa a contraste;
-- resumen de trayectoria;
-- persistencia en `localStorage`.
+`24 registros → +7 → criterio → revelación → reorganización/serie → B1 (5) → reorganización → B2 (5) → reorganización → hueco → predicción → contraste → preparación REC6 → resumen`
 
-Todavía no incluye:
+## Fuentes históricas candidatas
 
-- corpus histórico real;
-- Mazo A/B definitivo;
-- contraste Mendeleev;
-- REC6 completo;
-- drag-and-drop;
-- exportación de archivo;
-- GitHub Pages.
+- tabla de Mendeleev de 1871;
+- Royal Society of Chemistry, materiales sobre la periodicidad y comparación eka-aluminio/galio;
+- Science History Institute, historia de las predicciones de Mendeleev.
 
-## Ejecutar
-
-```bash
-cd 19_IMPLEMENTACION_Y_DESPLIEGUE/apps/h6-periodicidad
-npm install
-npm run dev
-```
-
-## Compilar
-
-```bash
-npm run build
-```
-
-## Regla de gobernanza
-
-Los datos actuales están rotulados **DEV DATA · NO PARA AULA**. No sustituirlos por datos históricos hasta cerrar QA del corpus H6.
+Las pistas marcadas FH/RH todavía requieren QA tarjeta por tarjeta antes de distribución a estudiantes.
