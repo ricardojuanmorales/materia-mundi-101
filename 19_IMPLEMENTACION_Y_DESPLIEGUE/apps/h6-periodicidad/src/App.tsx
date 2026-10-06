@@ -5,6 +5,16 @@ import {
 import { parseHistory, pushHistory, serializeHistory, undoHistory, type HistoryEntry } from '../../../packages/state-history/src'
 import { evidenceMarkdown } from '../../../packages/evidence-export/src'
 import {
+  createGroup as engineCreateGroup,
+  groupedItems,
+  markGap,
+  moveItem,
+  reorderSeries,
+  toggleSeriesItem,
+  type ClassificationState,
+  type SemanticRelation,
+} from '../../../packages/classification-engine/src'
+import {
   DECK_A1, DECK_A2, DECK_B1, DECK_B2, HISTORICAL_CARDS,
   HISTORICAL_CONTRAST, SOURCE_NOTE, SYSTEM_LIMIT,
 } from './historicalData'
@@ -29,6 +39,7 @@ type SavedState = {
   b1Loaded:boolean
   b2Loaded:boolean
   series:string[]
+  relations:SemanticRelation[]
   gapFrom:string
   gapTo:string
   gapNote:string
@@ -48,12 +59,24 @@ const initialPlacements:Placement=Object.fromEntries(DECK_A1.map(c=>[c.id,'Sin c
 const initialState:SavedState={
   stage:'intro',placements:initialPlacements,groups:['Sin clasificar','Grupo A','Grupo B','Grupo C'],
   criterion:'',criterionNote:'',revealed:false,a2Loaded:false,b1Loaded:false,b2Loaded:false,
-  series:[],gapFrom:'',gapTo:'',gapNote:'',prediction:blankPrediction,reflection:blankReflection,
+  series:[],relations:[],gapFrom:'',gapTo:'',gapNote:'',prediction:blankPrediction,reflection:blankReflection,
+}
+
+function normalizeState(value:Partial<SavedState>):SavedState{
+  return {...initialState,...value,relations:Array.isArray(value.relations)?value.relations:[]}
 }
 
 function loadState():SavedState{
-  try{const raw=localStorage.getItem(STORAGE_KEY);return raw?{...initialState,...JSON.parse(raw)}:initialState}
+  try{const raw=localStorage.getItem(STORAGE_KEY);return raw?normalizeState(JSON.parse(raw)):initialState}
   catch{return initialState}
+}
+
+function classificationOf(s:SavedState):ClassificationState{
+  return {groups:s.groups,placements:s.placements,series:s.series,relations:s.relations}
+}
+
+function applyClassification(s:SavedState,next:ClassificationState):SavedState{
+  return {...s,groups:next.groups,placements:next.placements,series:next.series,relations:next.relations}
 }
 
 function downloadText(filename:string,text:string){
@@ -115,9 +138,12 @@ export default function App(){
     return false
   }),[state.a2Loaded,state.b1Loaded,state.b2Loaded])
 
-  const grouped=useMemo(()=>state.groups.map(group=>({
-    group,cards:visibleCards.filter(card=>state.placements[card.id]===group)
-  })),[state.groups,state.placements,visibleCards])
+  const grouped=useMemo(
+    ()=>groupedItems(classificationOf(state),visibleCards.map(card=>card.id)).map(({group,items})=>({
+      group,cards:items.map(id=>visibleCards.find(card=>card.id===id)!).filter(Boolean),
+    })),
+    [state.groups,state.placements,state.series,state.relations,visibleCards],
+  )
 
   const seriesEnabled=state.revealed
   const workspaceStage=['archive1','archive2','reorganize','reorganizeB1','reorganizeB2'].includes(state.stage)
@@ -129,14 +155,14 @@ export default function App(){
   const moveCard=(cardId:string,group:string)=>{
     const card=HISTORICAL_CARDS.find(c=>c.id===cardId)
     checkpoint(`Mover ${card?.symbol??cardId} a ${group}`)
-    setState(s=>({...s,placements:{...s.placements,[cardId]:group}}))
+    setState(s=>applyClassification(s,moveItem(classificationOf(s),cardId,group)))
     setAnnouncement(`${card?.name??'Tarjeta'} movida a ${group}.`)
   }
 
   const createGroup=()=>{
     const label=newGroup.trim();if(!label||state.groups.includes(label))return
     checkpoint(`Crear grupo ${label}`)
-    setState(s=>({...s,groups:[...s.groups,label]}));setNewGroup('');setAnnouncement(`Grupo ${label} creado.`)
+    setState(s=>applyClassification(s,engineCreateGroup(classificationOf(s),label)));setNewGroup('');setAnnouncement(`Grupo ${label} creado.`)
   }
 
   const addWave=(wave:'A2'|'B1'|'B2')=>{
@@ -155,14 +181,11 @@ export default function App(){
 
   const toggleSeries=(id:string)=>{
     checkpoint(`${state.series.includes(id)?'Quitar':'Añadir'} ${id} de la serie`)
-    setState(s=>({...s,series:s.series.includes(id)?s.series.filter(x=>x!==id):[...s.series,id]}))
+    setState(s=>applyClassification(s,toggleSeriesItem(classificationOf(s),id)))
   }
   const moveSeries=(i:number,d:number)=>{
     checkpoint('Reordenar serie propuesta')
-    setState(s=>{
-    const next=[...s.series],target=i+d;if(target<0||target>=next.length)return s
-    ;[next[i],next[target]]=[next[target],next[i]];return{...s,series:next}
-    })
+    setState(s=>applyClassification(s,reorderSeries(classificationOf(s),i,d)))
   }
 
   const exportSession=()=>{
@@ -192,8 +215,9 @@ export default function App(){
     if(!confirm('Importar reemplazará la sesión actualmente guardada en este navegador. ¿Continuar?')) return
     setHistory([])
     localStorage.removeItem(HISTORY_KEY)
-    setState(result.state)
-    localStorage.setItem(STORAGE_KEY,JSON.stringify(result.state))
+    const restored=normalizeState(result.state)
+    setState(restored)
+    localStorage.setItem(STORAGE_KEY,JSON.stringify(restored))
     setAnnouncement('Sesión importada correctamente. Puedes continuar desde el punto guardado.')
   }
 
@@ -210,6 +234,7 @@ export default function App(){
     [
       {heading:'Criterio',body:`${state.criterion}\n${state.criterionNote}`},
       {heading:'Serie propuesta',body:state.series.join(' → ')||'No se construyó una serie.'},
+      {heading:'Relaciones semánticas registradas',body:state.relations.length?state.relations.map(r=>`- ${r.type}: ${r.source}${r.target?` → ${r.target}`:''}${r.group?` @ ${r.group}`:''}`).join('\n'):'No registradas.'},
       {heading:'Hueco',body:`${state.gapFrom} → [ ? ] → ${state.gapTo}\n${state.gapNote}`},
       {heading:'Predicción',body:`Masa: ${state.prediction.mass}\nRelación: ${state.prediction.family}\nFórmula: ${state.prediction.formula||'—'}\nPropiedad: ${state.prediction.property||'—'}\nJustificación: ${state.prediction.justification}`},
       {heading:'Reflexión para REC6',body:`Evidencia que cambió mi organización: ${state.reflection.changedBy}\nQué muestra: ${state.reflection.shows}\nQué simplifica u oculta: ${state.reflection.hides}\nQué todavía no explica: ${state.reflection.limit}`},
@@ -317,7 +342,7 @@ export default function App(){
       <p>La app no te dirá dónde buscar. Declara un hueco sólo si tu sistema lo vuelve necesario.</p>
       <div className="two-col"><label>Después de<select value={state.gapFrom} onChange={e=>setState(s=>({...s,gapFrom:e.target.value}))}><option value="">Selecciona…</option>{visibleCards.map(c=><option key={c.id} value={c.id}>{c.symbol} · {c.mass}</option>)}</select></label><label>Antes de<select value={state.gapTo} onChange={e=>setState(s=>({...s,gapTo:e.target.value}))}><option value="">Selecciona…</option>{visibleCards.map(c=><option key={c.id} value={c.id}>{c.symbol} · {c.mass}</option>)}</select></label></div>
       <label>¿Por qué ese espacio tiene significado?<textarea rows={5} value={state.gapNote} onChange={e=>setState(s=>({...s,gapNote:e.target.value}))}/></label>
-      <button disabled={!state.gapFrom||!state.gapTo||!state.gapNote.trim()} onClick={()=>{checkpoint('Registrar hueco');setState(s=>({...s,stage:'prediction'}))}}>Registrar hueco</button>
+      <button disabled={!state.gapFrom||!state.gapTo||!state.gapNote.trim()} onClick={()=>{checkpoint('Registrar hueco');setState(s=>{const next=markGap(classificationOf(s),s.gapFrom,s.gapTo,s.gapNote);return {...applyClassification(s,next),stage:'prediction'}})}}>Registrar hueco</button>
     </section>}
 
     {state.stage==='prediction'&&<section className="panel narrow">
