@@ -9,7 +9,8 @@ Este cartapacio aloja implementaciones ejecutables y su infraestructura de publi
 - `packages/state-history/` — historial semántico y undo.
 - `packages/evidence-export/` — exportación de trayectoria/evidencia.
 - `packages/classification-engine/` — grupos, pertenencia, relaciones, series y huecos semánticos.
-- `packages/pedagogical-flow/` — etapas, transiciones, Gates y revelaciones configurables.
+- `packages/pedagogical-flow/` — etapas, transiciones y Gates configurables.
+- `packages/reveal-feedback/` — revelaciones y feedback contextual sin corrección prematura.
 - `site/` — shell del sitio de aplicaciones de Materia Mundi.
 
 ## Estrategia
