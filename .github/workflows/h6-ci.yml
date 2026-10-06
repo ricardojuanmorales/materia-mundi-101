@@ -9,6 +9,7 @@ on:
       - "19_IMPLEMENTACION_Y_DESPLIEGUE/packages/evidence-export/**"
       - "19_IMPLEMENTACION_Y_DESPLIEGUE/packages/classification-engine/**"
       - "19_IMPLEMENTACION_Y_DESPLIEGUE/packages/pedagogical-flow/**"
+      - "19_IMPLEMENTACION_Y_DESPLIEGUE/packages/reveal-feedback/**"
       - ".github/workflows/h6-ci.yml"
   push:
     paths:
@@ -18,6 +19,7 @@ on:
       - "19_IMPLEMENTACION_Y_DESPLIEGUE/packages/evidence-export/**"
       - "19_IMPLEMENTACION_Y_DESPLIEGUE/packages/classification-engine/**"
       - "19_IMPLEMENTACION_Y_DESPLIEGUE/packages/pedagogical-flow/**"
+      - "19_IMPLEMENTACION_Y_DESPLIEGUE/packages/reveal-feedback/**"
       - ".github/workflows/h6-ci.yml"
 
 permissions:
