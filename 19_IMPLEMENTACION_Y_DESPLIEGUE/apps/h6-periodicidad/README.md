@@ -1,41 +1,28 @@
-# H6 · Ordenar el archivo — MVP pedagógico candidato
+# H6 · Ordenar el archivo — MVP pedagógico candidato v0.3
 
 Estado: **CANDIDATO / NO PARA AULA**
 
-## Alcance actual
+## Decisiones humanas ratificadas
 
-Incluye:
+1. narrativa de investigador histórico reforzada;
+2. primera entrega reducida a 24 tarjetas y 7 adicionales antes de declarar criterio;
+3. la serie aparece sólo después de declarar criterio;
+4. las pistas iniciales alternan fórmula, masa y relación en lugar de mostrar siempre el mismo tipo de evidencia;
+5. Mazo B entra en dos olas de cinco registros;
+6. el hueco sigue siendo declarado libremente por el estudiante;
+7. predicción exige masa + relación + justificación; fórmula y propiedad son opcionales;
+8. ≈68 sigue siendo el objetivo principal y ≈72 permanece como segundo contraste;
+9. el contraste incluye aciertos, discrepancias y límites del sistema;
+10. la app conserva cuatro preguntas de preparación y Moodle mantiene REC6 formal.
 
-- Mazo A candidato de 31 registros históricos;
-- Mazo B candidato de 10 registros;
-- masas históricas aproximadas de la tabla de 1871;
-- patrones de grupo históricos;
-- creación de grupos;
-- clasificación accesible con `Mover a…`;
-- serie propuesta con reordenamiento por teclado/botón;
-- declaración de criterio;
-- revelación de segunda evidencia;
-- expansión Mazo B;
-- declaración explícita de hueco;
-- predicción estructurada;
-- contraste histórico posterior con ≈68 y ≈72;
-- reflexión REC6 mínima;
-- resumen copiable/descargable;
-- persistencia local.
+## Flujo candidato
+
+`24 registros → +7 → criterio → revelación → reorganización/serie → B1 (5) → reorganización → B2 (5) → reorganización → hueco → predicción → contraste → preparación REC6 → resumen`
 
 ## Fuentes históricas candidatas
 
-- Mendeleev, tabla periódica de 1871, Science History Institute.
-- Royal Society of Chemistry, reproducción de la tabla de 1871 y desarrollo de la tabla periódica.
+- tabla de Mendeleev de 1871;
+- Royal Society of Chemistry, materiales sobre la periodicidad y comparación eka-aluminio/galio;
+- Science History Institute, historia de las predicciones de Mendeleev.
 
-Los patrones de fórmulas de grupo se derivan de los encabezados históricos de la tabla de 1871. Las frases explicativas reconstruidas siguen marcadas como RH/DD y requieren QA.
-
-## Pendiente antes de aula
-
-- validar cada pista de tarjeta;
-- calibrar carga cognitiva;
-- probar descubribilidad del hueco;
-- verificar accesibilidad con usuarios/tecnología asistiva;
-- decidir 68 obligatorio / 72 opcional después de piloto;
-- completar REC6 según la versión final Moodle;
-- revisar copy y duración.
+Las pistas marcadas FH/RH todavía requieren QA tarjeta por tarjeta antes de distribución a estudiantes.
