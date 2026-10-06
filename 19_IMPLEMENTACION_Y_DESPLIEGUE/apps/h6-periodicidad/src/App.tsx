@@ -4,6 +4,8 @@ import {
 } from '../../../packages/session-portability/src'
 import { parseHistory, pushHistory, serializeHistory, undoHistory, type HistoryEntry } from '../../../packages/state-history/src'
 import { evidenceMarkdown } from '../../../packages/evidence-export/src'
+import { canTransition, progressOf, transitionLabel } from '../../../packages/pedagogical-flow/src'
+import { H6_FLOW } from './flowConfig'
 import {
   createGroup as engineCreateGroup,
   groupedItems,
@@ -147,9 +149,28 @@ export default function App(){
 
   const seriesEnabled=state.revealed
   const workspaceStage=['archive1','archive2','reorganize','reorganizeB1','reorganizeB2'].includes(state.stage)
-  const progress:Record<Stage,number>={
-    intro:0,archive1:1,archive2:2,criterion:3,reveal:4,reorganize:5,
-    deckB1:6,reorganizeB1:7,deckB2:8,reorganizeB2:9,gap:10,prediction:11,contrast:12,reflection:13,summary:14,
+  const flowContext={
+    criterion:state.criterion,
+    criterionNote:state.criterionNote,
+    gapFrom:state.gapFrom,
+    gapTo:state.gapTo,
+    gapNote:state.gapNote,
+    prediction:{
+      mass:state.prediction.mass,
+      family:state.prediction.family,
+      justification:state.prediction.justification,
+    },
+    reflection:state.reflection,
+  }
+
+  const go=(to:Stage)=>{
+    if(!canTransition(H6_FLOW,state.stage,to,flowContext)){
+      setAnnouncement('Todavía falta completar la evidencia requerida para avanzar.')
+      return
+    }
+    const label=transitionLabel(H6_FLOW,state.stage,to)??`Avanzar a ${to}`
+    checkpoint(label)
+    setState(s=>({...s,stage:to}))
   }
 
   const moveCard=(cardId:string,group:string)=>{
@@ -166,7 +187,12 @@ export default function App(){
   }
 
   const addWave=(wave:'A2'|'B1'|'B2')=>{
-    checkpoint(`Incorporar ${wave}`)
+    const target:Stage=wave==='A2'?'archive2':wave==='B1'?'reorganizeB1':'reorganizeB2'
+    if(!canTransition(H6_FLOW,state.stage,target,flowContext)){
+      setAnnouncement('Esta transición todavía no está disponible.')
+      return
+    }
+    checkpoint(transitionLabel(H6_FLOW,state.stage,target)??`Incorporar ${wave}`)
     const cards=wave==='A2'?DECK_A2:wave==='B1'?DECK_B1:DECK_B2
     const added=Object.fromEntries(cards.map(c=>[c.id,'Sin clasificar']))
     setState(s=>({
@@ -174,7 +200,7 @@ export default function App(){
       a2Loaded:wave==='A2'?true:s.a2Loaded,
       b1Loaded:wave==='B1'?true:s.b1Loaded,
       b2Loaded:wave==='B2'?true:s.b2Loaded,
-      stage:wave==='A2'?'archive2':wave==='B1'?'reorganizeB1':'reorganizeB2',
+      stage:target,
     }))
     setAnnouncement(`${cards.length} registros nuevos incorporados.`)
   }
@@ -246,7 +272,7 @@ export default function App(){
     <p className="dev-banner">MVP PEDAGÓGICO CANDIDATO · NO PARA AULA</p>
     <header className="topbar">
       <div><p className="eyebrow">CIFI 3065 Virtual · Materia Mundi</p><h1>H6 · Ordenar el archivo</h1></div>
-      <div className="progress" aria-label={`Progreso ${progress[state.stage]} de 14`}>{progress[state.stage]}/14</div>
+      <div className="progress" aria-label={`Progreso ${progressOf(H6_FLOW,state.stage)} de 14`}>{progressOf(H6_FLOW,state.stage)}/14</div>
     </header>
     <div className="sr-only" aria-live="polite">{announcement}</div>
 
@@ -278,7 +304,7 @@ export default function App(){
       <h2>El archivo no viene ordenado. La hipótesis tampoco.</h2>
       <p>Actúas como investigador ante un conjunto de masas, fórmulas y semejanzas químicas del siglo XIX. No conoces todavía una explicación moderna del patrón. Tu tarea es construir una representación útil, someterla a nueva evidencia y decidir si el archivo sugiere algo que aún no está allí.</p>
       <ul><li>Clasifica con un criterio que puedas explicar.</li><li>Reorganiza cuando la evidencia lo exija.</li><li>Deja registros pendientes si no encajan.</li><li>Predice antes de conocer el contraste histórico.</li></ul>
-      <button onClick={()=>{checkpoint('Abrir expediente');setState(s=>({...s,stage:'archive1'}))}}>Abrir el expediente</button>
+      <button onClick={()=>go('archive1')}>Abrir el expediente</button>
     </section>}
 
     {workspaceStage&&<section className="panel">
@@ -314,24 +340,24 @@ export default function App(){
       </section>}
 
       {state.stage==='archive1'&&<button onClick={()=>addWave('A2')}>Incorporar 7 registros antes de fijar criterio</button>}
-      {state.stage==='archive2'&&<button onClick={()=>{checkpoint('Declarar criterio');setState(s=>({...s,stage:'criterion'}))}}>Declarar mi criterio</button>}
-      {state.stage==='reorganize'&&<button onClick={()=>{checkpoint('Pasar a Mazo B');setState(s=>({...s,stage:'deckB1'}))}}>Poner a prueba mi sistema</button>}
-      {state.stage==='reorganizeB1'&&<button onClick={()=>{checkpoint('Pasar a segunda ola B');setState(s=>({...s,stage:'deckB2'}))}}>Continuar con una segunda presión</button>}
-      {state.stage==='reorganizeB2'&&<button onClick={()=>{checkpoint('Buscar hueco');setState(s=>({...s,stage:'gap'}))}}>Buscar una ausencia significativa</button>}
+      {state.stage==='archive2'&&<button onClick={()=>go('criterion')}>Declarar mi criterio</button>}
+      {state.stage==='reorganize'&&<button onClick={()=>go('deckB1')}>Poner a prueba mi sistema</button>}
+      {state.stage==='reorganizeB1'&&<button onClick={()=>go('deckB2')}>Continuar con una segunda presión</button>}
+      {state.stage==='reorganizeB2'&&<button onClick={()=>go('gap')}>Buscar una ausencia significativa</button>}
     </section>}
 
     {state.stage==='criterion'&&<section className="panel narrow">
       <p className="eyebrow">Criterio</p><h2>¿Qué intentas conservar?</h2>
       <label>Criterio principal<select value={state.criterion} onChange={e=>setState(s=>({...s,criterion:e.target.value}))}><option value="">Selecciona…</option><option>Masa</option><option>Semejanza química</option><option>Fórmulas o patrones de compuestos</option><option>Otro</option></select></label>
       <label>Explícalo brevemente<textarea rows={5} value={state.criterionNote} onChange={e=>setState(s=>({...s,criterionNote:e.target.value}))}/></label>
-      <button disabled={!state.criterion||!state.criterionNote.trim()} onClick={()=>{checkpoint('Registrar criterio');setState(s=>({...s,stage:'reveal',revealed:true}))}}>Registrar criterio y recibir nueva evidencia</button>
+      <button disabled={!state.criterion||!state.criterionNote.trim()} onClick={()=>{if(canTransition(H6_FLOW,state.stage,'reveal',flowContext)){checkpoint('Registrar criterio');setState(s=>({...s,stage:'reveal',revealed:true}))}else setAnnouncement('Completa el criterio y su explicación antes de avanzar.')}}>Registrar criterio y recibir nueva evidencia</button>
     </section>}
 
     {state.stage==='reveal'&&<section className="panel">
       <p className="eyebrow">Nueva evidencia</p><h2>Tu primera organización ya tiene algo que resistir</h2>
       <p>Las pistas nuevas no corrigen automáticamente. Pueden confirmar, dividir o deshacer tus grupos.</p>
       <div className="mini-grid">{visibleCards.map(c=><article className="mini-card" key={c.id}><strong>{c.symbol}</strong><span>{c.revealClue}</span></article>)}</div>
-      <button onClick={()=>{checkpoint('Abrir reorganización');setState(s=>({...s,stage:'reorganize'}))}}>Reorganizar y construir una serie si hace falta</button>
+      <button onClick={()=>go('reorganize')}>Reorganizar y construir una serie si hace falta</button>
     </section>}
 
     {state.stage==='deckB1'&&<section className="panel narrow"><p className="eyebrow">Mazo B · ola 1</p><h2>Cinco registros nuevos</h2><p>Fe, Co, Ni, Cu y Ag añaden casos donde una regla simple puede dejar de bastar.</p><button onClick={()=>addWave('B1')}>Incorporar primera ola</button></section>}
@@ -342,7 +368,7 @@ export default function App(){
       <p>La app no te dirá dónde buscar. Declara un hueco sólo si tu sistema lo vuelve necesario.</p>
       <div className="two-col"><label>Después de<select value={state.gapFrom} onChange={e=>setState(s=>({...s,gapFrom:e.target.value}))}><option value="">Selecciona…</option>{visibleCards.map(c=><option key={c.id} value={c.id}>{c.symbol} · {c.mass}</option>)}</select></label><label>Antes de<select value={state.gapTo} onChange={e=>setState(s=>({...s,gapTo:e.target.value}))}><option value="">Selecciona…</option>{visibleCards.map(c=><option key={c.id} value={c.id}>{c.symbol} · {c.mass}</option>)}</select></label></div>
       <label>¿Por qué ese espacio tiene significado?<textarea rows={5} value={state.gapNote} onChange={e=>setState(s=>({...s,gapNote:e.target.value}))}/></label>
-      <button disabled={!state.gapFrom||!state.gapTo||!state.gapNote.trim()} onClick={()=>{checkpoint('Registrar hueco');setState(s=>{const next=markGap(classificationOf(s),s.gapFrom,s.gapTo,s.gapNote);return {...applyClassification(s,next),stage:'prediction'}})}}>Registrar hueco</button>
+      <button disabled={!state.gapFrom||!state.gapTo||!state.gapNote.trim()} onClick={()=>{if(!canTransition(H6_FLOW,state.stage,'prediction',flowContext)){setAnnouncement('Completa y justifica el hueco antes de avanzar.');return}checkpoint('Registrar hueco');setState(s=>{const next=markGap(classificationOf(s),s.gapFrom,s.gapTo,s.gapNote);return {...applyClassification(s,next),stage:'prediction'}})}}>Registrar hueco</button>
     </section>}
 
     {state.stage==='prediction'&&<section className="panel narrow">
@@ -354,7 +380,7 @@ export default function App(){
         <label>Propiedad esperada, opcional<input value={state.prediction.property} onChange={e=>setState(s=>({...s,prediction:{...s.prediction,property:e.target.value}}))}/></label>
       </div>
       <label>Justificación *<textarea rows={6} value={state.prediction.justification} onChange={e=>setState(s=>({...s,prediction:{...s.prediction,justification:e.target.value}}))}/></label>
-      <button disabled={!state.prediction.mass.trim()||!state.prediction.family.trim()||!state.prediction.justification.trim()} onClick={()=>{checkpoint('Congelar predicción');setState(s=>({...s,stage:'contrast'}))}}>Congelar predicción y abrir contraste</button>
+      <button disabled={!state.prediction.mass.trim()||!state.prediction.family.trim()||!state.prediction.justification.trim()} onClick={()=>go('contrast')}>Congelar predicción y abrir contraste</button>
     </section>}
 
     {state.stage==='contrast'&&<section className="panel">
@@ -364,7 +390,7 @@ export default function App(){
       </article>)}</div>
       <p className="notice"><strong>El sistema también cambió:</strong> {SYSTEM_LIMIT}</p>
       <details className="source-note"><summary>Procedencia candidata</summary><p>{SOURCE_NOTE}</p></details>
-      <button onClick={()=>{checkpoint('Abrir reflexión REC6');setState(s=>({...s,stage:'reflection'}))}}>Preparar mi reflexión REC6</button>
+      <button onClick={()=>go('reflection')}>Preparar mi reflexión REC6</button>
     </section>}
 
     {state.stage==='reflection'&&<section className="panel narrow">
@@ -374,7 +400,7 @@ export default function App(){
       <label>¿Qué muestra tu representación?<textarea rows={4} value={state.reflection.shows} onChange={e=>setState(s=>({...s,reflection:{...s.reflection,shows:e.target.value}}))}/></label>
       <label>¿Qué simplifica u oculta?<textarea rows={4} value={state.reflection.hides} onChange={e=>setState(s=>({...s,reflection:{...s.reflection,hides:e.target.value}}))}/></label>
       <label>¿Qué todavía no explica?<textarea rows={4} value={state.reflection.limit} onChange={e=>setState(s=>({...s,reflection:{...s.reflection,limit:e.target.value}}))}/></label>
-      <button disabled={Object.values(state.reflection).some(v=>!v.trim())} onClick={()=>{checkpoint('Generar recorrido');setState(s=>({...s,stage:'summary'}))}}>Generar recorrido para Moodle</button>
+      <button disabled={Object.values(state.reflection).some(v=>!v.trim())} onClick={()=>go('summary')}>Generar recorrido para Moodle</button>
     </section>}
 
     {state.stage==='summary'&&<section className="panel">
