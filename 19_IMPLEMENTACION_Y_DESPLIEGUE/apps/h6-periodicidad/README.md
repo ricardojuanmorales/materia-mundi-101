@@ -26,3 +26,17 @@ Estado: **CANDIDATO / NO PARA AULA**
 - Science History Institute, historia de las predicciones de Mendeleev.
 
 Las pistas marcadas FH/RH todavía requieren QA tarjeta por tarjeta antes de distribución a estudiantes.
+
+
+## Continuidad entre dispositivos
+
+La sesión puede exportarse como JSON portable desde cualquier etapa y volver a importarse en otro navegador/computadora.
+
+El paquete contiene:
+
+- identificador de aplicación;
+- versión de formato;
+- fecha de exportación;
+- estado pedagógico completo de la investigación.
+
+La importación valida aplicación, versión, estructura básica del estado y tarjetas conocidas antes de reemplazar el estado local. No requiere cuenta, backend ni datos personales.
