@@ -32,6 +32,15 @@ type SavedState = {
 }
 
 const STORAGE_KEY='materia-mundi:h6:pedagogical-mvp:v0.3'
+const SESSION_APP='materia-mundi:h6-periodicidad'
+const SESSION_FORMAT=1
+
+type PortableSession={
+  app:string
+  formatVersion:number
+  exportedAt:string
+  state:SavedState
+}
 const blankPrediction:Prediction={mass:'',family:'',formula:'',property:'',justification:''}
 const blankReflection:Reflection={changedBy:'',shows:'',hides:'',limit:''}
 const initialPlacements:Placement=Object.fromEntries(DECK_A1.map(c=>[c.id,'Sin clasificar']))
@@ -47,10 +56,40 @@ function loadState():SavedState{
   catch{return initialState}
 }
 
-function downloadText(filename:string,text:string){
-  const blob=new Blob([text],{type:'text/markdown;charset=utf-8'})
+function downloadFile(filename:string,text:string,type:string){
+  const blob=new Blob([text],{type})
   const url=URL.createObjectURL(blob)
   const a=document.createElement('a');a.href=url;a.download=filename;a.click();URL.revokeObjectURL(url)
+}
+
+function downloadText(filename:string,text:string){
+  downloadFile(filename,text,'text/markdown;charset=utf-8')
+}
+
+function isSavedState(value:unknown):value is SavedState{
+  if(!value||typeof value!=='object') return false
+  const s=value as Partial<SavedState>
+  const validStages:Stage[]=[
+    'intro','archive1','archive2','criterion','reveal','reorganize','deckB1','reorganizeB1',
+    'deckB2','reorganizeB2','gap','prediction','contrast','reflection','summary'
+  ]
+  return !!(
+    s.stage&&validStages.includes(s.stage) &&
+    s.placements&&typeof s.placements==='object' &&
+    Array.isArray(s.groups) &&
+    typeof s.criterion==='string' &&
+    typeof s.criterionNote==='string' &&
+    typeof s.revealed==='boolean' &&
+    typeof s.a2Loaded==='boolean' &&
+    typeof s.b1Loaded==='boolean' &&
+    typeof s.b2Loaded==='boolean' &&
+    Array.isArray(s.series) &&
+    typeof s.gapFrom==='string' &&
+    typeof s.gapTo==='string' &&
+    typeof s.gapNote==='string' &&
+    s.prediction&&typeof s.prediction==='object' &&
+    s.reflection&&typeof s.reflection==='object'
+  )
 }
 
 export default function App(){
@@ -109,6 +148,38 @@ export default function App(){
     ;[next[i],next[target]]=[next[target],next[i]];return{...s,series:next}
   })
 
+  const exportSession=()=>{
+    const portable:PortableSession={
+      app:SESSION_APP,
+      formatVersion:SESSION_FORMAT,
+      exportedAt:new Date().toISOString(),
+      state,
+    }
+    const stamp=new Date().toISOString().slice(0,10)
+    downloadFile(`materia-mundi-h6-sesion-${stamp}.json`,JSON.stringify(portable,null,2),'application/json;charset=utf-8')
+    setAnnouncement('Sesión exportada. Puedes guardarla y continuar en otro dispositivo.')
+  }
+
+  const importSession=async(file:File)=>{
+    try{
+      const parsed=JSON.parse(await file.text()) as Partial<PortableSession>
+      if(parsed.app!==SESSION_APP) throw new Error('Este archivo pertenece a otra aplicación.')
+      if(parsed.formatVersion!==SESSION_FORMAT) throw new Error('La versión del archivo no es compatible.')
+      if(!isSavedState(parsed.state)) throw new Error('El estado de la sesión está incompleto o dañado.')
+      const knownIds=new Set(HISTORICAL_CARDS.map(card=>card.id))
+      const unknownCards=Object.keys(parsed.state.placements).filter(id=>!knownIds.has(id))
+      if(unknownCards.length) throw new Error('El archivo contiene tarjetas que esta versión no reconoce.')
+      if(!confirm('Importar reemplazará la sesión actualmente guardada en este navegador. ¿Continuar?')) return
+      setState(parsed.state)
+      localStorage.setItem(STORAGE_KEY,JSON.stringify(parsed.state))
+      setAnnouncement('Sesión importada correctamente. Puedes continuar desde el punto guardado.')
+    }catch(error){
+      const message=error instanceof Error?error.message:'No se pudo leer el archivo.'
+      alert(`No se pudo importar la sesión: ${message}`)
+      setAnnouncement('La importación no se completó.')
+    }
+  }
+
   const reset=()=>{
     if(confirm('Comenzar de nuevo eliminará esta sesión candidata guardada en este navegador.')){
       localStorage.removeItem(STORAGE_KEY);setState(initialState);setAnnouncement('Sesión reiniciada.')
@@ -153,6 +224,28 @@ MVP PEDAGÓGICO CANDIDATO · NO PARA AULA
       <div className="progress" aria-label={`Progreso ${progress[state.stage]} de 14`}>{progress[state.stage]}/14</div>
     </header>
     <div className="sr-only" aria-live="polite">{announcement}</div>
+
+    <section className="continuity-bar" aria-label="Continuidad de sesión">
+      <div>
+        <strong>Continuidad entre dispositivos</strong>
+        <span> Exporta tu sesión completa y vuelve a importarla en otra computadora.</span>
+      </div>
+      <div className="continuity-actions">
+        <button className="secondary" onClick={exportSession}>Exportar sesión</button>
+        <label className="file-button">
+          Importar sesión
+          <input
+            type="file"
+            accept="application/json,.json"
+            onChange={e=>{
+              const file=e.target.files?.[0]
+              if(file) void importSession(file)
+              e.currentTarget.value=''
+            }}
+          />
+        </label>
+      </div>
+    </section>
 
     {state.stage==='intro'&&<section className="panel hero">
       <p className="eyebrow">Expediente 1871 · Investigación histórica</p>
