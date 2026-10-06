@@ -2,6 +2,8 @@ import { useEffect, useMemo, useState } from 'react'
 import {
   buildPortableSession, downloadPortableText, parsePortableSession, serializePortableSession,
 } from '../../../packages/session-portability/src'
+import { parseHistory, pushHistory, serializeHistory, undoHistory, type HistoryEntry } from '../../../packages/state-history/src'
+import { evidenceMarkdown } from '../../../packages/evidence-export/src'
 import {
   DECK_A1, DECK_A2, DECK_B1, DECK_B2, HISTORICAL_CARDS,
   HISTORICAL_CONTRAST, SOURCE_NOTE, SYSTEM_LIMIT,
@@ -35,6 +37,7 @@ type SavedState = {
 }
 
 const STORAGE_KEY='materia-mundi:h6:pedagogical-mvp:v0.3'
+const HISTORY_KEY='materia-mundi:h6:history:v1'
 const SESSION_APP='materia-mundi:h6-periodicidad'
 const SESSION_FORMAT=1
 
@@ -85,10 +88,24 @@ function isSavedState(value:unknown):value is SavedState{
 
 export default function App(){
   const [state,setState]=useState<SavedState>(loadState)
+  const [history,setHistory]=useState<HistoryEntry<SavedState>[]>(()=>parseHistory(localStorage.getItem(HISTORY_KEY)))
   const [announcement,setAnnouncement]=useState('')
   const [newGroup,setNewGroup]=useState('')
 
   useEffect(()=>localStorage.setItem(STORAGE_KEY,JSON.stringify(state)),[state])
+  useEffect(()=>localStorage.setItem(HISTORY_KEY,serializeHistory(history)),[history])
+
+  const checkpoint=(label:string)=>{
+    setHistory(h=>pushHistory(h,label,state,20))
+  }
+
+  const undo=()=>{
+    const result=undoHistory(history)
+    if(!result.entry) return
+    setHistory(result.history)
+    setState(result.entry.state)
+    setAnnouncement(`Se deshizo: ${result.entry.label}.`)
+  }
 
   const visibleCards=useMemo(()=>HISTORICAL_CARDS.filter(card=>{
     if(DECK_A1.some(c=>c.id===card.id)) return true
@@ -111,16 +128,19 @@ export default function App(){
 
   const moveCard=(cardId:string,group:string)=>{
     const card=HISTORICAL_CARDS.find(c=>c.id===cardId)
+    checkpoint(`Mover ${card?.symbol??cardId} a ${group}`)
     setState(s=>({...s,placements:{...s.placements,[cardId]:group}}))
     setAnnouncement(`${card?.name??'Tarjeta'} movida a ${group}.`)
   }
 
   const createGroup=()=>{
     const label=newGroup.trim();if(!label||state.groups.includes(label))return
+    checkpoint(`Crear grupo ${label}`)
     setState(s=>({...s,groups:[...s.groups,label]}));setNewGroup('');setAnnouncement(`Grupo ${label} creado.`)
   }
 
   const addWave=(wave:'A2'|'B1'|'B2')=>{
+    checkpoint(`Incorporar ${wave}`)
     const cards=wave==='A2'?DECK_A2:wave==='B1'?DECK_B1:DECK_B2
     const added=Object.fromEntries(cards.map(c=>[c.id,'Sin clasificar']))
     setState(s=>({
@@ -133,11 +153,17 @@ export default function App(){
     setAnnouncement(`${cards.length} registros nuevos incorporados.`)
   }
 
-  const toggleSeries=(id:string)=>setState(s=>({...s,series:s.series.includes(id)?s.series.filter(x=>x!==id):[...s.series,id]}))
-  const moveSeries=(i:number,d:number)=>setState(s=>{
+  const toggleSeries=(id:string)=>{
+    checkpoint(`${state.series.includes(id)?'Quitar':'Añadir'} ${id} de la serie`)
+    setState(s=>({...s,series:s.series.includes(id)?s.series.filter(x=>x!==id):[...s.series,id]}))
+  }
+  const moveSeries=(i:number,d:number)=>{
+    checkpoint('Reordenar serie propuesta')
+    setState(s=>{
     const next=[...s.series],target=i+d;if(target<0||target>=next.length)return s
     ;[next[i],next[target]]=[next[target],next[i]];return{...s,series:next}
-  })
+    })
+  }
 
   const exportSession=()=>{
     const portable=buildPortableSession(SESSION_APP,SESSION_FORMAT,state)
@@ -164,6 +190,8 @@ export default function App(){
       return
     }
     if(!confirm('Importar reemplazará la sesión actualmente guardada en este navegador. ¿Continuar?')) return
+    setHistory([])
+    localStorage.removeItem(HISTORY_KEY)
     setState(result.state)
     localStorage.setItem(STORAGE_KEY,JSON.stringify(result.state))
     setAnnouncement('Sesión importada correctamente. Puedes continuar desde el punto guardado.')
@@ -171,40 +199,23 @@ export default function App(){
 
   const reset=()=>{
     if(confirm('Comenzar de nuevo eliminará esta sesión candidata guardada en este navegador.')){
-      localStorage.removeItem(STORAGE_KEY);setState(initialState);setAnnouncement('Sesión reiniciada.')
+      localStorage.removeItem(STORAGE_KEY);localStorage.removeItem(HISTORY_KEY);setHistory([]);setState(initialState);setAnnouncement('Sesión reiniciada.')
     }
   }
 
-  const summaryText=`# Tu recorrido H6 — MVP candidato
-
-## Criterio
-${state.criterion}
-${state.criterionNote}
-
-## Serie propuesta
-${state.series.join(' → ')||'No se construyó una serie.'}
-
-## Hueco
-${state.gapFrom} → [ ? ] → ${state.gapTo}
-${state.gapNote}
-
-## Predicción
-Masa: ${state.prediction.mass}
-Relación: ${state.prediction.family}
-Fórmula: ${state.prediction.formula||'—'}
-Propiedad: ${state.prediction.property||'—'}
-Justificación: ${state.prediction.justification}
-
-## Reflexión para REC6
-Evidencia que cambió mi organización: ${state.reflection.changedBy}
-Qué muestra: ${state.reflection.shows}
-Qué simplifica u oculta: ${state.reflection.hides}
-Qué todavía no explica: ${state.reflection.limit}
-
-> La app conserva cuatro preguntas de preparación. El REC6 completo se entrega en Moodle.
-
-MVP PEDAGÓGICO CANDIDATO · NO PARA AULA
-`
+  const trajectoryItems=history.map(item=>({at:item.at,action:item.label}))
+  const summaryText=evidenceMarkdown(
+    'Tu recorrido H6 — MVP candidato',
+    trajectoryItems,
+    [
+      {heading:'Criterio',body:`${state.criterion}\n${state.criterionNote}`},
+      {heading:'Serie propuesta',body:state.series.join(' → ')||'No se construyó una serie.'},
+      {heading:'Hueco',body:`${state.gapFrom} → [ ? ] → ${state.gapTo}\n${state.gapNote}`},
+      {heading:'Predicción',body:`Masa: ${state.prediction.mass}\nRelación: ${state.prediction.family}\nFórmula: ${state.prediction.formula||'—'}\nPropiedad: ${state.prediction.property||'—'}\nJustificación: ${state.prediction.justification}`},
+      {heading:'Reflexión para REC6',body:`Evidencia que cambió mi organización: ${state.reflection.changedBy}\nQué muestra: ${state.reflection.shows}\nQué simplifica u oculta: ${state.reflection.hides}\nQué todavía no explica: ${state.reflection.limit}`},
+      {heading:'Nota',body:'La app conserva cuatro preguntas de preparación. El REC6 completo se entrega en Moodle.\n\nMVP PEDAGÓGICO CANDIDATO · NO PARA AULA'},
+    ],
+  )
 
   return <main className="shell">
     <p className="dev-banner">MVP PEDAGÓGICO CANDIDATO · NO PARA AULA</p>
@@ -220,6 +231,7 @@ MVP PEDAGÓGICO CANDIDATO · NO PARA AULA
         <span> Exporta tu sesión completa y vuelve a importarla en otra computadora.</span>
       </div>
       <div className="continuity-actions">
+        <button className="secondary" onClick={undo} disabled={!history.length}>Deshacer ({history.length})</button>
         <button className="secondary" onClick={exportSession}>Exportar sesión</button>
         <label className="file-button">
           Importar sesión
@@ -241,7 +253,7 @@ MVP PEDAGÓGICO CANDIDATO · NO PARA AULA
       <h2>El archivo no viene ordenado. La hipótesis tampoco.</h2>
       <p>Actúas como investigador ante un conjunto de masas, fórmulas y semejanzas químicas del siglo XIX. No conoces todavía una explicación moderna del patrón. Tu tarea es construir una representación útil, someterla a nueva evidencia y decidir si el archivo sugiere algo que aún no está allí.</p>
       <ul><li>Clasifica con un criterio que puedas explicar.</li><li>Reorganiza cuando la evidencia lo exija.</li><li>Deja registros pendientes si no encajan.</li><li>Predice antes de conocer el contraste histórico.</li></ul>
-      <button onClick={()=>setState(s=>({...s,stage:'archive1'}))}>Abrir el expediente</button>
+      <button onClick={()=>{checkpoint('Abrir expediente');setState(s=>({...s,stage:'archive1'}))}}>Abrir el expediente</button>
     </section>}
 
     {workspaceStage&&<section className="panel">
@@ -277,24 +289,24 @@ MVP PEDAGÓGICO CANDIDATO · NO PARA AULA
       </section>}
 
       {state.stage==='archive1'&&<button onClick={()=>addWave('A2')}>Incorporar 7 registros antes de fijar criterio</button>}
-      {state.stage==='archive2'&&<button onClick={()=>setState(s=>({...s,stage:'criterion'}))}>Declarar mi criterio</button>}
-      {state.stage==='reorganize'&&<button onClick={()=>setState(s=>({...s,stage:'deckB1'}))}>Poner a prueba mi sistema</button>}
-      {state.stage==='reorganizeB1'&&<button onClick={()=>setState(s=>({...s,stage:'deckB2'}))}>Continuar con una segunda presión</button>}
-      {state.stage==='reorganizeB2'&&<button onClick={()=>setState(s=>({...s,stage:'gap'}))}>Buscar una ausencia significativa</button>}
+      {state.stage==='archive2'&&<button onClick={()=>{checkpoint('Declarar criterio');setState(s=>({...s,stage:'criterion'}))}}>Declarar mi criterio</button>}
+      {state.stage==='reorganize'&&<button onClick={()=>{checkpoint('Pasar a Mazo B');setState(s=>({...s,stage:'deckB1'}))}}>Poner a prueba mi sistema</button>}
+      {state.stage==='reorganizeB1'&&<button onClick={()=>{checkpoint('Pasar a segunda ola B');setState(s=>({...s,stage:'deckB2'}))}}>Continuar con una segunda presión</button>}
+      {state.stage==='reorganizeB2'&&<button onClick={()=>{checkpoint('Buscar hueco');setState(s=>({...s,stage:'gap'}))}}>Buscar una ausencia significativa</button>}
     </section>}
 
     {state.stage==='criterion'&&<section className="panel narrow">
       <p className="eyebrow">Criterio</p><h2>¿Qué intentas conservar?</h2>
       <label>Criterio principal<select value={state.criterion} onChange={e=>setState(s=>({...s,criterion:e.target.value}))}><option value="">Selecciona…</option><option>Masa</option><option>Semejanza química</option><option>Fórmulas o patrones de compuestos</option><option>Otro</option></select></label>
       <label>Explícalo brevemente<textarea rows={5} value={state.criterionNote} onChange={e=>setState(s=>({...s,criterionNote:e.target.value}))}/></label>
-      <button disabled={!state.criterion||!state.criterionNote.trim()} onClick={()=>setState(s=>({...s,stage:'reveal',revealed:true}))}>Registrar criterio y recibir nueva evidencia</button>
+      <button disabled={!state.criterion||!state.criterionNote.trim()} onClick={()=>{checkpoint('Registrar criterio');setState(s=>({...s,stage:'reveal',revealed:true}))}}>Registrar criterio y recibir nueva evidencia</button>
     </section>}
 
     {state.stage==='reveal'&&<section className="panel">
       <p className="eyebrow">Nueva evidencia</p><h2>Tu primera organización ya tiene algo que resistir</h2>
       <p>Las pistas nuevas no corrigen automáticamente. Pueden confirmar, dividir o deshacer tus grupos.</p>
       <div className="mini-grid">{visibleCards.map(c=><article className="mini-card" key={c.id}><strong>{c.symbol}</strong><span>{c.revealClue}</span></article>)}</div>
-      <button onClick={()=>setState(s=>({...s,stage:'reorganize'}))}>Reorganizar y construir una serie si hace falta</button>
+      <button onClick={()=>{checkpoint('Abrir reorganización');setState(s=>({...s,stage:'reorganize'}))}}>Reorganizar y construir una serie si hace falta</button>
     </section>}
 
     {state.stage==='deckB1'&&<section className="panel narrow"><p className="eyebrow">Mazo B · ola 1</p><h2>Cinco registros nuevos</h2><p>Fe, Co, Ni, Cu y Ag añaden casos donde una regla simple puede dejar de bastar.</p><button onClick={()=>addWave('B1')}>Incorporar primera ola</button></section>}
@@ -305,7 +317,7 @@ MVP PEDAGÓGICO CANDIDATO · NO PARA AULA
       <p>La app no te dirá dónde buscar. Declara un hueco sólo si tu sistema lo vuelve necesario.</p>
       <div className="two-col"><label>Después de<select value={state.gapFrom} onChange={e=>setState(s=>({...s,gapFrom:e.target.value}))}><option value="">Selecciona…</option>{visibleCards.map(c=><option key={c.id} value={c.id}>{c.symbol} · {c.mass}</option>)}</select></label><label>Antes de<select value={state.gapTo} onChange={e=>setState(s=>({...s,gapTo:e.target.value}))}><option value="">Selecciona…</option>{visibleCards.map(c=><option key={c.id} value={c.id}>{c.symbol} · {c.mass}</option>)}</select></label></div>
       <label>¿Por qué ese espacio tiene significado?<textarea rows={5} value={state.gapNote} onChange={e=>setState(s=>({...s,gapNote:e.target.value}))}/></label>
-      <button disabled={!state.gapFrom||!state.gapTo||!state.gapNote.trim()} onClick={()=>setState(s=>({...s,stage:'prediction'}))}>Registrar hueco</button>
+      <button disabled={!state.gapFrom||!state.gapTo||!state.gapNote.trim()} onClick={()=>{checkpoint('Registrar hueco');setState(s=>({...s,stage:'prediction'}))}}>Registrar hueco</button>
     </section>}
 
     {state.stage==='prediction'&&<section className="panel narrow">
@@ -317,7 +329,7 @@ MVP PEDAGÓGICO CANDIDATO · NO PARA AULA
         <label>Propiedad esperada, opcional<input value={state.prediction.property} onChange={e=>setState(s=>({...s,prediction:{...s.prediction,property:e.target.value}}))}/></label>
       </div>
       <label>Justificación *<textarea rows={6} value={state.prediction.justification} onChange={e=>setState(s=>({...s,prediction:{...s.prediction,justification:e.target.value}}))}/></label>
-      <button disabled={!state.prediction.mass.trim()||!state.prediction.family.trim()||!state.prediction.justification.trim()} onClick={()=>setState(s=>({...s,stage:'contrast'}))}>Congelar predicción y abrir contraste</button>
+      <button disabled={!state.prediction.mass.trim()||!state.prediction.family.trim()||!state.prediction.justification.trim()} onClick={()=>{checkpoint('Congelar predicción');setState(s=>({...s,stage:'contrast'}))}}>Congelar predicción y abrir contraste</button>
     </section>}
 
     {state.stage==='contrast'&&<section className="panel">
@@ -327,7 +339,7 @@ MVP PEDAGÓGICO CANDIDATO · NO PARA AULA
       </article>)}</div>
       <p className="notice"><strong>El sistema también cambió:</strong> {SYSTEM_LIMIT}</p>
       <details className="source-note"><summary>Procedencia candidata</summary><p>{SOURCE_NOTE}</p></details>
-      <button onClick={()=>setState(s=>({...s,stage:'reflection'}))}>Preparar mi reflexión REC6</button>
+      <button onClick={()=>{checkpoint('Abrir reflexión REC6');setState(s=>({...s,stage:'reflection'}))}}>Preparar mi reflexión REC6</button>
     </section>}
 
     {state.stage==='reflection'&&<section className="panel narrow">
@@ -337,7 +349,7 @@ MVP PEDAGÓGICO CANDIDATO · NO PARA AULA
       <label>¿Qué muestra tu representación?<textarea rows={4} value={state.reflection.shows} onChange={e=>setState(s=>({...s,reflection:{...s.reflection,shows:e.target.value}}))}/></label>
       <label>¿Qué simplifica u oculta?<textarea rows={4} value={state.reflection.hides} onChange={e=>setState(s=>({...s,reflection:{...s.reflection,hides:e.target.value}}))}/></label>
       <label>¿Qué todavía no explica?<textarea rows={4} value={state.reflection.limit} onChange={e=>setState(s=>({...s,reflection:{...s.reflection,limit:e.target.value}}))}/></label>
-      <button disabled={Object.values(state.reflection).some(v=>!v.trim())} onClick={()=>setState(s=>({...s,stage:'summary'}))}>Generar recorrido para Moodle</button>
+      <button disabled={Object.values(state.reflection).some(v=>!v.trim())} onClick={()=>{checkpoint('Generar recorrido');setState(s=>({...s,stage:'summary'}))}}>Generar recorrido para Moodle</button>
     </section>}
 
     {state.stage==='summary'&&<section className="panel">
