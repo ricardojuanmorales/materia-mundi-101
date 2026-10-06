@@ -5,11 +5,15 @@ on:
     paths:
       - "19_IMPLEMENTACION_Y_DESPLIEGUE/apps/h6-periodicidad/**"
       - "19_IMPLEMENTACION_Y_DESPLIEGUE/packages/session-portability/**"
+      - "19_IMPLEMENTACION_Y_DESPLIEGUE/packages/state-history/**"
+      - "19_IMPLEMENTACION_Y_DESPLIEGUE/packages/evidence-export/**"
       - ".github/workflows/h6-ci.yml"
   push:
     paths:
       - "19_IMPLEMENTACION_Y_DESPLIEGUE/apps/h6-periodicidad/**"
       - "19_IMPLEMENTACION_Y_DESPLIEGUE/packages/session-portability/**"
+      - "19_IMPLEMENTACION_Y_DESPLIEGUE/packages/state-history/**"
+      - "19_IMPLEMENTACION_Y_DESPLIEGUE/packages/evidence-export/**"
       - ".github/workflows/h6-ci.yml"
 
 permissions:
