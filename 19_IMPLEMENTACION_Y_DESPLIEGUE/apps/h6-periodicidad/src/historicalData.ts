@@ -13,7 +13,7 @@ export type HistoricalCard = {
 const card = (
   id:string, symbol:string, name:string, mass:string, deck:'A'|'B',
   pattern:string, initialClue:string, revealClue:string,
-): HistoricalCard => ({ id, symbol, name, mass, deck, pattern, initialClue, revealClue, provenance:'FH/RH' })
+): HistoricalCard => ({ id, symbol, name, mass, deck, pattern, initialClue, revealClue, provenance:'masa/patrón: FH · pistas: RH' })
 
 export const HISTORICAL_CARDS: HistoricalCard[] = [
   card('Li','Li','Litio','7','A','R₂O','Forma un óxido con patrón R₂O.','Su patrón químico puede compararse con Na y K.'),
@@ -60,8 +60,8 @@ export const HISTORICAL_CARDS: HistoricalCard[] = [
   card('In','In','Indio','113','B','R₂O₃','Forma un óxido con patrón R₂O₃.','Extiende una relación semejante a B y Al.'),
   card('Sn','Sn','Estaño','118','B','RO₂','Forma un óxido con patrón RO₂.','Extiende una relación semejante a C y Si.'),
   card('Sb','Sb','Antimonio','122','B','RH₃ / R₂O₅','Presenta un patrón RH₃ / R₂O₅.','Extiende una relación semejante a P y As.'),
-  card('Te','Te','Telurio','125','B','RH₂ / RO₃','Su masa queda antes de I.','Su relación química con I tensiona una regla puramente basada en masa.'),
-  card('I','I','Yodo','127','B','RH / R₂O₇','Presenta un patrón de hidruro RH.','Su semejanza química obliga a comparar más de un criterio.'),
+  card('Te','Te','Telurio','125','B','RH₂ / RO₃','Su masa queda antes de I.','Conserva analogías químicas con O, S y Se dentro del sistema de 1871.'),
+  card('I','I','Yodo','127','B','RH / R₂O₇','Presenta un patrón de hidruro RH.','Conserva analogías químicas con F, Cl y Br dentro del sistema de 1871.'),
 ]
 
 export const DECK_A = HISTORICAL_CARDS.filter(c => c.deck === 'A')
@@ -88,7 +88,7 @@ export const HISTORICAL_CONTRAST = {
     relation:'análogo de Si',
     predictedOxide:'EsO₂',
     discovered:'Germanio (Ge), 1886',
-    observedMass:'≈72.6',
+    observedMass:'≈72.3 (comparación histórica)',
     success:'La masa y varias propiedades previstas estuvieron muy cerca de las observadas.',
     limit:'La comparación histórica muestra una predicción poderosa, no una explicación moderna de por qué existe la periodicidad.',
   },
@@ -98,4 +98,4 @@ export const SYSTEM_LIMIT =
   'El sistema de 1871 fue revisado y ampliado después. La aparición de los gases nobles, entre otros casos, mostró que una clasificación útil también puede necesitar nuevas categorías.'
 
 export const SOURCE_NOTE =
-  'Fuentes candidatas para QA: tabla de Mendeleev de 1871 y materiales históricos de la Royal Society of Chemistry y Science History Institute. Las pistas RH/DD siguen pendientes de validación tarjeta por tarjeta.'
+  'QA histórico: masas y patrones se contrastan con la tabla de 1871; las pistas interpretativas se mantienen como reconstrucciones históricas (RH) hasta cerrar revisión tarjeta por tarjeta.'
