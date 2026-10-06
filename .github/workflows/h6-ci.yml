@@ -4,13 +4,12 @@ on:
   pull_request:
     paths:
       - "19_IMPLEMENTACION_Y_DESPLIEGUE/apps/h6-periodicidad/**"
+      - "19_IMPLEMENTACION_Y_DESPLIEGUE/packages/session-portability/**"
       - ".github/workflows/h6-ci.yml"
   push:
-    branches:
-      - main
-      - "feat/h6-*"
     paths:
       - "19_IMPLEMENTACION_Y_DESPLIEGUE/apps/h6-periodicidad/**"
+      - "19_IMPLEMENTACION_Y_DESPLIEGUE/packages/session-portability/**"
       - ".github/workflows/h6-ci.yml"
 
 permissions:
