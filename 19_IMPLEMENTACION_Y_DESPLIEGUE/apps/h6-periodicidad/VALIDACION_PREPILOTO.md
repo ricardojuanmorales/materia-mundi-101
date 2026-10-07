@@ -1,8 +1,8 @@
 # H6 — Plan operativo de validación para uso estudiantil
 
-Estado: **VALIDACIÓN PREPILOTO**
+Estado: **PILOTO EN AULA AUTORIZADO**
 
-Regla de control: **no expandir el motor** salvo que una prueba revele un bloqueo real.
+Regla de control: **no expandir el motor** salvo que el piloto revele un bloqueo real.
 
 ## Gate 1 — QA histórico
 
@@ -50,7 +50,7 @@ La interfaz requiere explicación reiterada, la serie se interpreta como requisi
 
 ---
 
-## Gate 3 — Accesibilidad funcional
+## Gate 3 — Accesibilidad funcional · VALIDACIÓN DURANTE PILOTO
 
 ### Objetivo
 Confirmar que ninguna acción esencial depende de ratón, precisión motora o visión de color.
@@ -74,7 +74,7 @@ Cualquier etapa crítica depende de drag-and-drop, posición visual exclusiva o 
 
 ---
 
-## Gate 4 — Flujo Moodle → app → evidencia → Moodle
+## Gate 4 — Flujo Moodle → app → evidencia → Moodle · VALIDACIÓN DURANTE PILOTO
 
 ### Objetivo
 Confirmar el circuito real que usará el estudiante.
@@ -99,7 +99,9 @@ Existe una ambigüedad sobre dónde continuar, qué entregar o cómo recuperar e
 
 ## Gate 5 — GO PILOTO
 
-Se concede sólo si Gates 1–4 están en PASS.
+**GO PILOTO AUTORIZADO EN MODO EXPEDITO.**
+
+Gate 1 y Gate 2 están en PASS. Gates 3 y 4 se trasladan a validación situada durante el piloto, con corrección inmediata sólo si aparece un bloqueo de accesibilidad, continuidad o entrega.
 
 ### Antes de abrir a estudiantes
 - etiquetar release `v1.0-pilot`;

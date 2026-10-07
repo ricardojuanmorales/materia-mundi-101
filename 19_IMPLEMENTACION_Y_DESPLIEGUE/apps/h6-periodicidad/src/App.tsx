@@ -277,12 +277,12 @@ export default function App(){
       {heading:'Hueco',body:`${state.gapFrom} → [ ? ] → ${state.gapTo}\n${state.gapNote}`},
       {heading:'Predicción',body:`Masa: ${state.prediction.mass}\nRelación: ${state.prediction.family}\nFórmula: ${state.prediction.formula||'—'}\nPropiedad: ${state.prediction.property||'—'}\nJustificación: ${state.prediction.justification}`},
       {heading:'Reflexión para REC6',body:`Evidencia que cambió mi organización: ${state.reflection.changedBy}\nQué muestra: ${state.reflection.shows}\nQué simplifica u oculta: ${state.reflection.hides}\nQué todavía no explica: ${state.reflection.limit}`},
-      {heading:'Nota',body:'La app conserva cuatro preguntas de preparación. El REC6 completo se entrega en Moodle.\n\nMVP PEDAGÓGICO CANDIDATO · NO PARA AULA'},
+      {heading:'Nota',body:'La app conserva cuatro preguntas de preparación. El REC6 completo se entrega en Moodle.\n\nPILOTO EN AULA · v1.0'},
     ],
   )
 
   return <main className="shell">
-    <p className="dev-banner">MVP PEDAGÓGICO CANDIDATO · NO PARA AULA</p>
+    <p className="dev-banner">PILOTO EN AULA · v1.0</p>
     <header className="topbar">
       <div><p className="eyebrow">CIFI 3065 Virtual · Materia Mundi</p><h1>H6 · Ordenar el archivo</h1></div>
       <div className="progress" aria-label={`Progreso ${progressOf(H6_FLOW,state.stage)} de 14`}>{progressOf(H6_FLOW,state.stage)}/14</div>
@@ -292,7 +292,7 @@ export default function App(){
     <section className="continuity-bar" aria-label="Continuidad de sesión">
       <div>
         <strong>Continuidad entre dispositivos</strong>
-        <span> Exporta tu sesión completa y vuelve a importarla en otra computadora.</span>
+        <span> Exporta tu sesión si vas a cambiar de computadora. Si algo falla, conserva ese archivo y continúa en Moodle.</span>
       </div>
       <div className="continuity-actions">
         <button className="secondary" onClick={undo} disabled={!history.length}>Deshacer ({history.length})</button>
