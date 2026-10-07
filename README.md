@@ -4,11 +4,11 @@
 
 ## Estado actual del proyecto
 
-**Fecha de corte:** 3 de octubre de 2026  
+**Fecha de corte:** 6 de octubre de 2026  
 **Fuente versionada de verdad:** GitHub `main`  
 **Nivel:** N3 Avanzado  
 **Caleidoscopio rector:** C4 Integral  
-**Estado global:** **F8 CERRADA — Gate F8→F9 = GO CON CONDICIONES / RATIFICADO — montaje progresivo post-F8 activo — U08/H6 absorbida — U09/H7 autorizada para activación en Carril B — Arquitectura A↔B↔C APROBADA — Carril C longitudinal autorizado.**
+**Estado global:** **F8 CERRADA — Gate F8→F9 = GO CON CONDICIONES / RATIFICADO — montaje progresivo post-F8 activo — U08/H6 absorbida — aplicación H6 v1.0 PILOTO EN AULA publicada — U09/H7 autorizada para activación en Carril B — Arquitectura A↔B↔C APROBADA — Carril C longitudinal autorizado.**
 
 F9 no está activada como fase empírica: requiere evidencia real de estudiantes. Producción, montaje y QA post-F8 preparan F9, pero no constituyen por sí mismos evidencia F9.
 
@@ -137,7 +137,11 @@ Movimiento absorbido:
 
 `diversidad de sustancias/símbolos/masas → lenguaje común/comparabilidad → estandarización → clasificación → periodicidad → predicción → límite`.
 
-Aplicación interactiva: **EN DESARROLLO EXTERNO / NO BLOQUEANTE**.
+Aplicación interactiva: **PILOTO EN AULA v1.0 / PUBLICADA EN GITHUB PAGES / CI VERDE**.
+
+URL pública: `https://ricardojuanmorales.github.io/materia-mundi-101/h6/`
+
+Gate 1 histórico: **PASS**. Gate 2 carga cognitiva: **PASS**. Gates 3 accesibilidad y 4 Moodle→app→evidencia→Moodle: **validación situada durante piloto**.
 
 Puente siguiente:
 
@@ -253,5 +257,5 @@ Leer, en este orden:
 
 1. **Carril B:** abrir U09/H7 desde su Kit/Prompt y ejecutar snapshot → baseline → inventario → Paso 1 → Mapa de Realización H7; detenerse para revisión humana antes de producción extensa.
 2. **Carril C:** mantener la gobernanza longitudinal de PROEMA; H7 incorpora Ensayo 3 sin transferir esa gobernanza a B.
-3. **Aplicación H6:** continuar como línea externa no bloqueante bajo su especificación funcional.
+3. **Aplicación H6:** ejecutar piloto en aula v1.0; observar Gates 3–4 de forma situada; sólo corregir bloqueos reales y no expandir el motor durante el piloto.
 4. **F9:** permanece cerrada hasta disponer de evidencia real de estudiantes.

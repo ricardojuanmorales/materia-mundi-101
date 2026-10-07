@@ -4,7 +4,7 @@ Este cartapacio aloja implementaciones ejecutables y su infraestructura de publi
 
 ## Estructura inicial
 
-- `apps/h6-periodicidad/` — aplicación H6 candidata.
+- `apps/h6-periodicidad/` — aplicación H6 **PILOTO EN AULA v1.0**.
 - `packages/session-portability/` — exportación/importación portable.
 - `packages/state-history/` — historial semántico y undo.
 - `packages/evidence-export/` — exportación de trayectoria/evidencia.
@@ -26,3 +26,13 @@ Un repositorio puede alojar varias aplicaciones. GitHub Pages publica un solo si
 - `main` sigue siendo fuente versionada de verdad.
 - Publicación automática se ejecuta sólo desde `main`.
 - Los datos históricos de aula no se incorporan hasta cerrar su QA.
+
+
+## Estado H6 al cierre de sesión 2026-10-06
+
+- Publicación: GitHub Pages activa.
+- CI: SUCCESS.
+- Gate 1 histórico: PASS.
+- Gate 2 carga cognitiva: PASS.
+- Gates 3–4: validación situada durante piloto.
+- Política activa: no ampliar el motor salvo bloqueo real observado en estudiantes.
