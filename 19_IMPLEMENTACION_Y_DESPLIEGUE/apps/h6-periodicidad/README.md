@@ -1,6 +1,6 @@
-# H6 · Ordenar el archivo — MVP pedagógico candidato v0.3
+# H6 · Ordenar el archivo — Piloto en aula v1.0
 
-Estado: **CANDIDATO / NO PARA AULA**
+Estado: **PILOTO EN AULA / v1.0**
 
 ## Decisiones humanas ratificadas
 
@@ -25,7 +25,7 @@ Estado: **CANDIDATO / NO PARA AULA**
 - Royal Society of Chemistry, materiales sobre la periodicidad y comparación eka-aluminio/galio;
 - Science History Institute, historia de las predicciones de Mendeleev.
 
-Las pistas marcadas FH/RH todavía requieren QA tarjeta por tarjeta antes de distribución a estudiantes.
+Gate 1 histórico y Gate 2 de carga cognitiva están aprobados. Gates 3 y 4 se observarán durante el piloto en aula.
 
 
 ## Continuidad entre dispositivos
@@ -40,3 +40,12 @@ El paquete contiene:
 - estado pedagógico completo de la investigación.
 
 La importación valida aplicación, versión, estructura básica del estado y tarjetas conocidas antes de reemplazar el estado local. No requiere cuenta, backend ni datos personales.
+
+
+## Política de piloto
+
+- Gates 1 y 2: PASS.
+- Gates 3 y 4: validación situada durante el piloto.
+- No se añaden funciones nuevas durante el piloto salvo corrección bloqueante.
+- La URL pública permanece estable.
+- La sesión puede exportarse para continuidad y contingencia.
