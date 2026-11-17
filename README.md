@@ -1,6 +1,8 @@
 # 🌎 Materia Mundi 101
 ## Una travesía histórica para comprender cómo conocemos y transformamos la materia
 
+![Materia Mundi 101: emblema de historia, evidencia y transformación de la materia](21_WIKI_DOCUMENTACION_HUMANA/Recursos_Visuales/README_MATERIA_MUNDI/hero-materia-mundi.svg)
+
 **CIFI 3065 · Educación General · Ciencia, historia, evidencia y responsabilidad**
 
 *Preguntar · observar · representar · contrastar · transformar · decidir*
@@ -64,6 +66,12 @@ preguntar → observar → medir → cuantificar → modelar
 ```
 
 H10 ofrece una síntesis especialmente importante: la capacidad técnica para transformar la materia debe examinarse junto a la evidencia, la incertidumbre y la distribución de beneficios y riesgos.
+
+### Dos escalas de aprendizaje
+
+![Dos escalas de aprendizaje: H1–H10 y trayectorias longitudinales U1, U2, U13 PROEMA, U14 y U15](21_WIKI_DOCUMENTACION_HUMANA/Recursos_Visuales/README_MATERIA_MUNDI/dos-escalas-aprendizaje.svg)
+
+Los hitos históricos proporcionan una secuencia de problemas científicos. Las trayectorias longitudinales conectan preguntas, evidencias, investigación y reflexión a lo largo del curso. La figura explica la arquitectura pedagógica, no el estado de finalización de cada componente.
 
 ## 🧠 Cómo se aprende en Materia Mundi
 
@@ -152,26 +160,35 @@ Son distinciones de responsabilidad, **no una promesa de avance automático ni u
 
 Los mecanismos incluyen gates de decisión, control de versiones, inventarios, revisión de procedencia, criterios de carga cognitiva, equivalencias de acceso, QA situada y registros de pendientes. Cuando una actividad se realiza en Moodle, el montaje y la revisión necesitan evidencia concreta de esa plataforma.
 
-## 📍 Estado del proyecto · corte documental
+## 📍 Estado actual del proyecto
 
-**Corte de referencia:** 17 de noviembre de 2026, con respaldo rector consultado en el **Estado Maestro v28.0 del 4 de noviembre de 2026**. Esta fecha identifica la preparación editorial del presente README; **no afirma que todos los estados hayan sido revalidados ese día**.
+**Noviembre de 2026 · Desarrollo y montaje curricular**
 
-| Componente | Situación documentada o conocida | Reserva importante |
-|---|---|---|
-| **F0–F8** | Fases cerradas según gates vigentes. | No equivale a resultados empíricos F9. |
-| **F8→F9** | GO CON CONDICIONES ratificado. | **F9 empírica no activada**; requiere evidencia real de estudiantes. |
-| **H1–H6** | Desarrollo y montaje histórico con retornos documentales; H6 cuenta con piloto interactivo publicado. | Los tipos de verificación y resultados no son homogéneos. |
-| **H7** | Montaje reportado en el proceso de trabajo. | Reconciliación documental B→A pendiente en Estado Maestro v28.0. |
-| **H8** | Montaje reportado; absorción documental condicionada. | Pendientes **H8-P01…P06**. |
-| **H9** | Montaje y QA situada docente reportados; absorción documental condicionada. | Pendientes **H9-P01…P07**; no se acredita revisión técnica independiente ni exportación LMS. |
-| **H10** | Gate A→B v1.0 ratificado para activación controlada y **Paso 1**. | No hay caso rector aprobado; **sin permiso para producción extensa ni montaje Moodle**. |
-| **Carril C / PROEMA** | Arquitectura longitudinal autorizada bajo gobernanza A. | Implementación y validación deben verificarse por artefacto. |
+Materia Mundi 101 se encuentra en una etapa avanzada de desarrollo curricular y montaje progresivo de experiencias educativas para la enseñanza virtual de las ciencias desde una perspectiva histórica, activa y transdisciplinaria.
 
-**Importante:** el README anterior llevaba un corte del 6 de octubre y el Estado Maestro v26.0 también quedó superado por el v28.0 consultado. Este documento no cierra por inferencia la reconciliación de H7 ni los pendientes de H8/H9. Ante diferencias entre conversaciones, artefactos y canon, corresponde abrir una revisión explícita en Carril A.
+### ¿Qué hemos logrado?
 
-### Próximo movimiento autorizado
+- Diseñar una trayectoria de **diez hitos históricos**, conectando ciencia, evidencia, modelos y transformación de la materia.
+- Desarrollar y montar progresivamente actividades, laboratorios, recursos visuales e interacciones educativas.
+- Integrar la reflexión científica con **PROEMA**, una investigación que acompaña el curso.
+- Establecer mecanismos de revisión docente, accesibilidad, seguimiento del aprendizaje y mejora continua.
 
-En H10 procede únicamente la recuperación de fuentes y baselines, el inventario, la comparación de casos posibles y la preparación del **Mapa de Realización candidato de Paso 1**, seguido de revisión docente. Se evita iniciar materiales extensos, seleccionar un caso por defecto o publicar en Moodle sin autorización posterior.
+### ¿Dónde estamos?
+
+Las experiencias **H1–H9** han avanzado en su desarrollo y montaje, aunque algunas conservan revisiones documentales y técnicas pendientes. **H10**, dedicado a las posibilidades y consecuencias de transformar la materia, cuenta con autorización para su planificación inicial y revisión docente, **no para producción extensa ni montaje en Moodle**.
+
+### ¿Qué sigue?
+
+Concluir revisiones pendientes, definir y desarrollar H10 cuando exista autorización docente, fortalecer la integración de las trayectorias del curso y preparar una futura evaluación con estudiantes para estudiar funcionamiento, accesibilidad y contribución al aprendizaje.
+
+**Alcance de la evidencia:** los avances curriculares y metodológicos están documentados, pero **la validación empírica con estudiantes sigue pendiente**. La planificación, el montaje y la revisión docente no demuestran por sí solos efectividad educativa.
+
+<details>
+<summary>Referencia documental para seguimiento y auditoría</summary>
+
+La síntesis pública se basa en el [Estado Maestro v28.0](00_CONTROL_MAESTRO/ESTADO_MAESTRO_CIFI3065_v28.0.md) (4 de noviembre de 2026). Allí se conservan las reservas de reconciliación H7, los pendientes documentales H8/H9 y el [Gate de H10](08_CURSOS_PROGRAMAS_Y_TRAYECTORIAS/CIFI3065/POST_F8/U12-H10/CIFI3065_POSTF8_U12-H10_GATE_A-B_GO_CONTROLADO_v1.0_APROBADO.md), que autoriza únicamente Paso 1. F9 empírica no está activada.
+
+</details>
 
 ## 📂 Cómo explorar el repositorio
 
@@ -214,6 +231,6 @@ El valor del proyecto no reside en aparentar que todo está terminado. Reside en
 
 ---
 
-**Estado de este documento:** `README v2.0 · APROBADO POR DOCENTE · PUBLICADO EN main`  
+**Estado de este documento:** `README v2.1 · INTEGRACIÓN VISUAL Y SÍNTESIS DOCENTE · PUBLICADO EN main`  
 **Fecha de elaboración y aprobación:** 17 de noviembre de 2026  
 **Referencia documental principal:** Estado Maestro CIFI 3065 v28.0 (2026-11-04) y Gate U12/H10 v1.0 aprobado.
