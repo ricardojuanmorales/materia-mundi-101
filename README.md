@@ -1,261 +1,219 @@
-# CIFI 3065 Virtual — Materia Mundi
+# 🌎 Materia Mundi 101
+## Una travesía histórica para comprender cómo conocemos y transformamos la materia
 
-> Arquitectura curricular, documental y operativa para la virtualización lúdica, transdisciplinaria, verificable y centrada en evidencia de **CIFI 3065**.
+**CIFI 3065 · Educación General · Ciencia, historia, evidencia y responsabilidad**
 
-## Estado actual del proyecto
+*Preguntar · observar · representar · contrastar · transformar · decidir*
 
-**Fecha de corte:** 6 de octubre de 2026  
-**Fuente versionada de verdad:** GitHub `main`  
-**Nivel:** N3 Avanzado  
-**Caleidoscopio rector:** C4 Integral  
-**Estado global:** **F8 CERRADA — Gate F8→F9 = GO CON CONDICIONES / RATIFICADO — montaje progresivo post-F8 activo — U08/H6 absorbida — aplicación H6 v1.0 PILOTO EN AULA publicada — U09/H7 autorizada para activación en Carril B — Arquitectura A↔B↔C APROBADA — Carril C longitudinal autorizado.**
+> Comprender la materia no ha sido únicamente descubrir de qué está hecho el mundo. También ha exigido inventar instrumentos, revisar explicaciones, negociar incertidumbres y preguntarnos qué hacemos con el conocimiento que construimos.
 
-F9 no está activada como fase empírica: requiere evidencia real de estudiantes. Producción, montaje y QA post-F8 preparan F9, pero no constituyen por sí mismos evidencia F9.
+Bienvenidas y bienvenidos a **Materia Mundi 101**, un proyecto de virtualización y diseño curricular de **CIFI 3065** que convierte la historia del conocimiento sobre la materia en una experiencia educativa activa, lúdica, transdisciplinaria y orientada por evidencia.
 
-## Arquitectura curricular
+Este repositorio documenta tanto el **curso en construcción y montaje progresivo** como el **laboratorio metodológico** que lo hace posible. No es solamente un depósito de materiales didácticos, ni un curso declarado empíricamente validado. Es una implementación situada, versionada y sujeta a revisión humana.
 
-Materia Mundi integra cinco unidades longitudinales persistentes: **U1 orientación**, **U2 epistemología**, **U13 PROEMA metodología**, **U14 producción/defensa** y **U15 síntesis/cosecha**.
+## 🚪 Elige tu puerta de entrada
 
-Trayectoria histórica:
+- 🎓 **Estudiantes y personas curiosas:** comienza por [la travesía H1–H10](#-diez-hitos-una-historia-en-movimiento) y descubre qué preguntas organizan el aprendizaje.
+- 🧑‍🏫 **Docentes y diseñadores curriculares:** consulta [la arquitectura pedagógica](#-cómo-se-aprende-en-materia-mundi) y el [sistema de calidad](#-producir-revisar-y-aprender-del-proceso).
+- 🔬 **Investigadores en educación:** revisa [los alcances de la evidencia](#-estado-del-proyecto-corte-documental) y las fronteras entre diseño, montaje y validación empírica.
+- 🧰 **Colaboradores técnicos:** explora [la organización del repositorio](#-cómo-explorar-el-repositorio) y la [arquitectura de tres carriles](#-tres-carriles-una-gobernanza).
+- 🧭 **Quienes desean conocer el marco más amplio:** visita el [Framework Proyecto Genérico IA 1](https://github.com/ricardojuanmorales/framework-proyecto-generico-ia-1), proyecto relacionado con identidad y gobernanza propias.
 
-`U03/H1 → U04/H2 → U05/H3 → U06/H4 → U07/H5 → U08/H6 → U09/H7 → U10/H8 → U11/H9 → U12/H10`
+**Acceso a un recurso piloto:** [Aplicación interactiva H6](https://ricardojuanmorales.github.io/materia-mundi-101/h6/). Su publicación técnica no sustituye la evaluación situada de accesibilidad ni de integración Moodle–aplicación–evidencia.
 
-Movimiento profundo:
+## 🌱 ¿Qué es Materia Mundi?
 
-`explicar → transformar → medir → cuantificar → datos/modelo → representar/clasificar → modelar → analizar sistemas → inferir/instrumentar → evaluar consecuencias`
+Materia Mundi parte de una pregunta sencilla de formular, pero difícil de agotar: **¿cómo llegó la humanidad a conocer la materia y qué responsabilidades surgieron al aprender a transformarla?**
 
-Gramática histórica común:
+En lugar de presentar la ciencia como una sucesión de respuestas definitivas, el curso reconstruye problemas, controversias, representaciones, experimentos e instrumentos que hicieron posibles nuevas explicaciones. La historia ofrece el escenario; la evidencia y los modelos permiten pensar; la reflexión transdisciplinaria ayuda a conectar ese conocimiento con decisiones contemporáneas.
 
-`Bienvenida/orientación → FEHE → actividad central → interacción analítica → Lab/REC → cierre de continuidad`
+El proyecto articula cuatro propósitos:
 
-Regla: **simetría funcional y navegacional, no copia literal**.
+1. **Formación científica general:** razonar a partir de pruebas, modelos e incertidumbre sin exigir que el estudiantado se convierta en especialista.
+2. **Comprensión histórica y epistemológica:** reconocer que las explicaciones científicas cambian y que toda representación tiene posibilidades y límites.
+3. **Aprendizaje activo y lúdico:** utilizar narrativas, recursos visuales, ejercicios, laboratorios e interacciones que tengan una función cognitiva, no meramente decorativa.
+4. **Investigación y mejora del diseño educativo:** conservar decisiones, criterios, revisiones y evidencias con responsabilidad docente.
 
-## Arquitectura operativa A ↔ B ↔ C
+La aspiración es que la ciencia se experimente como una forma humana, revisable y colectiva de investigar el mundo.
 
-La Arquitectura Maestra A↔B v1.0 permanece vigente y se extiende mediante:
+## 🗺️ Diez hitos, una historia en movimiento
 
-`03_METODOLOGIA_Y_FLUJO_DE_TRABAJO/CIFI3065_ARQUITECTURA_OPERATIVA_TRES_CARRILES_A-B-C_v1.0_APROBADA.md`
+La trayectoria histórica comprende **diez hitos (H1–H10)**, correspondientes a **U03–U12**. Cada uno pregunta qué cambió en la manera de explicar, medir, representar o intervenir la materia.
 
-Funciones:
+| Hito | Movimiento conceptual de la trayectoria |
+|---|---|
+| **H1 · U03** | Comenzar a explicar la materia y reconocer la diversidad de explicaciones. |
+| **H2 · U04** | Examinar transformaciones materiales y las condiciones para explicarlas. |
+| **H3 · U05** | Observar, medir y producir comparaciones defendibles. |
+| **H4 · U06** | Cuantificar relaciones y analizar sistemas mediante evidencia. |
+| **H5 · U07** | Reconocer patrones en los datos y poner a prueba modelos de la materia. |
+| **H6 · U08** | Construir lenguajes compartidos de representación y clasificación, incluida la periodicidad. |
+| **H7 · U09** | Explorar conectividad, estructura, isomería y límites de los modelos. |
+| **H8 · U10** | Investigar qué evidencia puede revelar la estructura interna del átomo. |
+| **H9 · U11** | Inferir electrón y núcleo mediante señales instrumentales y revisar modelos atómicos. |
+| **H10 · U12** | Evaluar síntesis, materiales, industria, ambiente y responsabilidad ante las consecuencias de transformar la materia. |
 
-- **Carril A:** gobernanza, canon, gates, absorción y Estado Maestro.
-- **Carril B:** realización histórica situada H1–H10.
-- **Carril C:** integración longitudinal U1/U2/U13/U14/U15.
+Esta tabla es un **mapa de orientación**, no una sustitución de los microdiseños, las FEHE o los guiones canónicos de cada unidad.
 
-Regla central:
+**Movimiento transversal:**
 
-**B y C no se gobiernan entre sí; A gobierna ambos.**
+```text
+preguntar → observar → medir → cuantificar → modelar
+→ representar → contrastar → instrumentar
+→ reconocer límites → evaluar consecuencias
+```
 
-Contrato mínimo B↔C:
+H10 ofrece una síntesis especialmente importante: la capacidad técnica para transformar la materia debe examinarse junto a la evidencia, la incertidumbre y la distribución de beneficios y riesgos.
 
-`evidencia producida → destino longitudinal → recuperación → feedback persistente → siguiente uso`.
+## 🧠 Cómo se aprende en Materia Mundi
 
-## PROEMA longitudinal
+Cada hito pertenece a una familia histórica común, sin convertirse en una copia idéntica de los anteriores:
 
-PROEMA permanece como una investigación longitudinal única:
+```text
+Bienvenida y orientación
+  → FEHE: problema histórico-epistemológico
+  → actividad central de indagación
+  → interacción analítica
+  → laboratorio y recuperación/reflexión
+  → cierre y puente hacia el siguiente hito
+```
 
-`tema común → subtema grupal → contribución individual → E1 H1 → E2 H4 → E3 H7 → E4 H10 → E5 U13 → presentación grupal U14 → artículo individual U15`.
+La **FEHE** articula el problema histórico y epistemológico de la unidad. Las actividades y los laboratorios exigen poner a trabajar ideas y evidencias; los foros invitan al intercambio fundamentado; las recuperaciones y cierres permiten revisar qué se aprendió, qué permanece abierto y cómo se conecta con otros momentos del curso.
 
-Carril C tiene prioridad inicial en **PROEMA / Ensayo 2 / U13 mínimo viable**.
+**Simetría funcional y navegacional no significa repetición literal.** Cada hito conserva identidad científica e histórica, pero el estudiante encuentra una orientación consistente.
 
-Los materiales PROEMA procedentes de otros cursos ingresan a Carril C como **candidatos de referencia**, bajo simetría reversible:
+Los recursos pueden incluir narrativas ilustradas de inspiración histórica, cómics, materiales interactivos, representaciones comparadas, análisis de fuentes y experiencias de laboratorio. Su inclusión depende de pertinencia, accesibilidad, procedencia de fuentes y carga cognitiva. Una reconstrucción didáctica no se presenta como documento histórico auténtico.
 
-`material externo → inventario C → función original → función equivalente → adaptación candidata → revisión humana → validación A → montaje C`.
+### Las cinco trayectorias que permanecen
 
-No se copia automáticamente nombre de tarea, rúbrica, ponderación, secuencia, plataforma ni producto.
+Más allá de H1–H10, el curso mantiene cinco unidades longitudinales:
 
-## Baseline post-F8 vigente
+| Trayectoria | Función en el recorrido |
+|---|---|
+| **U1** | Orientación y continuidad del aprendizaje. |
+| **U2** | Reflexión epistemológica sobre conocimiento, modelos y evidencia. |
+| **U13 · PROEMA** | Articulación metodológica de una investigación longitudinal. |
+| **U14** | Producción, comunicación y defensa del trabajo. |
+| **U15** | Síntesis, reflexión y cosecha de aprendizajes. |
 
-1. Arquitectura Maestra Carril A↔B v1.0 APROBADA.
-2. Arquitectura Operativa A↔B↔C v1.0 APROBADA.
-3. Expediente Humanizado v1.1 POSTPILOTO APROBADA.
-4. Sistema Documental/Operativo Carril B v1.1 POSTPILOTO APROBADO.
-5. Patrón de Familia Histórica H1–H10 v1.0 APROBADO.
-6. Sistema Federado Consolidado R3.6 v1.0 APROBADO.
-7. Gate F8→F9 v1.0 RATIFICADO.
-8. Registro Evolutivo v1.0 ESTABILIZADO POST-F8.
-9. Delta v1.1 POST-U04/H2.
-10. Delta v1.2 POST-U05/H3.
-11. Delta v1.3 POST-U06/H4.
-12. Delta v1.4 POST-U07/H5.
-13. Delta v1.5 POST-U08/H6.
+La secuencia de PROEMA conecta un tema común, un subtema grupal y contribuciones individuales con momentos de elaboración progresiva:
 
-## Estado de montaje histórico
+```text
+E1 (H1) → E2 (H4) → E3 (H7) → E4 (H10)
+→ E5 (U13) → presentación grupal (U14)
+→ artículo individual (U15)
+```
 
-### U03/H1
-**MONTADO / retorno integrado / referencia metodológica.**
+Esta secuencia expresa la arquitectura prevista. **No implica que todas las entregas estén ya realizadas ni evaluadas con estudiantes.**
 
-### U04/H2
-**CERRADA EN B / VERIFICADO-SITUADO / RETORNO B→A INTEGRADO.**
+## 🎨 Aprender con imaginación, sin perder rigor
 
-Ruta: `08_CURSOS_PROGRAMAS_Y_TRAYECTORIAS/CIFI3065/POST_F8/U04-H2/`
+La dimensión lúdica no consiste en añadir entretenimiento a contenidos ya terminados. Busca abrir oportunidades para formular hipótesis, comparar representaciones, advertir tensiones y hacer visible la evolución de las explicaciones científicas.
 
-### U05/H3
-**CERRADA EN B / VERIFICADO-SITUADO / RETORNO B→A INTEGRADO.**
+El diseño procura distinguir tres niveles de participación: **núcleo**, **profundización** y **exploración**, de modo que los recursos opcionales no se transformen silenciosamente en nuevas obligaciones. Las decisiones de tiempo, accesibilidad y equivalencia de recursos forman parte del microdiseño y de su revisión.
 
-Ruta: `08_CURSOS_PROGRAMAS_Y_TRAYECTORIAS/CIFI3065/POST_F8/U05-H3/`
+La mediación humana sigue siendo central: una imagen convincente no prueba un hecho, una simulación no es un experimento histórico y una respuesta generada por IA no adquiere por sí misma autoridad científica o curricular.
 
-### U06/H4
-**CERRADA EN B / VERIFICADO-SITUADO / RETORNO B→A INTEGRADO.**
+## 🧬 Tres carriles, una gobernanza
 
-Ruta: `08_CURSOS_PROGRAMAS_Y_TRAYECTORIAS/CIFI3065/POST_F8/U06-H4/`
+La arquitectura operativa se organiza en **A ↔ B ↔ C**:
 
-Aprendizajes absorbidos destacados:
+| Carril | Responsabilidad |
+|---|---|
+| **A · Gobernanza** | Canon, decisiones docentes, gates, absorciones, Estado Maestro y trazabilidad. |
+| **B · Realización histórica** | Diseño, producción, montaje y verificación situada de H1–H10. |
+| **C · Integración longitudinal** | Articulación de U1, U2, U13, U14 y U15, incluida PROEMA. |
 
-- cuantificación progresiva `localizar→extraer→organizar→calcular→comparar→interpretar`;
-- distinción parte/sistema;
-- procedencia explícita de evidencia histórica, secundaria, recreación y datos docentes/sintéticos;
-- reutilización profunda de evidencia;
-- sistema abierto→cerrado como patrón preferente condicionado;
-- DME estricto `PRODUCIDO → MONTADO → VERIFICADO-SITUADO`.
+**Regla de gobierno:** B y C no se gobiernan entre sí; ambos operan bajo A. Lo aprendido en una realización puede proponerse como mejora metodológica, pero **no entra automáticamente en el canon**.
 
-### U07/H5
-**CERRADA EN B / MONTADA Y REVISADA / RETORNO B→A INTEGRADO.**
+```text
+Decisión y baseline (A)
+     ↓             ↓
+Hitos históricos (B)    Trayectorias longitudinales (C)
+     ↓             ↓
+     evidencia situada y aprendizajes
+                 ↓
+       retorno candidato a A
+                 ↓
+        revisión humana y versión
+```
 
-Ruta: `08_CURSOS_PROGRAMAS_Y_TRAYECTORIAS/CIFI3065/POST_F8/U07-H5/`
+## 🔍 Producir, revisar y aprender del proceso
 
-Artefactos canónicos de absorción:
+El proyecto distingue estados que no deben confundirse:
 
-- `CIFI3065_POSTF8_U07-H5_RETORNO_B-A_INTEGRADO_v1.0_APROBADO.md`
-- `CIFI3065_POSTF8_U07-H5_BLT_LECCIONES_TRANSPORTABLES_v1.0_APROBADO.md`
+```text
+PROPUESTO → AUTORIZADO → PRODUCIDO → MONTADO
+→ VERIFICADO-SITUADO → RETORNO DOCUMENTAL
+→ (si procede) VALIDACIÓN EMPÍRICA
+```
 
-Movimiento absorbido:
+Son distinciones de responsabilidad, **no una promesa de avance automático ni una única secuencia universal**. Un gate autoriza solo su alcance escrito; un recurso publicado puede conservar problemas técnicos; una revisión del docente no sustituye evidencia de aprendizaje del estudiantado.
 
-`datos de composición/masa/volumen → patrones y razones → generalización empírica → modelo corpuscular → predicción/explicación → límite`.
+Los mecanismos incluyen gates de decisión, control de versiones, inventarios, revisión de procedencia, criterios de carga cognitiva, equivalencias de acceso, QA situada y registros de pendientes. Cuando una actividad se realiza en Moodle, el montaje y la revisión necesitan evidencia concreta de esa plataforma.
 
-### U08/H6
-**CERRADA EN B / MONTADA / VERIFICADA-SITUADA / RETORNO B→A INTEGRADO.**
+## 📍 Estado del proyecto · corte documental
 
-Ruta: `08_CURSOS_PROGRAMAS_Y_TRAYECTORIAS/CIFI3065/POST_F8/U08-H6/`
+**Corte de referencia:** 17 de noviembre de 2026, con respaldo rector consultado en el **Estado Maestro v28.0 del 4 de noviembre de 2026**. Esta fecha identifica la preparación editorial del presente README; **no afirma que todos los estados hayan sido revalidados ese día**.
 
-Artefactos canónicos de absorción:
+| Componente | Situación documentada o conocida | Reserva importante |
+|---|---|---|
+| **F0–F8** | Fases cerradas según gates vigentes. | No equivale a resultados empíricos F9. |
+| **F8→F9** | GO CON CONDICIONES ratificado. | **F9 empírica no activada**; requiere evidencia real de estudiantes. |
+| **H1–H6** | Desarrollo y montaje histórico con retornos documentales; H6 cuenta con piloto interactivo publicado. | Los tipos de verificación y resultados no son homogéneos. |
+| **H7** | Montaje reportado en el proceso de trabajo. | Reconciliación documental B→A pendiente en Estado Maestro v28.0. |
+| **H8** | Montaje reportado; absorción documental condicionada. | Pendientes **H8-P01…P06**. |
+| **H9** | Montaje y QA situada docente reportados; absorción documental condicionada. | Pendientes **H9-P01…P07**; no se acredita revisión técnica independiente ni exportación LMS. |
+| **H10** | Gate A→B v1.0 ratificado para activación controlada y **Paso 1**. | No hay caso rector aprobado; **sin permiso para producción extensa ni montaje Moodle**. |
+| **Carril C / PROEMA** | Arquitectura longitudinal autorizada bajo gobernanza A. | Implementación y validación deben verificarse por artefacto. |
 
-- `CIFI3065_POSTF8_U08-H6_RETORNO_B-A_INTEGRADO_v1.0_APROBADO.md`
-- `CIFI3065_POSTF8_U08-H6_BLT_LECCIONES_TRANSPORTABLES_v1.0_APROBADO.md`
+**Importante:** el README anterior llevaba un corte del 6 de octubre y el Estado Maestro v26.0 también quedó superado por el v28.0 consultado. Este documento no cierra por inferencia la reconciliación de H7 ni los pendientes de H8/H9. Ante diferencias entre conversaciones, artefactos y canon, corresponde abrir una revisión explícita en Carril A.
 
-Movimiento absorbido:
+### Próximo movimiento autorizado
 
-`diversidad de sustancias/símbolos/masas → lenguaje común/comparabilidad → estandarización → clasificación → periodicidad → predicción → límite`.
+En H10 procede únicamente la recuperación de fuentes y baselines, el inventario, la comparación de casos posibles y la preparación del **Mapa de Realización candidato de Paso 1**, seguido de revisión docente. Se evita iniciar materiales extensos, seleccionar un caso por defecto o publicar en Moodle sin autorización posterior.
 
-Aplicación interactiva: **PILOTO EN AULA v1.0 / PUBLICADA EN GITHUB PAGES / CI VERDE**.
+## 📂 Cómo explorar el repositorio
 
-URL pública: `https://ricardojuanmorales.github.io/materia-mundi-101/h6/`
+GitHub **`main`** es la fuente documental versionada de referencia. El proyecto utiliza una estructura de cartapacios **00–21 + 99** y activa las rutas según necesidad real, sin llenar carpetas por formalidad.
 
-Gate 1 histórico: **PASS**. Gate 2 carga cognitiva: **PASS**. Gates 3 accesibilidad y 4 Moodle→app→evidencia→Moodle: **validación situada durante piloto**.
+| Puerta documental | Para qué sirve |
+|---|---|
+| [`00_CONTROL_MAESTRO/`](00_CONTROL_MAESTRO/) | Estado, manifiestos, decisiones y ruta maestra. |
+| [`03_METODOLOGIA_Y_FLUJO_DE_TRABAJO/`](03_METODOLOGIA_Y_FLUJO_DE_TRABAJO/) | Protocolos de trabajo y arquitectura de carriles. |
+| [`07_PLANTILLAS_Y_MODELOS/`](07_PLANTILLAS_Y_MODELOS/) | Instrumentos y modelos de apoyo. |
+| [`08_CURSOS_PROGRAMAS_Y_TRAYECTORIAS/CIFI3065/`](08_CURSOS_PROGRAMAS_Y_TRAYECTORIAS/CIFI3065/) | Trayectorias, fases y realizaciones históricas. |
+| [`15_EVALUACION_CALIDAD_Y_AUDITORIA/`](15_EVALUACION_CALIDAD_Y_AUDITORIA/) | Calidad, contrastes y auditoría. |
+| [`18_DOCUMENTACION_ACTIVA/`](18_DOCUMENTACION_ACTIVA/) | Informes, continuidad y decisiones en curso. |
+| [`20_MANTENIMIENTO_Y_EVOLUCION/`](20_MANTENIMIENTO_Y_EVOLUCION/) | Deudas, mejoras y evolución. |
+| [`99_ARCHIVO_HISTORICO/`](99_ARCHIVO_HISTORICO/) | Genealogía y antecedentes conservados. |
 
-Puente siguiente:
+### Documentos para recuperar el estado
 
-`H6 clasificación/periodicidad → H7 composición/valencia/estructura → conectividad → propiedades`.
+1. [Estado Maestro v28.0](00_CONTROL_MAESTRO/ESTADO_MAESTRO_CIFI3065_v28.0.md).
+2. [Arquitectura operativa A–B–C aprobada](03_METODOLOGIA_Y_FLUJO_DE_TRABAJO/CIFI3065_ARQUITECTURA_OPERATIVA_TRES_CARRILES_A-B-C_v1.0_APROBADA.md).
+3. [Gate H10 aprobado](08_CURSOS_PROGRAMAS_Y_TRAYECTORIAS/CIFI3065/POST_F8/U12-H10/CIFI3065_POSTF8_U12-H10_GATE_A-B_GO_CONTROLADO_v1.0_APROBADO.md).
+4. [Kit de activación H10](08_CURSOS_PROGRAMAS_Y_TRAYECTORIAS/CIFI3065/POST_F8/U12-H10/CIFI3065_POSTF8_U12-H10_KIT_ACTIVACION_CARRIL_B_v1.0.md).
+5. [Repositorio del Framework relacionado](https://github.com/ricardojuanmorales/framework-proyecto-generico-ia-1).
 
-### U09/H7
-**GO CON CONDICIONES / AUTORIZADA PARA ACTIVACIÓN EN CARRIL B.**
+Los nombres de archivo y sus versiones forman parte de la trazabilidad. Si una referencia deja de ser vigente, debe documentarse su sucesora en lugar de reescribir silenciosamente la historia.
 
-Ruta: `08_CURSOS_PROGRAMAS_Y_TRAYECTORIAS/CIFI3065/POST_F8/U09-H7/`
+## 🤖 Humano, tecnología e inteligencia artificial
 
-Artefactos de activación:
+La IA puede apoyar análisis, propuestas, adaptación de recursos y producción documental o visual. No sustituye la decisión pedagógica ni la verificación de fuentes, derechos, accesibilidad o aprendizaje. El docente conserva autoridad sobre gates, objetivos, carga, criterios y aprobación de la publicación.
 
-- `CIFI3065_POSTF8_U09-H7_KIT_ACTIVACION_CARRIL_B_v1.0.md`
-- `CIFI3065_POSTF8_U09-H7_PROMPT_INDEPENDIENTE_ACTIVACION_CARRIL_B_v1.0.md`
+La relación con el Framework es de **implementación situada y posible retorno metodológico**, no de equivalencia total entre sus respectivos alcances, estados o niveles de validación.
 
-Configuración protegida:
+## 🔭 Horizonte abierto
 
-`composición elemental → conectividad/valencia → representación estructural → isomería → relación estructura–propiedad → predicción → límite`.
+Materia Mundi tiene todavía trabajo por realizar: reconciliar retornos, atender pendientes técnicos y documentales, cerrar decisiones de H10, fortalecer integraciones longitudinales y, cuando proceda, comenzar una fase de investigación empírica con evidencia auténtica del estudiantado.
 
-REC7:
+El valor del proyecto no reside en aparentar que todo está terminado. Reside en hacer visible **qué se sabe, cómo se produjo, qué se revisó, qué falta y quién debe decidir el siguiente paso**.
 
-**¿Qué predice tu modelo, con qué evidencia lo contrastas y qué rasgo del modelo no debe tomarse literalmente?**
+> La historia de la materia continúa. También continúa la historia de cómo aprendemos a enseñarla.
 
-Semana: **amarilla controlada**, con Ensayo PROEMA 3 como síntesis mayor.
+---
 
-## Estado de longitudinales / Carril C
-
-**GO CON CONDICIONES / AUTORIZADO PARA ACTIVACIÓN.**
-
-Ruta:
-
-`08_CURSOS_PROGRAMAS_Y_TRAYECTORIAS/CIFI3065/POST_F8/LONGITUDINALES/`
-
-Artefactos:
-
-- `CIFI3065_POSTF8_CARRIL_C_KIT_ACTIVACION_LONGITUDINALES_v1.0.md`
-- `CIFI3065_POSTF8_CARRIL_C_PROMPT_INDEPENDIENTE_ACTIVACION_v1.0.md`
-
-Primera salida requerida antes de producción extensa:
-
-`inventario PROEMA → materiales externos candidatos → matriz de simetría reversible → Mapa Longitudinal PROEMA → U13 mínimo viable E2 → interfaz U13↔U14↔U15 → revisión humana`.
-
-## Política de ZIP
-
-El ZIP no es requisito mecánico para cada tránsito.
-
-Se utiliza cuando existe valor real de portabilidad/auditoría: evidencia situada, archivos externos no representados en `main`, múltiples artefactos que conviene congelar juntos o fronteras complejas.
-
-Regla: **ZIP por necesidad de portabilidad y auditoría, no por ritual documental.**
-
-## Estructura de cartapacios
-
-El repositorio conserva la arquitectura **00–21 + 99** con apertura proporcional a necesidad real.
-
-- `00_CONTROL_MAESTRO/` — ACTIVE
-- `03_METODOLOGIA_Y_FLUJO_DE_TRABAJO/` — ACTIVE
-- `07_PLANTILLAS_Y_MODELOS/` — SUPPORT
-- `08_CURSOS_PROGRAMAS_Y_TRAYECTORIAS/` — ACTIVE
-- `15_EVALUACION_CALIDAD_Y_AUDITORIA/` — ACTIVE
-- `18_DOCUMENTACION_ACTIVA/` — ACTIVE
-- `20_MANTENIMIENTO_Y_EVOLUCION/` — SUPPORT
-- `99_ARCHIVO_HISTORICO/` — SUPPORT / HISTÓRICO
-
-Los demás cartapacios permanecen SUPPORT/LATENT según necesidad verificable. No se crea contenido para completar taxonomía.
-
-## Rutas canónicas rectoras
-
-### Control maestro
-
-- `00_CONTROL_MAESTRO/ESTADO_MAESTRO_CIFI3065_v26.0.md`
-- `00_CONTROL_MAESTRO/MANIFEST_CANONICO_CIFI3065_v18.0.md`
-- `00_CONTROL_MAESTRO/CIFI3065_MAPA_RUTA_MAESTRO_F0-F10_v1.0.md`
-
-### Metodología
-
-- `03_METODOLOGIA_Y_FLUJO_DE_TRABAJO/Protocolo_General_Sesion_Concertada_Verificable_v1_1.md`
-- `03_METODOLOGIA_Y_FLUJO_DE_TRABAJO/CIFI3065_ARQUITECTURA_OPERATIVA_TRES_CARRILES_A-B-C_v1.0_APROBADA.md`
-- `03_METODOLOGIA_Y_FLUJO_DE_TRABAJO/CIFI3065_REGISTRO_EVOLUTIVO_TRANSFERENCIA_METODOLOGICA_v1.5_POST-U08-H6.md`
-
-### Baseline post-F8
-
-- `08_CURSOS_PROGRAMAS_Y_TRAYECTORIAS/CIFI3065/F8/CIFI3065_F8_H6R3_ARQUITECTURA_MAESTRA_CARRIL_A-B_v1.0_APROBADA.md`
-- `08_CURSOS_PROGRAMAS_Y_TRAYECTORIAS/CIFI3065/F8/CIFI3065_F8_H6R3_ESPECIFICACION_EXPEDIENTE_HUMANIZADO_v1.1_POSTPILOTO_APROBADA.md`
-- `08_CURSOS_PROGRAMAS_Y_TRAYECTORIAS/CIFI3065/F8/CIFI3065_F8_H6R3_SISTEMA_DOCUMENTAL_CARRIL_B_v1.1_POSTPILOTO_APROBADO.md`
-- `08_CURSOS_PROGRAMAS_Y_TRAYECTORIAS/CIFI3065/F8/CIFI3065_F8_H6R3_PATRON_FAMILIA_HISTORICA_H1-H10_v1.0_APROBADO.md`
-- `08_CURSOS_PROGRAMAS_Y_TRAYECTORIAS/CIFI3065/F8/CIFI3065_F8_H6R3_R3.6_SISTEMA_FEDERADO_CONSOLIDADO_v1.0_APROBADO.md`
-
-## Gobernanza documental
-
-**GitHub `main` es la fuente versionada de verdad.**
-
-Una ruta canónica se determina por `función + ruta + versión + estado + sucesión`.
-
-Regla de producto vivo:
-
-**un producto vivo por función + Git como genealogía**.
-
-## Cómo recuperar el estado
-
-Leer, en este orden:
-
-1. `README.md`
-2. Estado Maestro vigente
-3. Arquitectura A↔B↔C vigente
-4. Manifest Canónico
-5. Mapa de Ruta F0–F10
-6. Gate F8→F9
-7. baseline post-F8
-8. registro evolutivo metodológico
-9. movimiento situado vigente en `POST_F8/`
-
-## Próximos movimientos
-
-1. **Carril B:** abrir U09/H7 desde su Kit/Prompt y ejecutar snapshot → baseline → inventario → Paso 1 → Mapa de Realización H7; detenerse para revisión humana antes de producción extensa.
-2. **Carril C:** mantener la gobernanza longitudinal de PROEMA; H7 incorpora Ensayo 3 sin transferir esa gobernanza a B.
-3. **Aplicación H6:** ejecutar piloto en aula v1.0; observar Gates 3–4 de forma situada; sólo corregir bloqueos reales y no expandir el motor durante el piloto.
-4. **F9:** permanece cerrada hasta disponer de evidencia real de estudiantes.
+**Estado de este documento:** `README v2.0 · APROBADO POR DOCENTE · PUBLICADO EN main`  
+**Fecha de elaboración y aprobación:** 17 de noviembre de 2026  
+**Referencia documental principal:** Estado Maestro CIFI 3065 v28.0 (2026-11-04) y Gate U12/H10 v1.0 aprobado.
